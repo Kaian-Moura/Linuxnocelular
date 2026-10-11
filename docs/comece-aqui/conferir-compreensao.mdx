@@ -1,0 +1,44 @@
+---
+title: Confira sua compreensão antes de avançar
+description: Exercícios comentados sobre root, execução remota, PRoot, USB-C, firmware e evidências de sucesso.
+sidebar_position: 7
+last_verified: '2026-10-11'
+verification: documental
+hardware_tested: false
+---
+
+import KnowledgeCheck from '@site/src/components/KnowledgeCheck';
+
+Um erro de conceito pode fazer você instalar o pacote na máquina errada, confundir um desktop virtual com Linux nativo ou gravar uma imagem incompatível. Este exercício usa seis situações pequenas para conferir se as diferenças ficaram claras. Dificuldade: iniciante, depois das [microaulas](micro-aulas.md). Materiais: navegador. Não há conexão com o telefone.
+
+Escolha uma resposta, clique **Conferir resposta** e leia a explicação. Se errou, você pode trocar a resposta e conferir de novo, ou seguir para a próxima pergunta e voltar ao guia correspondente. O resultado conta a primeira tentativa de cada pergunta; revisar depois é parte do aprendizado, não uma penalidade.
+
+## Seis situações do projeto
+
+<KnowledgeCheck />
+
+## O que essas perguntas estão verificando
+
+**Privilégio real:** um aplicativo instalado, um bootloader desbloqueado e um usuário chamado root dentro de um ambiente não são a mesma evidência. Antes de concluir que há privilégio no Android, identifique o ambiente e o método do aparelho. [Magisk](../preparacao/root-magisk.md) ensina obtenção, patch, instalação condicionada e verificação; a instalação do APK é só parte do caminho.
+
+**Local de execução:** o notebook pode estar servindo como tela e teclado de uma shell remota. Depois de conectar por SSH, os comandos executam no servidor autenticado até sair daquela conexão. O tutorial [SSH](../projetos/ssh-remoto.md) separa cliente, servidor, usuários, portas e chaves. Essa distinção evita instalar um driver no notebook esperando que apareça no telefone.
+
+**Funções do USB-C:** um conector pode conduzir energia e dados sem oferecer o caminho de vídeo que você deseja. A descrição de velocidade não basta para escolher um monitor, hub ou cabo. [USB-C e hubs](../hardware/usb-c-hubs.md) mostra as funções distintas; [vídeo e hotplug](../hardware/video-hotplug.md) segue a cadeia até a imagem física e a sessão gráfica.
+
+**Kernel e ambiente:** PRoot permite executar programas de uma distribuição adaptando chamadas em espaço de usuário. Isso não troca o kernel Android nem transforma uma identidade apresentada em root administrativo real do host. [PRoot-distro](../android/proot-distro.md) explica versões, instalação, limites, backup e manutenção. A ausência de um recurso de kernel não é resolvida só por trocar a distribuição dentro do ambiente.
+
+**Identidade do firmware:** arquitetura de CPU é um requisito para programas, mas não uma receita de instalação para uma placa. Um smartphone também depende de device tree, firmware, formatos de boot e políticas de segurança. O [guia nativo](../nativo/visao-geral.md) separa essas peças, e o [plano de recuperação](../preparacao/plano-recuperacao.md) exige identificar o retorno antes de gravar.
+
+**Resultado observável:** código de saída, nó em `/dev`, ícone e luz de periférico são evidências parciais. O resultado precisa corresponder ao objetivo: teclas chegando à aplicação, imagem no monitor, carga sustentada, sessão preservada ou serviço acessível após reiniciar. O [método de diagnóstico](../diagnostico/metodo.md) ajuda a dizer o que o teste comprovou e o que ainda é desconhecido.
+
+## Como usar seu resultado
+
+Se uma resposta exigiu adivinhação, abra o guia ligado à explicação e procure o exemplo correspondente ao seu objetivo. Anote com suas palavras: “sei isso porque observei tal resultado” ou “ainda preciso conferir tal condição”. Essa anotação vale mais para o projeto que decorar um nome de comando.
+
+Você pode repetir o exercício quantas vezes quiser. As respostas não são salvas, não viram um certificado e não preenchem automaticamente o assistente de compatibilidade. Mesmo acertar todas não demonstra que seu bootloader aceita imagens ou que o hub negocia energia. Essas condições exigem as fontes e os testes do modelo.
+
+Depois, volte à [minha trilha](minha-trilha.mdx) ou escolha uma [aula prática](../aulas/primeiro-projeto-termux.md). Para uma etapa que não funcionou, use o [manual de erros para iniciantes](../diagnostico/erros-para-iniciantes.md), informando o ambiente e a mensagem que realmente apareceu.
+
+## Fontes e verificação
+
+Questões e explicações originais, revisadas em **11/10/2026**. Referências técnicas: [Magisk oficial](https://topjohnwu.github.io/Magisk/install.html), [OpenSSH](https://www.openssh.com/manual.html), [PRoot-distro](https://github.com/termux/proot-distro), [AOSP bootloader](https://source.android.com/docs/core/architecture/bootloader) e as fontes dos guias vinculados. O exercício verifica compreensão das respostas; não é uma avaliação de hardware, não grava arquivos no aparelho e não autoriza operações de manutenção.

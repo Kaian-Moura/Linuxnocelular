@@ -4,7 +4,7 @@ Base de conhecimento em português brasileiro sobre reaproveitar smartphones com
 
 ## Executar
 
-Para **ler e seguir** os tutoriais, comece pela [trilha do zero](docs/comece-aqui/do-zero.md) e pelo [diretório de downloads oficiais](docs/comece-aqui/downloads.md). Não é necessário instalar Node ou Docusaurus no telefone para usar Linux; as ferramentas abaixo servem para executar **este site de documentação** no computador.
+Para **ler e seguir** os tutoriais, monte [sua trilha](docs/comece-aqui/minha-trilha.mdx), pratique no [terminal simulado](docs/comece-aqui/laboratorio.mdx) e siga a [primeira aula Termux](docs/aulas/primeiro-projeto-termux.md). O [guia do zero](docs/comece-aqui/do-zero.md) e o [diretório de downloads oficiais](docs/comece-aqui/downloads.md) explicam os preparativos. Não é necessário instalar Node ou Docusaurus no telefone para usar Linux; as ferramentas abaixo servem para executar **este site de documentação** no computador.
 
 Para abrir o site localmente pela primeira vez:
 
@@ -50,7 +50,7 @@ O último comando faz requisições HTTP e registra resultados inconclusivos/blo
 ## Organização
 
 - `docs/`: conceitos, caminhos, compatibilidade, preparação, hardware, diagnóstico, recuperação, projetos e comunidade.
-- `src/`: home, tema e assistente de decisão React, sem backend ou coleta própria.
+- `src/`: home, tema, assistente de decisão, trilhas, simulador e perguntas React, sem backend ou coleta própria; progresso local somente se o leitor optar.
 - `templates/`: modelos de tutorial, dispositivo e registro de teste.
 - `scripts/`: validação editorial, links internos e disponibilidade de fontes externas.
 - `tests/`: invariantes de decisão e testes de navegador.
@@ -64,7 +64,7 @@ Outra hospedagem estática: build `npm ci && npm run build`, saída `build/`. Co
 
 ## Evidências e limites
 
-Revisão inicial: 10/10/2026; ampliação para iniciantes em 11/10/2026. São 76 páginas, incluindo uma trilha desde o primeiro terminal, downloads oficiais, ADB/Fastboot, desbloqueio, root com Magisk, instalação de aplicativos e tutoriais ampliados dos caminhos e projetos. Os capítulos indicam fontes, condições e limites; o anúncio de mudança de postmarketOS para Nura está contextualizado. Informações documentais não são testes em hardware. Adaptações privadas do OnePlus não são distribuídas como suporte genérico. Fontes que bloquearam automação são identificadas.
+Revisão inicial: 10/10/2026; ampliações para iniciantes em 11/10/2026. São 85 páginas, incluindo dez microaulas, três percursos práticos completos, downloads oficiais, ADB/Fastboot, desbloqueio, root com Magisk, kit de recuperação e manual de erros. Três trilhas interativas organizam o estudo; seis exercícios de terminal simulam somente um cenário fictício, e seis perguntas explicam equívocos frequentes. Os capítulos indicam fontes, condições e limites; o anúncio de mudança de postmarketOS para Nura está contextualizado. Informações documentais não são testes em hardware. Adaptações privadas do OnePlus não são distribuídas como suporte genérico. Fontes que bloquearam automação são identificadas.
 
 ## Contribuir e licenças
 

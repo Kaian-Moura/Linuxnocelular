@@ -1,0 +1,82 @@
+---
+title: Laboratório — pratique o terminal sem alterar o aparelho
+description: Seis exercícios interativos de pastas, arquivos, aspas e erros em um cenário fictício, antes da prática no terminal real.
+sidebar_position: 6
+last_verified: '2026-10-11'
+verification: documental
+hardware_tested: false
+---
+
+import TerminalLab from '@site/src/components/TerminalLab';
+
+Esta aula é para experimentar **pasta atual, listagem, navegação e leitura de arquivos**. Os seis exercícios abaixo rodam como simulação no navegador. Você não precisa conectar o telefone, instalar Linux ou abrir um terminal real para fazê-los. Dificuldade: iniciante. Materiais: navegador e uma forma de digitar.
+
+O cenário usa a sintaxe de uma shell Linux simples. Ele não reproduz todo o Bash, o Android ou o PowerShell. Não oferece instalação de pacotes, escrita de arquivos, sudo, ADB, SSH ou flash. As respostas são geradas a partir de pastas e textos fictícios; não revelam arquivos reais, conexões, arquitetura ou privilégios do seu aparelho.
+
+## Experimente os seis exercícios
+
+Digite no campo **Comando de prática** e pressione Enter ou Simular. Se tiver dúvida, use Mostrar dica. Você pode experimentar uma leitura errada e observar a mensagem antes de continuar. A ordem de exercícios aparece no painel; comandos de consulta também podem ser repetidos.
+
+<TerminalLab />
+
+## Entenda o cenário
+
+Você começa em `/home/aluno`. Uma pasta de usuário real costuma ser diferente; `aluno` não é uma conta para entrar no seu telefone. O conjunto fictício é:
+
+```text title="Árvore de arquivos do simulador; não é comando"
+/home/aluno/
+├── Downloads/
+├── nome com espaço.txt
+└── projetos/
+    └── boas-vindas.txt
+```
+
+Uma árvore representa relações: `boas-vindas.txt` está **dentro** de `projetos`, que está dentro da pasta pessoal. Estar em Downloads não faz um arquivo de projetos aparecer no diretório atual. Um caminho absoluto começa por `/`; um caminho relativo é interpretado a partir de onde você está.
+
+## O que cada exercício ensina
+
+### 1. Saber onde você está
+
+`pwd` mostra a pasta atual. No simulador, inicialmente retorna `/home/aluno`. No terminal real, leia o resultado em vez de esperar exatamente esse nome. Um caminho diferente não é automaticamente erro: pode ser seu usuário, um diretório de aplicativo ou uma conexão remota.
+
+### 2. Ver o que existe antes de escolher
+
+`ls` lista os nomes na pasta atual. O simulador acrescenta `/` aos nomes de pastas para ajudar a distinguir; nem toda configuração real de `ls` faz isso. A lista pode estar vazia numa pasta nova. Antes de inventar o nome de uma imagem ou executar um arquivo, confira a listagem e a extensão real.
+
+### 3. Mudar de pasta
+
+`cd projetos` muda a localização da sessão. No sistema real, `cd` normalmente termina sem imprimir confirmação. O simulador mostra uma frase didática, identificada como explicação, e atualiza o caminho próximo ao campo. Você pode conferir a mudança por `pwd`.
+
+### 4. Ler um arquivo de texto
+
+`cat boas-vindas.txt` mostra o texto desse arquivo. Na prática real, use `cat` em textos conhecidos; não o utilize para despejar uma imagem binária, chave privada ou arquivo de firmware no terminal. Ler um arquivo não o instala nem o modifica.
+
+### 5. Voltar um nível
+
+`cd ..` vai para a pasta acima. Os dois pontos são um nome especial, não uma reticência nem dois argumentos. Seus arquivos continuam onde estavam. Navegar por pastas não apaga conteúdo.
+
+### 6. Manter um nome com espaços num argumento
+
+Em `cat "nome com espaço.txt"`, as aspas fazem o nome inteiro chegar como um único argumento. Sem aspas, uma shell interpreta vários argumentos. Este laboratório aceita aspas simples e duplas para esse exercício, mas não implementa expansão de variáveis ou todos os escapes de uma shell real.
+
+## Aprenda com três erros comuns
+
+| Experimento no simulador | O que ele mostra | Próxima consulta útil |
+| --- | --- | --- |
+| `cat boas-vindas.txt` antes de entrar em projetos | O arquivo não está na pasta atual | `pwd`, depois `ls` |
+| `cd Projetos` com P maiúsculo | Esse nome não corresponde a projetos | Conferir o nome exato em `ls` |
+| Uma aspa aberta sem fechar | A linha está incompleta | Corrigir a aspa e reenviar |
+
+Num terminal real, aspas incompletas podem fazer o prompt mudar e aguardar o restante da linha. O simulador encerra a tentativa com uma explicação em vez de entrar nesse modo. Não conclua que todo programa real terá esse mesmo comportamento.
+
+`help` mostra os comandos limitados desta prática. `clear` limpa apenas a saída visual do simulador e conserva o avanço dos exercícios. **Recomeçar os exercícios** volta ao cenário inicial. Essas ações não limpam o armazenamento do computador, o Termux nem os logs do telefone. O histórico simulado é limitado e permanece só na memória desta página.
+
+## Agora, prepare a prática real
+
+Você terminou quando consegue explicar o que `pwd`, `ls`, `cd` e `cat` fazem e por que a pasta e as aspas importam. Em seguida, siga a [primeira aula de terminal e arquivos](terminal-primeiros-passos.md), que ensina abrir o ambiente real, criar uma pasta de laboratório e salvar um documento seu. Para Android preservado, comece pela [aula Termux e Python](../aulas/primeiro-projeto-termux.md).
+
+No ambiente real existem dados e permissões de verdade. Confira a máquina antes de executar comandos e não cole exemplos destrutivos como exercício. Esta simulação não foi feita para prever uma restauração, verificar root ou reconhecer drivers.
+
+## Fontes e limites
+
+Simulador e exercícios originais, revisão **11/10/2026**, sem execução em telefone. Os conceitos de shell são descritos no [manual GNU Bash](https://www.gnu.org/software/bash/manual/bash.html); arquivos e programas do ambiente Android precisam seguir [Termux](https://github.com/termux/termux-app). O componente é integrado conforme [MDX e React no Docusaurus](https://docusaurus.io/docs/markdown-features/react). O subconjunto implementado aqui não é anunciado como emulador completo de nenhuma shell.

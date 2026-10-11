@@ -8,12 +8,17 @@ const routes = [
   ['02', 'Linux sobre Android', 'Comece com Termux e PRoot. Explore chroot, interfaces gráficas e os limites do kernel que você já tem.', '/docs/android/visao-geral/', 'Android permanece'],
   ['03', 'Hardware na prática', 'Investigue monitor, hub, teclado, energia e aceleração gráfica. Siga a cadeia de diagnóstico, camada por camada.', '/docs/diagnostico/metodo/', 'Evidências antes de alterações'],
 ];
+const courses = [
+  ['SEM ROOT', 'Seu primeiro programa no telefone', 'Instale o Termux pela fonte oficial, escreva Python, corrija um erro e confira uma cópia fora do aparelho.', '/docs/aulas/primeiro-projeto-termux/', 'Android + Termux'],
+  ['ANDROID PERMANECE', 'Seu primeiro desktop Debian', 'Siga uma única rota gráfica. Abra, use, encerre e retome o desktop, sabendo em qual ambiente executar cada etapa.', '/docs/aulas/debian-desktop/', 'Termux + PRoot + X11'],
+  ['APÓS A INSTALAÇÃO', 'Seu mini-PC com Linux nativo', 'Parta de um port já instalado. Confira desktop, arquivos, rede, monitor, periféricos, reinício e reconexão.', '/docs/aulas/mini-pc-nativo/', 'Depende do port e da variante'],
+];
 function DesktopDiagram() {
   return <div className={styles.diagram} role="img" aria-label="Um smartphone reaproveitado fornece processamento para monitor, teclado e mouse por um hub. Energia e suporte de drivers precisam ser verificados.">
-    <div className={styles.diagramTop}><span className={styles.statusDot}/> HARDWARE REAL, SUPORTE VERIFICADO</div>
+    <div className={styles.diagramTop}><span className={styles.statusDot}/> EXEMPLO DE CONEXÃO · SUPORTE A VERIFICAR</div>
     <div className={styles.monitor}><div className={styles.screen}>
       <div className={styles.windowTop}><i/><i/><i/><span>seu novo computador</span></div>
-      <div className={styles.terminal}><span>~ $ </span>uname -m<br/><strong>aarch64</strong><br/><br/><span>~ $ </span>um novo começo<span className={styles.cursor}>▍</span></div>
+      <div className={styles.terminal}><span>~ $ </span>uname -m<br/><strong>aarch64</strong><br/><br/><span>~ $ </span>python ola.py<br/><strong>Olá, Linux!</strong><span className={styles.cursor}>▍</span></div>
       <div className={styles.desktopIcons}><span>⌘</span><span>▣</span><span>⌁</span><span>▤</span></div>
     </div></div>
     <div className={styles.stand}/>
@@ -35,6 +40,11 @@ export default function Home() {
         <DesktopDiagram/>
       </section>
       <div className={styles.strip}><span>APRENDA</span> Entenda antes de executar.<b aria-hidden="true">/</b><span>VERIFIQUE</span> Compatibilidade tem versão.<b aria-hidden="true">/</b><span>CONTRIBUA</span> Documente o que funcionou.</div>
+      <section className={styles.learning} aria-labelledby="learning-title">
+        <div className={styles.learningIntro}><span className={styles.eyebrow}>PARA QUEM ESTÁ COMEÇANDO</span><h2 id="learning-title">Um resultado concreto, passo a passo.</h2><p>Monte sua trilha, pratique num terminal simulado e acompanhe as verificações. As aulas mostram onde baixar, onde digitar, o que deve aparecer e como retomar depois.</p><div className={styles.learningActions}><Link className="button button--primary" to="/docs/comece-aqui/minha-trilha/">Montar minha trilha →</Link><Link className={styles.textLink} to="/docs/comece-aqui/laboratorio/">Praticar sem alterar meu aparelho →</Link></div></div>
+        <div className={styles.cards}>{courses.map(([tag,title,copy,to,place]) => <Link className={styles.card} to={to} key={to}><span className={styles.courseTag}>{tag}</span><h3>{title}</h3><p>{copy}</p><span className={styles.tag}>{place}</span></Link>)}</div>
+        <p className={styles.learningNote}>Concluir uma aula registra aprendizado. Compatibilidade e recuperação precisam de evidências do seu aparelho.</p>
+      </section>
       <section className={styles.routes} aria-labelledby="routes-title">
         <div className={styles.sectionHead}><div><span className={styles.eyebrow}>MÉTODOS DIFERENTES, OBJETIVOS REAIS</span><h2 id="routes-title">Encontre sua próxima etapa.</h2></div><p>Da primeira sessão no terminal a um desktop nativo. Cada caminho traz seus requisitos e limites.</p></div>
         <div className={styles.cards}>{routes.map(([n,title,copy,to,tag]) => <Link className={styles.card} to={to} key={n}><span className={styles.cardNumber}>{n}<span aria-hidden="true">↗</span></span><h3>{title}</h3><p>{copy}</p><span className={styles.tag}>{tag}</span></Link>)}</div>

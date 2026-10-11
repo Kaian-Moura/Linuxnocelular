@@ -8,4 +8,5 @@
 .button {border-radius:8px;}.button--primary {color:#fff!important;}[data-theme='dark'] .button--primary {color:#102f2b!important;}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible {outline:3px solid #bb7c14;outline-offset:3px;}
 .theme-admonition {box-shadow:none;border:1px solid var(--guide-line);}.theme-code-block {border:1px solid var(--guide-line);}
+.guide-context {margin:1.3rem 0 2rem;padding:1rem 1.15rem;border:1px solid var(--guide-line);border-radius:10px;background:var(--guide-soft);font-size:.78rem;line-height:1.6;}.guide-context>div {display:flex;gap:.5rem 1rem;flex-wrap:wrap;font-weight:600;}.guide-context p {margin:.4rem 0 .6rem;color:var(--guide-muted);}.guide-context nav {display:flex;gap:.6rem 1.3rem;flex-wrap:wrap;}.guide-context nav a {font-weight:650;text-decoration:underline;text-underline-offset:3px;}
 @media print {.navbar,.footer,.theme-doc-sidebar-container,.theme-doc-toc-desktop {display:none!important;}.main-wrapper {margin:0!important;}.markdown {font-size:11pt;}}

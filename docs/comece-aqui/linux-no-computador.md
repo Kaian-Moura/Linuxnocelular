@@ -1,7 +1,7 @@
 ---
 title: Use Linux no notebook por pendrive, sem instalar
 description: Prepare uma sessão live Ubuntu para conhecer Linux e avaliar o ambiente de preparação sem substituir o sistema do computador.
-sidebar_position: 5
+sidebar_position: 9
 last_verified: '2026-10-11'
 verification: documental
 hardware_tested: false

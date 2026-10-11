@@ -1,7 +1,7 @@
 ---
 title: Prepare o computador, baixe e abra os arquivos
 description: Windows, macOS e Linux desde o navegador até a pasta de trabalho, extração, arquitetura e verificação do download.
-sidebar_position: 2
+sidebar_position: 3
 last_verified: '2026-10-11'
 verification: documental
 hardware_tested: false

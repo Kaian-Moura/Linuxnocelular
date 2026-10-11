@@ -1,0 +1,55 @@
+---
+title: Minha trilha — aprenda fazendo
+description: Escolha um objetivo, acompanhe as aulas, pratique com verificações e baixe seu roteiro sem presumir compatibilidade.
+sidebar_position: 1
+last_verified: '2026-10-11'
+verification: documental
+hardware_tested: false
+---
+
+import LearningPath from '@site/src/components/LearningPath';
+
+Você não precisa estudar todas as páginas antes de fazer algo útil. Escolha um objetivo pequeno, prepare o ambiente certo e confira um resultado por vez. Esta página organiza **aulas práticas com uma ordem de aprendizado**, enquanto o [assistente de compatibilidade](../escolha/index.mdx) responde outra pergunta: quais caminhos têm requisitos atendidos pelo seu aparelho?
+
+**Dificuldade:** a primeira trilha começa no nível iniciante; investigar uma substituição do Android é avançado. **Resultado:** um roteiro de estudo e verificações, com links para aulas completas. **Materiais:** navegador; nas etapas reais, telefone, internet e os materiais indicados por cada aula. A ferramenta abaixo não se conecta ao aparelho.
+
+## Escolha seu objetivo e organize as aulas
+
+<LearningPath />
+
+## Se você está começando agora
+
+Escolha **Programar mantendo Android** quando consegue instalar aplicativos e confirmar permissões. O primeiro resultado será um programa seu, salvo no telefone, sem precisar de root. A [aula de primeiro projeto](../aulas/primeiro-projeto-termux.md) acompanha download, instalação, atualização, criação, edição e cópia dos arquivos. Você pode abri-la diretamente e consultar os fundamentos quando encontrar uma dúvida.
+
+Se quer janelas e aplicativos de desktop sem substituir Android, siga **Ter um desktop mantendo Android**. O [curso Debian e desktop](../aulas/debian-desktop.md) separa o aplicativo Android, o terminal Termux, o ambiente Debian e a interface gráfica. Essa separação evita instalar pacotes na máquina errada ou chamar uma sessão virtual de sistema nativo. A possibilidade de uso no monitor depende ainda do hardware e da rota escolhida.
+
+Escolha **Investigar Linux no lugar do Android** somente como preparação de uma decisão. Nem RAM abundante, arquitetura ARM64 ou root comprovam a existência de um port adequado. A trilha começa por evidências e recuperação; não por desbloqueio e flash. Se o aparelho não tem suporte demonstrado, conservar Android continua sendo um caminho útil. Se Linux nativo já está instalado, vá à [aula de configurar um mini-PC](../aulas/mini-pc-nativo.md).
+
+## Como usar uma aula sem se perder
+
+1. Leia o resultado esperado e os materiais antes de copiar comandos. Se falta uma condição, registre a pendência.
+2. Localize **onde executar**: notebook, aplicativo Android, Termux, Debian PRoot ou Linux nativo. Uma janela no notebook pode estar controlando o telefone por SSH.
+3. Execute uma etapa pequena e aguarde o resultado. Textos rotulados como saída ilustrativa não são comandos.
+4. Compare o resultado com a verificação da aula. Um comando sem erro não demonstra que a imagem chegou ao monitor ou que a bateria recebeu energia.
+5. Se divergir, use a tabela de erros daquela etapa ou o [manual de erros para iniciantes](../diagnostico/erros-para-iniciantes.md). Não some comandos de tutoriais diferentes.
+6. Marque a aula quando tiver estudado e conferido o que se aplica ao seu cenário. Não marque uma função de hardware que ainda não observou.
+
+Ao pedir ajuda, informe a aula, etapa, ambiente e mensagem exata, com identificadores pessoais removidos. “Estou no PowerShell, dentro de platform-tools, e aparece unauthorized” permite uma investigação melhor que “o Linux não funciona”. Não publique senhas, chaves privadas, IMEI ou um dump inteiro.
+
+## O que as marcações significam
+
+As marcações são **anotações de estudo feitas por você**. O site não sabe se conectou o hub, comparou o firmware ou testou root. Não certifica suporte, não altera permissões e não libera uma gravação. Ao mudar de trilha, as aulas compartilhadas mantêm suas marcações; isso evita repetir a aula de terminal só porque decidiu explorar um desktop.
+
+Sem ativar **Salvar progresso neste navegador**, as marcações ficam na memória da página e podem ser perdidas ao sair. Com a opção ativada, o navegador guarda somente a trilha e os identificadores das aulas concluídas. O armazenamento pertence à origem do site: uma edição local, um domínio publicado e outro navegador têm registros independentes. Limpar dados do site também pode apagar esse progresso.
+
+Você pode baixar **Meu roteiro** como Markdown. É um arquivo de texto legível no VS Code ou em outro editor, com tarefas e resultados a conferir. Os caminhos de guia no arquivo identificam páginas deste site; não são endereços de download de firmware. O arquivo não leva suas senhas nem identifica automaticamente o telefone. Para dados técnicos do aparelho, mantenha uma [ficha de inventário](../compatibilidade/inventario.md) e um [plano de recuperação](../preparacao/plano-recuperacao.md) separados.
+
+## Pare no ponto certo
+
+Uma instalação de aplicativo pode ser desfeita pelo gerenciador, preservando antes os arquivos necessários. Alterar a inicialização exige um plano específico: variante, build, pacote, alvo, modo, slots quando aplicáveis, riscos e retorno. Se não consegue preencher essas informações com fontes confiáveis, a etapa de gravação continua pendente mesmo depois de ler todas as aulas.
+
+O progresso não mede velocidade nem impõe prazo. Sessões de download podem demorar; um telefone pode exigir confirmação física; uma fonte pode não disponibilizar firmware. Registre a limitação e escolha uma alternativa documentada. O objetivo é aprender a construir um resultado verificável, não completar uma barra a qualquer custo.
+
+## Fontes e funcionamento da ferramenta
+
+Roteiro e atividades originais, revisados em **11/10/2026**. Os critérios técnicos estão nos tutoriais vinculados, com suas fontes e limites. A interface usa componentes locais [React em MDX/Docusaurus](https://docusaurus.io/docs/markdown-features/react) e armazenamento no navegador, sem serviço próprio de coleta. Os caminhos iniciais são fundamentados em [Termux](https://github.com/termux/termux-app), [PRoot-distro](https://github.com/termux/proot-distro) e nos [requisitos AOSP de inicialização](https://source.android.com/docs/core/architecture/bootloader). Nenhuma aula executa comandos por meio desta página.

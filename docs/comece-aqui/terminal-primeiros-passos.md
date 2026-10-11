@@ -1,13 +1,15 @@
 ---
 title: Primeira aula de terminal e arquivos
 description: Abra o terminal, copie comandos, reconheça o ambiente, edite um arquivo e instale seu primeiro pacote com verificações.
-sidebar_position: 3
+sidebar_position: 4
 last_verified: '2026-10-11'
 verification: documental
 hardware_tested: false
 ---
 
 Você vai criar uma pasta de exercícios, escrever um arquivo e aprender a reconhecer um comando concluído. Dificuldade: iniciante. Este exercício usa **shell Linux/macOS ou Termux**. Para PowerShell, siga os blocos específicos de [preparação do computador](computador-downloads.md) e [ADB](../preparacao/adb-fastboot.md). A sintaxe não é sempre igual.
+
+Se quiser experimentar primeiro sem abrir um terminal real, faça os [seis exercícios no laboratório simulado](laboratorio.mdx). Ele ensina navegação e leitura em um cenário fictício; depois volte aqui para criar e salvar seus próprios arquivos no ambiente identificado.
 
 ## 1. Abra o lugar certo para digitar
 

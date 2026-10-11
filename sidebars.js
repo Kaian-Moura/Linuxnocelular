@@ -1,5 +1,6 @@
 const categories = [
   ['Primeiros passos — do zero', 'comece-aqui'],
+  ['Aulas práticas', 'aulas'],
   ['Conceitos fundamentais', 'fundamentos'], ['Verificação de compatibilidade', 'compatibilidade'],
   ['Escolha seu caminho', 'escolha'], ['Preparação do dispositivo', 'preparacao'],
   ['Instalação nativa', 'nativo'], ['Linux sobre Android', 'android'],

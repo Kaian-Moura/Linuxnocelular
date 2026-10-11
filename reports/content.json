@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-11T12:20:53.040Z",
-  "pages": 76,
-  "words": 110213,
+  "generatedAt": "2026-10-11T14:38:24.657Z",
+  "pages": 85,
+  "words": 137332,
   "metrics": [
     {
       "file": "docs/android/chroot.md",
@@ -60,6 +60,30 @@
       "sourceCount": 4
     },
     {
+      "file": "docs/aulas/debian-desktop.md",
+      "title": "Aula prática: Debian com desktop sobre Android",
+      "lastVerified": "2026-10-11",
+      "words": 4473,
+      "commandBlocks": 31,
+      "sourceCount": 18
+    },
+    {
+      "file": "docs/aulas/mini-pc-nativo.md",
+      "title": "Aula: use seu primeiro mini-PC com Linux nativo",
+      "lastVerified": "2026-10-11",
+      "words": 4038,
+      "commandBlocks": 10,
+      "sourceCount": 12
+    },
+    {
+      "file": "docs/aulas/primeiro-projeto-termux.md",
+      "title": "Aula prática: seu primeiro projeto no Termux",
+      "lastVerified": "2026-10-11",
+      "words": 3113,
+      "commandBlocks": 16,
+      "sourceCount": 10
+    },
+    {
       "file": "docs/comece-aqui/computador-downloads.md",
       "title": "Prepare o computador, baixe e abra os arquivos",
       "lastVerified": "2026-10-11",
@@ -68,10 +92,18 @@
       "sourceCount": 4
     },
     {
+      "file": "docs/comece-aqui/conferir-compreensao.mdx",
+      "title": "Confira sua compreensão antes de avançar",
+      "lastVerified": "2026-10-11",
+      "words": 631,
+      "commandBlocks": 0,
+      "sourceCount": 4
+    },
+    {
       "file": "docs/comece-aqui/do-zero.md",
       "title": "Nunca fiz isso — por onde começo?",
       "lastVerified": "2026-10-11",
-      "words": 1361,
+      "words": 1401,
       "commandBlocks": 0,
       "sourceCount": 4
     },
@@ -84,6 +116,14 @@
       "sourceCount": 28
     },
     {
+      "file": "docs/comece-aqui/laboratorio.mdx",
+      "title": "Laboratório — pratique o terminal sem alterar o aparelho",
+      "lastVerified": "2026-10-11",
+      "words": 868,
+      "commandBlocks": 0,
+      "sourceCount": 3
+    },
+    {
       "file": "docs/comece-aqui/linux-no-computador.md",
       "title": "Use Linux no notebook por pendrive, sem instalar",
       "lastVerified": "2026-10-11",
@@ -92,10 +132,26 @@
       "sourceCount": 5
     },
     {
+      "file": "docs/comece-aqui/micro-aulas.md",
+      "title": "Dez microaulas para entender o projeto",
+      "lastVerified": "2026-10-11",
+      "words": 3732,
+      "commandBlocks": 7,
+      "sourceCount": 9
+    },
+    {
+      "file": "docs/comece-aqui/minha-trilha.mdx",
+      "title": "Minha trilha — aprenda fazendo",
+      "lastVerified": "2026-10-11",
+      "words": 857,
+      "commandBlocks": 0,
+      "sourceCount": 4
+    },
+    {
       "file": "docs/comece-aqui/terminal-primeiros-passos.md",
       "title": "Primeira aula de terminal e arquivos",
       "lastVerified": "2026-10-11",
-      "words": 1280,
+      "words": 1318,
       "commandBlocks": 12,
       "sourceCount": 5
     },
@@ -202,6 +258,14 @@
       "words": 856,
       "commandBlocks": 2,
       "sourceCount": 4
+    },
+    {
+      "file": "docs/diagnostico/erros-para-iniciantes.md",
+      "title": "Erros para iniciantes: do sintoma à próxima ação",
+      "lastVerified": "2026-10-11",
+      "words": 5788,
+      "commandBlocks": 26,
+      "sourceCount": 24
     },
     {
       "file": "docs/diagnostico/instalar-ferramentas.md",
@@ -391,7 +455,7 @@
       "file": "docs/intro.md",
       "title": "Comece aqui",
       "lastVerified": "2026-10-11",
-      "words": 980,
+      "words": 1014,
       "commandBlocks": 0,
       "sourceCount": 3
     },
@@ -474,6 +538,14 @@
       "words": 1795,
       "commandBlocks": 8,
       "sourceCount": 5
+    },
+    {
+      "file": "docs/preparacao/plano-recuperacao.md",
+      "title": "Monte seu kit de recuperação antes de alterar o boot",
+      "lastVerified": "2026-10-11",
+      "words": 3507,
+      "commandBlocks": 5,
+      "sourceCount": 10
     },
     {
       "file": "docs/preparacao/root-magisk.md",

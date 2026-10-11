@@ -77,7 +77,7 @@ test('trilha iniciante chega ao download e ao root com condições explícitas',
   await expect(page.locator('article')).toContainText('Instalar o APK do Magisk, sozinho');
   await expect(page.locator('article')).toContainText('não constituem um método universal');
 });
-test('todos os sete fluxogramas da edição renderizam',async({page})=>{
+test('todos os fluxogramas da edição renderizam',async({page})=>{
   for(const pathname of [
     '/docs/nativo/visao-geral/',
     '/docs/fundamentos/boot-kernel/',
@@ -86,6 +86,7 @@ test('todos os sete fluxogramas da edição renderizam',async({page})=>{
     '/docs/hardware/teclados-usb/',
     '/docs/hardware/video-hotplug/',
     '/docs/escolha/',
+    '/docs/aulas/mini-pc-nativo/',
   ]) {
     await page.goto(route(pathname));
     const diagram=page.locator('.docusaurus-mermaid-container');

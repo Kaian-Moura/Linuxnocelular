@@ -1,7 +1,7 @@
 ---
 title: Onde baixar cada ferramenta
 description: Diretório de origens oficiais, escolha de arquivo e tutorial de instalação para cada caminho.
-sidebar_position: 4
+sidebar_position: 8
 last_verified: '2026-10-11'
 verification: documental
 hardware_tested: false

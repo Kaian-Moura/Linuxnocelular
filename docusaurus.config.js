@@ -41,6 +41,7 @@ module.exports = {
       items: [
         {type: 'docSidebar', sidebarId: 'guide', position: 'left', label: 'Documentação'},
         {to: '/docs/comece-aqui/do-zero/', label: 'Do zero', position: 'left'},
+        {to: '/docs/comece-aqui/minha-trilha/', label: 'Minha trilha', position: 'left'},
         {to: '/docs/escolha/', label: 'Escolha seu caminho', position: 'left'},
         {to: '/docs/comunidade/contribuir/', label: 'Contribua', position: 'right'},
         ...(repository ? [{href: `https://github.com/${repository}`, label: 'GitHub', position: 'right'}] : []),

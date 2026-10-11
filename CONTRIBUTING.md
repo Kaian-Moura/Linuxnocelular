@@ -12,4 +12,6 @@ Leia [o padrão editorial](docs/comunidade/contribuir.md) e [a política de evid
 
 Um novo dispositivo não herda suporte por usar o mesmo SoC. “Boot funciona” não deve virar “desktop estável”. Ajustes no assistente precisam preservar suas condições de segurança e ter testes de regressão.
 
+Para uma nova aula, use também `templates/aula-pratica.md`. Complete um único percurso do início até salvar, encerrar e retomar, sem misturar alternativas na mesma sessão. Inclua erros esperados e checkpoints, distinguindo saída ilustrativa de resultado medido. Ao acrescentar aulas a `src/lib/learning.mjs`, preserve IDs já usados ou documente a migração do progresso local. Perguntas de compreensão devem explicar por que a resposta está correta e apontar ao guia relevante; notas e checkboxes nunca certificam compatibilidade. A simulação de terminal deve permanecer sem execução, rede ou acesso ao hardware.
+
 Código original recebe contribuições sob MIT; documentação sob CC BY-SA 4.0. Identifique origem/licença de material externo; prefira explicação original e referência primária. Mantenha comunicação respeitosa com pessoas de todos os níveis técnicos.

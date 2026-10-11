@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-11T12:21:41.852Z",
+  "generatedAt": "2026-10-11T14:39:48.040Z",
   "meaning": "Disponibilidade HTTP; não valida conteúdo ou suporte de hardware. Bloqueios/timeouts são inconclusivos.",
   "counts": {
-    "reachable": 388,
-    "inconclusive-http": 7,
-    "inconclusive-network": 4
+    "reachable": 427,
+    "inconclusive-network": 5,
+    "inconclusive-http": 9
   },
   "results": [
     {
@@ -96,14 +96,37 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://curl.se/docs/manpage.html",
+      "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://curl.se/docs/manpage.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://developer.android.com/about/versions/10/privacy/changes#proc-net",
+      "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://developer.android.com/about/versions/10/privacy/changes?hl=bn",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://developer.android.com/ndk/guides/abis",
       "pages": [
         "docs/comece-aqui/computador-downloads.md",
+        "docs/comece-aqui/micro-aulas.md",
         "docs/compatibilidade/inventario.md"
       ],
       "status": 200,
-      "finalUrl": "https://developer.android.com/ndk/guides/abis?hl=pt-br",
-      "redirected": true,
+      "finalUrl": "https://developer.android.com/ndk/guides/abis",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -113,7 +136,7 @@
         "docs/preparacao/adb-fastboot.md"
       ],
       "status": 200,
-      "finalUrl": "https://developer.android.com/studio/debug/dev-options?hl=zh-tw",
+      "finalUrl": "https://developer.android.com/studio/debug/dev-options?hl=es-419",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -124,8 +147,8 @@
         "docs/preparacao/adb-fastboot.md"
       ],
       "status": 200,
-      "finalUrl": "https://developer.android.com/studio/run/device",
-      "redirected": false,
+      "finalUrl": "https://developer.android.com/studio/run/device?hl=ja",
+      "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -136,25 +159,28 @@
         "docs/preparacao/adb-fastboot.md"
       ],
       "status": 200,
-      "finalUrl": "https://developer.android.com/studio/run/oem-usb?hl=ru",
-      "redirected": true,
+      "finalUrl": "https://developer.android.com/studio/run/oem-usb",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
     {
       "url": "https://developer.android.com/tools/adb",
       "pages": [
+        "docs/comece-aqui/micro-aulas.md",
         "docs/compatibilidade/inventario.md",
         "docs/diagnostico/boot-crash.md",
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/diagnostico/tela-quebrada.md",
         "docs/preparacao/adb-fastboot.md",
         "docs/preparacao/backup.md",
+        "docs/preparacao/plano-recuperacao.md",
         "docs/preparacao/tela-quebrada.md",
         "docs/recuperacao/triagem.md"
       ],
       "status": 200,
-      "finalUrl": "https://developer.android.com/tools/adb?hl=zh-tw",
-      "redirected": true,
+      "finalUrl": "https://developer.android.com/tools/adb",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -163,11 +189,13 @@
       "pages": [
         "docs/comece-aqui/computador-downloads.md",
         "docs/comece-aqui/downloads.md",
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/preparacao/adb-fastboot.md",
-        "docs/preparacao/desbloquear-bootloader.md"
+        "docs/preparacao/desbloquear-bootloader.md",
+        "docs/preparacao/plano-recuperacao.md"
       ],
       "status": 200,
-      "finalUrl": "https://developer.android.com/tools/releases/platform-tools?hl=ja",
+      "finalUrl": "https://developer.android.com/tools/releases/platform-tools?hl=fa",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -178,8 +206,8 @@
         "docs/android/termux.md"
       ],
       "status": 200,
-      "finalUrl": "https://developer.android.com/training/monitoring-device-state/doze-standby",
-      "redirected": false,
+      "finalUrl": "https://developer.android.com/training/monitoring-device-state/doze-standby?hl=es-419",
+      "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -210,11 +238,12 @@
       "pages": [
         "docs/dispositivos/variantes-fabricantes.md",
         "docs/preparacao/backup.md",
+        "docs/preparacao/plano-recuperacao.md",
         "docs/preparacao/root-magisk.md",
         "docs/recuperacao/restaurar-android.md"
       ],
       "status": 200,
-      "finalUrl": "https://developers.google.com/android/images?hl=zh-cn",
+      "finalUrl": "https://developers.google.com/android/images?hl=pt-br",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -223,12 +252,13 @@
       "url": "https://developers.google.com/android/ota",
       "pages": [
         "docs/dispositivos/variantes-fabricantes.md",
+        "docs/preparacao/plano-recuperacao.md",
         "docs/preparacao/root-magisk.md",
         "docs/recuperacao/restaurar-android.md"
       ],
       "status": 200,
-      "finalUrl": "https://developers.google.com/android/ota",
-      "redirected": false,
+      "finalUrl": "https://developers.google.com/android/ota?hl=pt-br",
+      "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -659,6 +689,17 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://docs.kernel.org/admin-guide/bug-hunting.html",
+      "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/admin-guide/bug-hunting.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
       "pages": [
         "docs/projetos/containers.md"
@@ -765,6 +806,17 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://docs.kernel.org/driver-api/firmware/introduction.html",
+      "pages": [
+        "docs/comece-aqui/micro-aulas.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/driver-api/firmware/introduction.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://docs.kernel.org/driver-api/thermal/sysfs-api.html",
       "pages": [
         "docs/hardware/energia.md"
@@ -789,6 +841,7 @@
     {
       "url": "https://docs.kernel.org/driver-api/usb/power-management.html",
       "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/hardware/energia.md",
         "docs/hardware/usb-c-hubs.md"
       ],
@@ -812,6 +865,7 @@
     {
       "url": "https://docs.kernel.org/driver-api/usb/typec.html",
       "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/diagnostico/tela-quebrada.md",
         "docs/glossario.md",
         "docs/hardware/usb-c-hubs.md",
@@ -894,6 +948,7 @@
     {
       "url": "https://docs.kernel.org/input/input.html",
       "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/diagnostico/instalar-ferramentas.md"
       ],
       "status": 200,
@@ -916,6 +971,7 @@
     {
       "url": "https://docs.kernel.org/power/power_supply_class.html",
       "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/hardware/energia.md"
       ],
       "status": 200,
@@ -931,6 +987,17 @@
       ],
       "status": 200,
       "finalUrl": "https://docs.kernel.org/usb/usbmon.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/userspace-api/media/v4l/dev-capture.html",
+      "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/userspace-api/media/v4l/dev-capture.html",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -1150,6 +1217,17 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://docs.python.org/3/library/functions.html",
+      "pages": [
+        "docs/aulas/primeiro-projeto-termux.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.python.org/3/builtins/functions.html",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://docs.python.org/3/library/http.server.html",
       "pages": [
         "docs/projetos/servidor-web.md"
@@ -1161,12 +1239,45 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://docs.python.org/3/library/pathlib.html",
+      "pages": [
+        "docs/aulas/primeiro-projeto-termux.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.python.org/3/library/pathlib.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://docs.python.org/3/library/venv.html",
       "pages": [
         "docs/projetos/desenvolvimento.md"
       ],
       "status": 200,
       "finalUrl": "https://docs.python.org/3/library/venv.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+      "pages": [
+        "docs/aulas/primeiro-projeto-termux.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.python.org/3/tutorial/inputoutput.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/interpreter.html",
+      "pages": [
+        "docs/aulas/mini-pc-nativo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.python.org/3/tutorial/interpreter.html",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -1309,6 +1420,61 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://docs.xfce.org/apps/mousepad/start",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.xfce.org/apps/mousepad/start",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.xfce.org/apps/xfce4-terminal/4.20/start",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.xfce.org/apps/xfce4-terminal/4.20/start",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.xfce.org/xfce/thunar/start",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.xfce.org/xfce/thunar/start",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.xfce.org/xfce/xfce4-session/4.20/logout",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.xfce.org/xfce/xfce4-session/4.20/logout",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.xfce.org/xfce/xfce4-session/4.20/start",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.xfce.org/xfce/xfce4-session/4.20/start",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://docusaurus.io/docs",
       "pages": [
         "docs/comunidade/fontes.md"
@@ -1353,15 +1519,24 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://docusaurus.io/docs/markdown-features/react",
+      "pages": [
+        "docs/comece-aqui/laboratorio.mdx",
+        "docs/comece-aqui/minha-trilha.mdx"
+      ],
+      "status": 200,
+      "finalUrl": "https://docusaurus.io/docs/markdown-features/react",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://download.samba.org/pub/rsync/rsync.1",
       "pages": [
         "docs/projetos/arquivos-nas.md"
       ],
-      "status": 200,
-      "finalUrl": "https://download.samba.org/pub/rsync/rsync.1",
-      "redirected": false,
-      "automationBlocked": false,
-      "outcome": "reachable"
+      "outcome": "inconclusive-network",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "url": "https://droidian.org/",
@@ -1370,6 +1545,17 @@
       ],
       "status": 200,
       "finalUrl": "https://droidian.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://en-us.support.motorola.com/app/answers/detail/a_id/158726/~/download-software-fix-%28pc-only%29/",
+      "pages": [
+        "docs/preparacao/plano-recuperacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://en-us.support.motorola.com/app/answers/detail/a_id/158726/~/download-software-fix-%28pc-only%29/",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -1400,6 +1586,7 @@
       "url": "https://f-droid.org/",
       "pages": [
         "docs/android/termux.md",
+        "docs/aulas/primeiro-projeto-termux.md",
         "docs/comece-aqui/downloads.md"
       ],
       "status": 200,
@@ -1444,6 +1631,7 @@
     {
       "url": "https://f-droid.org/packages/com.termux/",
       "pages": [
+        "docs/aulas/primeiro-projeto-termux.md",
         "docs/comece-aqui/downloads.md"
       ],
       "status": 200,
@@ -1673,6 +1861,17 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://github.com/docker-library/official-images/blob/master/library/debian",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/docker-library/official-images/blob/master/library/debian",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://github.com/droidian-images/droidian",
       "pages": [
         "docs/nativo/mobian-droidian.md"
@@ -1711,7 +1910,7 @@
         "docs/nativo/mobian-droidian.md"
       ],
       "status": 200,
-      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/654075573/13eff575-210e-4adc-971d-0134c322ab18?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T12%3A59%3A48Z&rscd=attachment%3B+filename%3Ddroidian-installer_0.0.6_linux_amd64.deb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T11%3A59%3A20Z&ske=2026-10-11T12%3A59%3A48Z&sks=b&skv=2018-11-09&sig=BF0mYhQfF%2BV0dn86M7dhl9s%2B7nZg6FQsNZ7KjmBwBw8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTcyMzA4MiwibmJmIjoxNzkxNzIxMjgyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.t7mB9QNF_G5t1EsOdQe3sEQ6KW5Mu3W-28hkAe7NMm4&response-content-disposition=attachment%3B%20filename%3Ddroidian-installer_0.0.6_linux_amd64.deb&response-content-type=application%2Foctet-stream",
+      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/654075573/13eff575-210e-4adc-971d-0134c322ab18?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T15%3A39%3A24Z&rscd=attachment%3B+filename%3Ddroidian-installer_0.0.6_linux_amd64.deb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T14%3A39%3A05Z&ske=2026-10-11T15%3A39%3A24Z&sks=b&skv=2018-11-09&sig=le273XMnUBe6Kq5Zbafz6ZakwNd7Fu0kIxdUwYecoWk%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTczMTM2NiwibmJmIjoxNzkxNzI5NTY2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Z1FlOxDu1BqJRLIY6sRu2yfL-nvit8IdUwUZ5xbEL2M&response-content-disposition=attachment%3B%20filename%3Ddroidian-installer_0.0.6_linux_amd64.deb&response-content-type=application%2Foctet-stream",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -1722,7 +1921,7 @@
         "docs/nativo/mobian-droidian.md"
       ],
       "status": 200,
-      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/654075573/10b10c48-85c7-41b0-ba6a-24e486391693?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T13%3A00%3A08Z&rscd=attachment%3B+filename%3Ddroidian-installer_0.0.6_linux_x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T12%3A00%3A01Z&ske=2026-10-11T13%3A00%3A08Z&sks=b&skv=2018-11-09&sig=%2BH7BWwUuX%2FtmhrjRDx8IU0x7ypLkKK%2FcOJA%2Btiip6Do%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTcyNDg4MiwibmJmIjoxNzkxNzIxMjgyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.EnuldYq2BodGS6-WzYQbn-FYbKkJlrwvRiSAvxfMlDA&response-content-disposition=attachment%3B%20filename%3Ddroidian-installer_0.0.6_linux_x86_64.AppImage&response-content-type=application%2Foctet-stream",
+      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/654075573/10b10c48-85c7-41b0-ba6a-24e486391693?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T15%3A13%3A23Z&rscd=attachment%3B+filename%3Ddroidian-installer_0.0.6_linux_x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T14%3A13%3A22Z&ske=2026-10-11T15%3A13%3A23Z&sks=b&skv=2018-11-09&sig=HVB%2B9YfC0iKiR1ZyDOuTILrvVt8R2f9E2vfT6yesC4U%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTczMzE2NiwibmJmIjoxNzkxNzI5NTY2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.B169ARetmaNtLA3-bdlL4eP-OJrS3pN0iQl5dvcmP-g&response-content-disposition=attachment%3B%20filename%3Ddroidian-installer_0.0.6_linux_x86_64.AppImage&response-content-type=application%2Foctet-stream",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -1733,7 +1932,7 @@
         "docs/nativo/mobian-droidian.md"
       ],
       "status": 200,
-      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/654075573/3b4c08e0-058e-443b-9cd5-01e495f90e8d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T13%3A05%3A13Z&rscd=attachment%3B+filename%3Ddroidian-installer_0.0.6_mac_x64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T12%3A04%3A18Z&ske=2026-10-11T13%3A05%3A13Z&sks=b&skv=2018-11-09&sig=9JZ0X7fKb70VSGg%2B0jAX8417HNQ0JqQnRzfOMwYl0r4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTcyNDg4MywibmJmIjoxNzkxNzIxMjgzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.xw_o1386WlCHKc3mPrKIngdnws8KD_NTOy9M2658Jr8&response-content-disposition=attachment%3B%20filename%3Ddroidian-installer_0.0.6_mac_x64.dmg&response-content-type=application%2Foctet-stream",
+      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/654075573/3b4c08e0-058e-443b-9cd5-01e495f90e8d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T15%3A33%3A20Z&rscd=attachment%3B+filename%3Ddroidian-installer_0.0.6_mac_x64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T14%3A32%3A58Z&ske=2026-10-11T15%3A33%3A20Z&sks=b&skv=2018-11-09&sig=aH225ZaUzhDVu1qNdTmCOUaF3%2BySYS7A%2FdrfsoTSEGE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTczMzE2NiwibmJmIjoxNzkxNzI5NTY2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.B169ARetmaNtLA3-bdlL4eP-OJrS3pN0iQl5dvcmP-g&response-content-disposition=attachment%3B%20filename%3Ddroidian-installer_0.0.6_mac_x64.dmg&response-content-type=application%2Foctet-stream",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -1744,7 +1943,7 @@
         "docs/nativo/mobian-droidian.md"
       ],
       "status": 200,
-      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/654075573/3ca5baf6-41e7-41f4-95ba-451003fe812f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T13%3A14%3A00Z&rscd=attachment%3B+filename%3Ddroidian-installer_0.0.6_win_x64.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T12%3A13%3A50Z&ske=2026-10-11T13%3A14%3A00Z&sks=b&skv=2018-11-09&sig=CMlkUXqhcqG6YoQtxeseFQePuUGs3sLxpS7TTAAbmFE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTcyMzA4MiwibmJmIjoxNzkxNzIxMjgyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.t7mB9QNF_G5t1EsOdQe3sEQ6KW5Mu3W-28hkAe7NMm4&response-content-disposition=attachment%3B%20filename%3Ddroidian-installer_0.0.6_win_x64.exe&response-content-type=application%2Foctet-stream",
+      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/654075573/3ca5baf6-41e7-41f4-95ba-451003fe812f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T15%3A36%3A22Z&rscd=attachment%3B+filename%3Ddroidian-installer_0.0.6_win_x64.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T14%3A35%3A31Z&ske=2026-10-11T15%3A36%3A22Z&sks=b&skv=2018-11-09&sig=1VmADS9j2cUjuURo2LbZdK9OB0UngA3dHsz6ttp6SU8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTczMTM2NiwibmJmIjoxNzkxNzI5NTY2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Z1FlOxDu1BqJRLIY6sRu2yfL-nvit8IdUwUZ5xbEL2M&response-content-disposition=attachment%3B%20filename%3Ddroidian-installer_0.0.6_win_x64.exe&response-content-type=application%2Foctet-stream",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -2188,9 +2387,13 @@
       "url": "https://github.com/termux/proot-distro",
       "pages": [
         "docs/android/visao-geral.md",
+        "docs/aulas/debian-desktop.md",
+        "docs/comece-aqui/conferir-compreensao.mdx",
         "docs/comece-aqui/do-zero.md",
         "docs/comece-aqui/downloads.md",
-        "docs/comunidade/fontes.md"
+        "docs/comece-aqui/minha-trilha.mdx",
+        "docs/comunidade/fontes.md",
+        "docs/diagnostico/erros-para-iniciantes.md"
       ],
       "status": 200,
       "finalUrl": "https://github.com/termux/proot-distro",
@@ -2221,6 +2424,17 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://github.com/termux/proot-distro/blob/master/proot_distro/parser.py",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/proot-distro/blob/master/proot_distro/parser.py",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://github.com/termux/proot-distro/blob/master/README.md",
       "pages": [
         "docs/android/proot-distro.md"
@@ -2234,7 +2448,8 @@
     {
       "url": "https://github.com/termux/proot-distro/blob/v4.35.0/README.md",
       "pages": [
-        "docs/android/proot-distro.md"
+        "docs/android/proot-distro.md",
+        "docs/aulas/debian-desktop.md"
       ],
       "status": 200,
       "finalUrl": "https://github.com/termux/proot-distro/blob/v4.35.0/README.md",
@@ -2249,6 +2464,17 @@
       ],
       "status": 200,
       "finalUrl": "https://github.com/termux/proot-distro/releases",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/proot-distro#legacy-migration",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/proot-distro",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -2280,12 +2506,25 @@
       "pages": [
         "docs/android/visao-geral.md",
         "docs/comece-aqui/do-zero.md",
+        "docs/comece-aqui/laboratorio.mdx",
+        "docs/comece-aqui/minha-trilha.mdx",
         "docs/comunidade/fontes.md",
         "docs/escolha/index.mdx",
         "docs/faq.md"
       ],
       "status": 200,
       "finalUrl": "https://github.com/termux/termux-app",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-app/issues/2993",
+      "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-app/issues/2993",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -2305,7 +2544,8 @@
     {
       "url": "https://github.com/termux/termux-app#installation",
       "pages": [
-        "docs/android/termux.md"
+        "docs/android/termux.md",
+        "docs/aulas/primeiro-projeto-termux.md"
       ],
       "status": 200,
       "finalUrl": "https://github.com/termux/termux-app",
@@ -2328,6 +2568,7 @@
       "url": "https://github.com/termux/termux-packages",
       "pages": [
         "docs/android/termux.md",
+        "docs/aulas/primeiro-projeto-termux.md",
         "docs/comece-aqui/terminal-primeiros-passos.md",
         "docs/comunidade/fontes.md"
       ],
@@ -2437,6 +2678,17 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://github.com/termux/termux-tools/blob/master/scripts/termux-setup-storage.in",
+      "pages": [
+        "docs/aulas/primeiro-projeto-termux.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-tools/blob/master/scripts/termux-setup-storage.in",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://github.com/termux/termux-x11",
       "pages": [
         "docs/comece-aqui/downloads.md",
@@ -2451,7 +2703,8 @@
     {
       "url": "https://github.com/termux/termux-x11/blob/master/README.md",
       "pages": [
-        "docs/android/desktop.md"
+        "docs/android/desktop.md",
+        "docs/aulas/debian-desktop.md"
       ],
       "status": 200,
       "finalUrl": "https://github.com/termux/termux-x11/blob/master/README.md",
@@ -2462,10 +2715,33 @@
     {
       "url": "https://github.com/termux/termux-x11/releases/tag/nightly",
       "pages": [
-        "docs/android/desktop.md"
+        "docs/android/desktop.md",
+        "docs/aulas/debian-desktop.md"
       ],
       "status": 200,
       "finalUrl": "https://github.com/termux/termux-x11/releases/tag/nightly",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-x11#setup-instructions",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-x11",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-x11#touch-gestures",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-x11",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -2570,7 +2846,7 @@
         "docs/nativo/ubuntu-touch.md"
       ],
       "status": 200,
-      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/81379180/8968f3f0-103e-45b6-b534-bc0353636474?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T13%3A18%3A03Z&rscd=attachment%3B+filename%3Dubports-installer_0.11.2_linux_amd64.deb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T12%3A17%3A16Z&ske=2026-10-11T13%3A18%3A03Z&sks=b&skv=2018-11-09&sig=1JVLUe39mO3j299pu%2F%2F1pEqcTrp2knmFjw1m2aM5Er4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTcyMzA4NSwibmJmIjoxNzkxNzIxMjg1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.sPpn3d80s6B6ga1dUxEzNy_lpyBtgqtGGb_ircE6Pzc&response-content-disposition=attachment%3B%20filename%3Dubports-installer_0.11.2_linux_amd64.deb&response-content-type=application%2Foctet-stream",
+      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/81379180/8968f3f0-103e-45b6-b534-bc0353636474?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T15%3A28%3A24Z&rscd=attachment%3B+filename%3Dubports-installer_0.11.2_linux_amd64.deb&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T14%3A27%3A32Z&ske=2026-10-11T15%3A28%3A24Z&sks=b&skv=2018-11-09&sig=s6HZMSUKTaLy%2FPerWd5KC3WzgQHYZwNoUDb%2FEFkymmo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTczMTM2OCwibmJmIjoxNzkxNzI5NTY4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.7ZibsQ2O2Gvs4X4qsM1ZrPaR7xIWUFDQPvVzV0C_OCA&response-content-disposition=attachment%3B%20filename%3Dubports-installer_0.11.2_linux_amd64.deb&response-content-type=application%2Foctet-stream",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -2581,7 +2857,7 @@
         "docs/nativo/ubuntu-touch.md"
       ],
       "status": 200,
-      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/81379180/71469a57-cbe2-44a7-8ce4-510b8b872661?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T13%3A03%3A22Z&rscd=attachment%3B+filename%3Dubports-installer_0.11.2_linux_x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T12%3A03%3A18Z&ske=2026-10-11T13%3A03%3A22Z&sks=b&skv=2018-11-09&sig=dogHMi1yNdMWdvgpjssxJbXLPmGoig86oyB%2Fj0EmDys%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTcyNDg4NSwibmJmIjoxNzkxNzIxMjg1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.ApXV7P3IcXw4fL86_sXaN-iPs1zwOl79LVz2dTa5R8w&response-content-disposition=attachment%3B%20filename%3Dubports-installer_0.11.2_linux_x86_64.AppImage&response-content-type=application%2Foctet-stream",
+      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/81379180/71469a57-cbe2-44a7-8ce4-510b8b872661?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T15%3A34%3A22Z&rscd=attachment%3B+filename%3Dubports-installer_0.11.2_linux_x86_64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T14%3A33%3A38Z&ske=2026-10-11T15%3A34%3A22Z&sks=b&skv=2018-11-09&sig=Qo2dFF4d9hIZf8gjhGpoecei7jjylBuCzM9Ry9XUcgI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTczMzE2OCwibmJmIjoxNzkxNzI5NTY4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.1zSNA_o2s5cPEl_ow80f1OGNN-lhHgATAGi4SDObdz8&response-content-disposition=attachment%3B%20filename%3Dubports-installer_0.11.2_linux_x86_64.AppImage&response-content-type=application%2Foctet-stream",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -2592,7 +2868,7 @@
         "docs/nativo/ubuntu-touch.md"
       ],
       "status": 200,
-      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/81379180/e2d45e25-1e2b-49cc-a654-2567026cbe5d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T13%3A17%3A52Z&rscd=attachment%3B+filename%3Dubports-installer_0.11.2_mac_x64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T12%3A17%3A23Z&ske=2026-10-11T13%3A17%3A52Z&sks=b&skv=2018-11-09&sig=dyLtjzWB8E7ouAc6c32Jpf94JUVYBrjr17ChlPqZpmQ%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTcyNDg4NSwibmJmIjoxNzkxNzIxMjg1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.ApXV7P3IcXw4fL86_sXaN-iPs1zwOl79LVz2dTa5R8w&response-content-disposition=attachment%3B%20filename%3Dubports-installer_0.11.2_mac_x64.dmg&response-content-type=application%2Foctet-stream",
+      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/81379180/e2d45e25-1e2b-49cc-a654-2567026cbe5d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T15%3A28%3A58Z&rscd=attachment%3B+filename%3Dubports-installer_0.11.2_mac_x64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T14%3A28%3A23Z&ske=2026-10-11T15%3A28%3A58Z&sks=b&skv=2018-11-09&sig=4Ck00F0IDbr0%2FvCFJVzcWTW1IBoz0y3aUzpCmHGPMK0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTczMzE2OSwibmJmIjoxNzkxNzI5NTY5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.X-VPhBi2Ks7-yVMgXqNZ3HIcC9tLM0-09q9ab407Vcs&response-content-disposition=attachment%3B%20filename%3Dubports-installer_0.11.2_mac_x64.dmg&response-content-type=application%2Foctet-stream",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -2603,7 +2879,7 @@
         "docs/nativo/ubuntu-touch.md"
       ],
       "status": 200,
-      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/81379180/d1cdc27d-b617-4757-9019-6fdc71fded49?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T13%3A19%3A03Z&rscd=attachment%3B+filename%3Dubports-installer_0.11.2_win_x64.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T12%3A18%3A35Z&ske=2026-10-11T13%3A19%3A03Z&sks=b&skv=2018-11-09&sig=seC8kNrEOhjz%2BeuNyDzrkKABLCcXKNpa4FCqzKIt%2F58%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTcyMzA4NSwibmJmIjoxNzkxNzIxMjg1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.sPpn3d80s6B6ga1dUxEzNy_lpyBtgqtGGb_ircE6Pzc&response-content-disposition=attachment%3B%20filename%3Dubports-installer_0.11.2_win_x64.exe&response-content-type=application%2Foctet-stream",
+      "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/81379180/d1cdc27d-b617-4757-9019-6fdc71fded49?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-10-11T15%3A30%3A13Z&rscd=attachment%3B+filename%3Dubports-installer_0.11.2_win_x64.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-10-11T14%3A29%3A32Z&ske=2026-10-11T15%3A30%3A13Z&sks=b&skv=2018-11-09&sig=X9spFagzgfyiACLY7pmxHF9MqGR9dNJh%2FfVspEP7vxY%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5MTczMTM2OCwibmJmIjoxNzkxNzI5NTY4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.7ZibsQ2O2Gvs4X4qsM1ZrPaR7xIWUFDQPvVzV0C_OCA&response-content-disposition=attachment%3B%20filename%3Dubports-installer_0.11.2_win_x64.exe&response-content-type=application%2Foctet-stream",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -2789,6 +3065,7 @@
     {
       "url": "https://help.gnome.org/gnome-help/display-blank.html",
       "pages": [
+        "docs/aulas/mini-pc-nativo.md",
         "docs/desktop/primeira-configuracao.md"
       ],
       "status": 200,
@@ -2800,6 +3077,7 @@
     {
       "url": "https://help.gnome.org/gnome-help/display-dual-monitors.html.pt_BR",
       "pages": [
+        "docs/aulas/mini-pc-nativo.md",
         "docs/desktop/primeira-configuracao.md"
       ],
       "status": 200,
@@ -2809,8 +3087,20 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://help.gnome.org/gnome-help/files-browse.html",
+      "pages": [
+        "docs/aulas/mini-pc-nativo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://help.gnome.org/gnome-help/files-browse.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://help.gnome.org/gnome-help/keyboard-layouts.html",
       "pages": [
+        "docs/aulas/mini-pc-nativo.md",
         "docs/desktop/primeira-configuracao.md"
       ],
       "status": 200,
@@ -2833,6 +3123,7 @@
     {
       "url": "https://help.gnome.org/gnome-help/net-wireless-connect.html",
       "pages": [
+        "docs/aulas/mini-pc-nativo.md",
         "docs/desktop/primeira-configuracao.md"
       ],
       "status": 200,
@@ -2844,6 +3135,7 @@
     {
       "url": "https://help.gnome.org/gnome-help/power-autosuspend.html",
       "pages": [
+        "docs/aulas/mini-pc-nativo.md",
         "docs/desktop/primeira-configuracao.md"
       ],
       "status": 200,
@@ -2877,10 +3169,34 @@
     {
       "url": "https://help.gnome.org/gnome-help/sound-usespeakers.html",
       "pages": [
-        "docs/desktop/primeira-configuracao.md"
+        "docs/aulas/mini-pc-nativo.md",
+        "docs/desktop/primeira-configuracao.md",
+        "docs/diagnostico/erros-para-iniciantes.md"
       ],
       "status": 200,
       "finalUrl": "https://help.gnome.org/gnome-help/sound-usespeakers.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://help.gnome.org/gnome-help/user-add.html",
+      "pages": [
+        "docs/aulas/mini-pc-nativo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://help.gnome.org/gnome-help/user-add.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://help.gnome.org/gnome-help/user-admin-explain.html",
+      "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://help.gnome.org/gnome-help/user-admin-explain.html",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -2986,6 +3302,18 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.5",
+      "pages": [
+        "docs/comece-aqui/micro-aulas.md",
+        "docs/preparacao/plano-recuperacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.5",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/powershell/scripting/learn/ps101/01-getting-started",
       "pages": [
         "docs/comece-aqui/computador-downloads.md"
@@ -3034,6 +3362,8 @@
       "url": "https://man.openbsd.org/ssh",
       "pages": [
         "docs/android/desktop.md",
+        "docs/comece-aqui/micro-aulas.md",
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/projetos/laboratorio-redes.md",
         "docs/projetos/servidor-web.md",
         "docs/projetos/ssh-remoto.md"
@@ -3101,6 +3431,28 @@
       ],
       "outcome": "inconclusive-network",
       "error": "fetch failed"
+    },
+    {
+      "url": "https://manpages.debian.org/trixie/adduser/adduser.8.en.html",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://manpages.debian.org/trixie/adduser/adduser.8.en.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://manpages.debian.org/trixie/apt/apt-cache.8.en.html",
+      "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://manpages.debian.org/trixie/apt/apt-cache.8.en.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
     },
     {
       "url": "https://manpages.debian.org/trixie/debootstrap/debootstrap.8.en.html",
@@ -3351,6 +3703,7 @@
       "url": "https://packages.debian.org/",
       "pages": [
         "docs/desktop/instalar-aplicativos.md",
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/diagnostico/instalar-ferramentas.md"
       ],
       "status": 200,
@@ -3367,6 +3720,17 @@
       "status": 200,
       "finalUrl": "https://packages.debian.org/search?keywords=mobian-archive-keyring",
       "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://packages.debian.org/trixie/dbus-x11",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://packages.debian.org/trixie/dbus-x11",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3415,12 +3779,34 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://packages.debian.org/trixie/mousepad",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://packages.debian.org/trixie/mousepad",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://packages.debian.org/trixie/procps",
       "pages": [
         "docs/desktop/gnome-nativo.md"
       ],
       "status": 200,
       "finalUrl": "https://packages.debian.org/trixie/procps",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://packages.debian.org/trixie/python3",
+      "pages": [
+        "docs/aulas/mini-pc-nativo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://packages.debian.org/trixie/python3",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -3437,9 +3823,21 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://packages.debian.org/trixie/xfce4",
+      "pages": [
+        "docs/aulas/debian-desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://packages.debian.org/trixie/xfce4",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://packages.ubuntu.com/",
       "pages": [
         "docs/desktop/instalar-aplicativos.md",
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/diagnostico/instalar-ferramentas.md"
       ],
       "status": 200,
@@ -3451,6 +3849,7 @@
     {
       "url": "https://pipewire.pages.freedesktop.org/wireplumber/man/wpctl.html",
       "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/hardware/audio.md"
       ],
       "status": 200,
@@ -3474,10 +3873,22 @@
       "url": "https://pkgs.alpinelinux.org/packages",
       "pages": [
         "docs/desktop/instalar-aplicativos.md",
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/diagnostico/instalar-ferramentas.md"
       ],
       "status": 200,
       "finalUrl": "https://pkgs.alpinelinux.org/packages",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://pkgs.alpinelinux.org/packages?name=python3",
+      "pages": [
+        "docs/aulas/mini-pc-nativo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://pkgs.alpinelinux.org/packages?name=python3",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -3561,7 +3972,19 @@
         "docs/intro.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/architecture",
+      "finalUrl": "https://source.android.com/docs/core/architecture?hl=pl",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/architecture/bootloader",
+      "pages": [
+        "docs/comece-aqui/conferir-compreensao.mdx",
+        "docs/comece-aqui/minha-trilha.mdx"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/architecture/bootloader",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -3581,17 +4004,19 @@
       "url": "https://source.android.com/docs/core/architecture/bootloader/fastbootd",
       "pages": [
         "docs/compatibilidade/bootloader.md",
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/preparacao/adb-fastboot.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/architecture/bootloader/fastbootd?hl=pl",
-      "redirected": true,
+      "finalUrl": "https://source.android.com/docs/core/architecture/bootloader/fastbootd",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
     {
       "url": "https://source.android.com/docs/core/architecture/bootloader/locking_unlocking",
       "pages": [
+        "docs/comece-aqui/micro-aulas.md",
         "docs/compatibilidade/bootloader.md",
         "docs/faq.md",
         "docs/preparacao/backup.md",
@@ -3600,19 +4025,20 @@
         "docs/recuperacao/triagem.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/architecture/bootloader/locking_unlocking?hl=ar",
-      "redirected": true,
+      "finalUrl": "https://source.android.com/docs/core/architecture/bootloader/locking_unlocking",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
     {
       "url": "https://source.android.com/docs/core/architecture/kernel",
       "pages": [
+        "docs/comece-aqui/micro-aulas.md",
         "docs/fundamentos/boot-kernel.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/architecture/kernel?hl=tr",
-      "redirected": true,
+      "finalUrl": "https://source.android.com/docs/core/architecture/kernel",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3622,8 +4048,8 @@
         "docs/nativo/porting.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/architecture/kernel/modules",
-      "redirected": false,
+      "finalUrl": "https://source.android.com/docs/core/architecture/kernel/modules?hl=de",
+      "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3633,8 +4059,8 @@
         "docs/compatibilidade/inventario.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/architecture/partitions?hl=bn",
-      "redirected": true,
+      "finalUrl": "https://source.android.com/docs/core/architecture/partitions",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3645,8 +4071,8 @@
         "docs/preparacao/root-magisk.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/architecture/partitions/generic-boot?hl=it",
-      "redirected": true,
+      "finalUrl": "https://source.android.com/docs/core/architecture/partitions/generic-boot",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3656,7 +4082,7 @@
         "docs/hardware/cameras.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/camera?hl=zh-cn",
+      "finalUrl": "https://source.android.com/docs/core/camera?hl=ar",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -3668,8 +4094,8 @@
         "docs/recuperacao/restaurar-android.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/ota/ab",
-      "redirected": false,
+      "finalUrl": "https://source.android.com/docs/core/ota/ab?hl=es-419",
+      "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3679,8 +4105,8 @@
         "docs/fundamentos/boot-kernel.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/ota/dynamic_partitions?hl=fa",
-      "redirected": true,
+      "finalUrl": "https://source.android.com/docs/core/ota/dynamic_partitions",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3690,8 +4116,8 @@
         "docs/recuperacao/restaurar-android.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/core/ota/dynamic_partitions/implement?hl=fr",
-      "redirected": true,
+      "finalUrl": "https://source.android.com/docs/core/ota/dynamic_partitions/implement",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3701,8 +4127,8 @@
         "docs/android/chroot.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/security/features/selinux?hl=bn",
-      "redirected": true,
+      "finalUrl": "https://source.android.com/docs/security/features/selinux",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3738,8 +4164,8 @@
         "docs/recuperacao/restaurar-android.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/setup/test/flash?hl=ar",
-      "redirected": true,
+      "finalUrl": "https://source.android.com/docs/setup/test/flash",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3749,8 +4175,8 @@
         "docs/diagnostico/boot-crash.md"
       ],
       "status": 200,
-      "finalUrl": "https://source.android.com/docs/setup/test/running",
-      "redirected": false,
+      "finalUrl": "https://source.android.com/docs/setup/test/running?hl=zh-cn",
+      "redirected": true,
       "automationBlocked": false,
       "outcome": "reachable"
     },
@@ -3770,11 +4196,11 @@
       "pages": [
         "docs/compatibilidade/bootloader.md"
       ],
-      "status": 200,
-      "finalUrl": "https://support.fairphone.com/hc/en-us/articles/10492476238865-How-to-unlock-or-lock-your-Fairphone-s-bootloader",
-      "redirected": true,
+      "status": 403,
+      "finalUrl": "https://support.fairphone.com/hc/en-us/articles/10492476238865-How-to-unlock-and-re-lock-the-bootloader",
+      "redirected": false,
       "automationBlocked": false,
-      "outcome": "reachable"
+      "outcome": "inconclusive-http"
     },
     {
       "url": "https://support.fairphone.com/hc/en-us/articles/10492476238865-How-to-unlock-or-lock-your-Fairphone-s-bootloader",
@@ -3795,17 +4221,19 @@
         "docs/nativo/fairphone-4.md",
         "docs/preparacao/backup.md",
         "docs/preparacao/desbloquear-bootloader.md",
+        "docs/preparacao/plano-recuperacao.md",
         "docs/recuperacao/restaurar-android.md"
       ],
-      "status": 403,
+      "status": 200,
       "finalUrl": "https://support.fairphone.com/hc/en-us/articles/18896094650513-How-to-manually-install-Android-on-your-Fairphone",
       "redirected": false,
       "automationBlocked": false,
-      "outcome": "inconclusive-http"
+      "outcome": "reachable"
     },
     {
       "url": "https://support.google.com/android/answer/9064445?hl=pt-BR",
       "pages": [
+        "docs/aulas/primeiro-projeto-termux.md",
         "docs/preparacao/backup.md"
       ],
       "status": 200,
@@ -3886,6 +4314,7 @@
     {
       "url": "https://topjohnwu.github.io/Magisk/install.html",
       "pages": [
+        "docs/comece-aqui/conferir-compreensao.mdx",
         "docs/preparacao/root-magisk.md"
       ],
       "status": 200,
@@ -3933,8 +4362,11 @@
       "pages": [
         "docs/comece-aqui/linux-no-computador.md"
       ],
-      "outcome": "inconclusive-network",
-      "error": "The operation was aborted due to timeout"
+      "status": 200,
+      "finalUrl": "https://ubuntu.com/tutorials/create-a-usb-stick-on-windows",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
     },
     {
       "url": "https://ubuntu.com/tutorials/how-to-verify-ubuntu",
@@ -3962,6 +4394,7 @@
     {
       "url": "https://update.kies.samsung.com/SmartSwitchPC_recovery_guide/firmware/emergencyrecovery/",
       "pages": [
+        "docs/preparacao/plano-recuperacao.md",
         "docs/recuperacao/modos-emergencia.md",
         "docs/recuperacao/restaurar-android.md"
       ],
@@ -4008,6 +4441,7 @@
     {
       "url": "https://wayland.freedesktop.org/libinput/doc/latest/tools.html",
       "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md",
         "docs/diagnostico/instalar-ferramentas.md",
         "docs/hardware/teclados-usb.md"
       ],
@@ -4023,10 +4457,21 @@
         "docs/hardware/cameras.md"
       ],
       "status": 200,
-      "finalUrl": "https://webrtc.org/getting-started/media-devices?hl=pl",
-      "redirected": true,
+      "finalUrl": "https://webrtc.org/getting-started/media-devices",
+      "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.alpinelinux.org/wiki/Apk",
+      "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md"
+      ],
+      "status": 403,
+      "finalUrl": "https://wiki.alpinelinux.org/wiki/Apk?__goaway_challenge=cookie&__goaway_id=d87b65a1d338845a97bb081741c93cf9",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
     },
     {
       "url": "https://wiki.alpinelinux.org/wiki/Gnome",
@@ -4034,7 +4479,7 @@
         "docs/desktop/gnome-nativo.md"
       ],
       "status": 403,
-      "finalUrl": "https://wiki.alpinelinux.org/wiki/Gnome?__goaway_challenge=cookie&__goaway_id=3c6bf681ff2440276d60a21b3cbc4d5a",
+      "finalUrl": "https://wiki.alpinelinux.org/wiki/Gnome?__goaway_challenge=cookie&__goaway_id=5b728c76ba48f0d1412e11ebc8c0f52b",
       "redirected": true,
       "automationBlocked": false,
       "outcome": "inconclusive-http"
@@ -4240,6 +4685,17 @@
       "outcome": "reachable"
     },
     {
+      "url": "https://www.debian.org/doc/manuals/debian-reference/ch01.en.html#_unix_like_filesystem",
+      "pages": [
+        "docs/comece-aqui/micro-aulas.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.debian.org/doc/manuals/debian-reference/ch01.en.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
       "url": "https://www.debian.org/doc/manuals/debian-reference/ch02.en.html",
       "pages": [
         "docs/comece-aqui/terminal-primeiros-passos.md",
@@ -4249,6 +4705,17 @@
       ],
       "status": 200,
       "finalUrl": "https://www.debian.org/doc/manuals/debian-reference/ch02.en.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.debian.org/doc/manuals/debian-reference/ch05.en.html",
+      "pages": [
+        "docs/comece-aqui/micro-aulas.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.debian.org/doc/manuals/debian-reference/ch05.en.html",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -4271,6 +4738,17 @@
       ],
       "status": 200,
       "finalUrl": "https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/CLI/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.gnu.org/software/bash/manual/bash.html",
+      "pages": [
+        "docs/comece-aqui/laboratorio.mdx"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.gnu.org/software/bash/manual/bash.html",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -4366,11 +4844,24 @@
     {
       "url": "https://www.nano-editor.org/dist/latest/nano.html",
       "pages": [
+        "docs/aulas/mini-pc-nativo.md",
+        "docs/aulas/primeiro-projeto-termux.md",
         "docs/comece-aqui/terminal-primeiros-passos.md",
         "docs/projetos/desenvolvimento.md"
       ],
       "status": 200,
       "finalUrl": "https://www.nano-editor.org/dist/latest/nano.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.networkmanager.dev/docs/api/latest/nmcli.html",
+      "pages": [
+        "docs/diagnostico/erros-para-iniciantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.networkmanager.dev/docs/api/latest/nmcli.html",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -4389,6 +4880,7 @@
     {
       "url": "https://www.openssh.com/manual.html",
       "pages": [
+        "docs/comece-aqui/conferir-compreensao.mdx",
         "docs/desktop/acesso-remoto.md",
         "docs/diagnostico/tela-quebrada.md",
         "docs/fundamentos/seguranca.md"
@@ -4483,8 +4975,16 @@
       "pages": [
         "docs/projetos/arquivos-nas.md"
       ],
+      "outcome": "inconclusive-network",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://www.samsung.com/au/support/mobile-devices/downloading-smart-switch-on-pc/",
+      "pages": [
+        "docs/preparacao/plano-recuperacao.md"
+      ],
       "status": 200,
-      "finalUrl": "https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html",
+      "finalUrl": "https://www.samsung.com/au/support/mobile-devices/downloading-smart-switch-on-pc/",
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
@@ -4521,6 +5021,17 @@
       "redirected": false,
       "automationBlocked": false,
       "outcome": "reachable"
+    },
+    {
+      "url": "https://www.sony.co.uk/electronics/support/other-products-xperia-smart-devices/articles/00236877",
+      "pages": [
+        "docs/preparacao/plano-recuperacao.md"
+      ],
+      "status": 500,
+      "finalUrl": "https://www.sony.co.uk/electronics/support/other-products-xperia-smart-devices/articles/00236877",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
     },
     {
       "url": "https://www.tcpdump.org/manpages/tcpdump.1.html",

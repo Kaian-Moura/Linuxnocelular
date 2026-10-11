@@ -23,7 +23,7 @@ Esta base ajuda você a **investigar o próprio aparelho e escolher um caminho**
 
 ## Como percorrer a documentação
 
-**Nunca usou terminal, baixou um APK ou preparou ADB?** Comece na [trilha do zero](comece-aqui/do-zero.md). Ela organiza a ordem de aprendizado, com [pastas e downloads](comece-aqui/computador-downloads.md), [primeira aula de terminal](comece-aqui/terminal-primeiros-passos.md) e um [diretório de origens oficiais](comece-aqui/downloads.md). Não é necessário fazer root para começar com Termux ou PRoot.
+**Nunca usou terminal, baixou um APK ou preparou ADB?** Monte [sua trilha de aprendizado](comece-aqui/minha-trilha.mdx), pratique no [laboratório simulado](comece-aqui/laboratorio.mdx) e leia as [dez microaulas](comece-aqui/micro-aulas.md). O [guia do zero](comece-aqui/do-zero.md) organiza os preparativos, com [pastas e downloads](comece-aqui/computador-downloads.md), [primeira aula de terminal](comece-aqui/terminal-primeiros-passos.md) e um [diretório de origens oficiais](comece-aqui/downloads.md). Não é necessário fazer root para começar com Termux ou PRoot.
 
 1. Leia [Linux, Android e as camadas do sistema](fundamentos/linux-android.md) se os termos forem novos.
 2. Faça o [inventário do aparelho](compatibilidade/inventario.md), identificando modelo, variante e arquitetura.
@@ -38,7 +38,7 @@ Se seu caminho exigir acesso privilegiado no Android, há um [tutorial específi
 
 ## Primeiro experimento recomendado
 
-Para quem tem Android funcionando e ainda não decidiu substituí-lo, comece pelo [Termux](android/termux.md). Instale ferramentas, execute um pequeno programa e confira consumo e estabilidade. Esse experimento não exige flash e permite descobrir se seu objetivo já é atendido.
+Para quem tem Android funcionando e ainda não decidiu substituí-lo, siga a aula [Seu primeiro projeto no Termux](aulas/primeiro-projeto-termux.md): download, instalação, programa Python, edição, cópia externa e retomada no dia seguinte. Esse experimento não exige flash e permite descobrir se seu objetivo já é atendido. Depois, a aula [Seu primeiro desktop Debian](aulas/debian-desktop.md) apresenta uma única rota gráfica, com encerramento e retomada, mantendo Android.
 
 Se o objetivo exige iniciar Linux sem Android, procure um port **para o modelo e variante exatos**, confira sua lista de funções e estabeleça uma restauração viável. Encontrar uma imagem ARM64 não satisfaz esse requisito. Uma imagem precisa combinar kernel, descrição do hardware, firmware, formato de boot e instalação apropriados.
 

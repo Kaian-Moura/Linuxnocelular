@@ -1,13 +1,15 @@
 ---
 title: Nunca fiz isso — por onde começo?
 description: Uma trilha guiada desde identificar o telefone até escolher, instalar e validar um ambiente Linux.
-sidebar_position: 1
+sidebar_position: 2
 last_verified: '2026-10-11'
 verification: documental
 hardware_tested: false
 ---
 
 Você não precisa saber usar Linux para começar. Precisa separar três coisas: **o aparelho que será reaproveitado**, **o computador que ajuda na preparação** e **o sistema que você quer ter ao final**. Esta página organiza a ordem dos exercícios. Nos links seguintes estão os downloads, a instalação das ferramentas e os comandos explicados.
+
+Para acompanhar aulas com uma lista de verificações, abra [Minha trilha — aprenda fazendo](minha-trilha.mdx). Você pode praticar no [terminal simulado](laboratorio.mdx), conferir conceitos por [microaulas](micro-aulas.md) e ir direto à [primeira aplicação no Termux](../aulas/primeiro-projeto-termux.md). Nenhuma dessas ferramentas interativas se conecta ao telefone.
 
 ## O que você vai conseguir e o que precisa ter
 
