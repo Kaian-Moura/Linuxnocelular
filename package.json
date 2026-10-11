@@ -11,6 +11,7 @@
     "test": "node --test tests/*.test.mjs",
     "check:content": "node scripts/check-content.mjs",
     "check:snippets": "node scripts/check-snippets.mjs",
+    "check:git-workshop": "node scripts/check-git-workshop.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:external": "node scripts/check-external.mjs",
     "test:browser": "playwright test",

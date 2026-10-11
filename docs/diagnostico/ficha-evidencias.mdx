@@ -1,0 +1,78 @@
+---
+title: Ficha de bancada — registre evidências
+description: Descreva seu sistema, a montagem e os resultados por cenário; exporte e retome localmente, sem certificação automática.
+sidebar_position: 1
+last_verified: '2026-10-11'
+verification: documental
+hardware_tested: false
+---
+
+import BenchRecord from '@site/src/components/BenchRecord';
+
+“O monitor funcionou” pode significar muitas situações: HDMI já conectado no boot, hub sem carregador, outro cabo, um compositor diferente ou uma resolução menor. Para reproduzir, precisamos saber **em qual cenário funcionou**. Esta ficha reúne a identificação, a montagem e observações separadas para cada teste.
+
+**Resultado:** um registro seu, exportável em Markdown para ler e JSON para retomar. **Dificuldade:** iniciante no preenchimento; falhas de drivers podem exigir investigação avançada. **Materiais:** navegador e suas anotações. Os testes físicos devem seguir os guias e as condições do seu aparelho; esta página não executa nenhum deles.
+
+## Preencha somente o que sabe
+
+<BenchRecord />
+
+## Como registrar sem transformar uma hipótese em fato
+
+Use os estados com significados distintos:
+
+| Estado | O que ele afirma | Exemplo de observação útil |
+|---|---|---|
+| Não testado | Ainda não há observação daquele cenário | “Tenho monitor, mas não fiz reconexão do hub.” |
+| Passou no cenário registrado | Você observou o resultado da ação descrita | “Nesta montagem, digitei letras e Shift; reconectei só o teclado e digitei de novo.” |
+| Falhou | A ação foi realizada, mas o resultado esperado não ocorreu | “Ao conectar PD, mouse parou; vídeo permaneceu; não alterei HDMI.” |
+| Inconclusivo | A evidência não permite decidir | “Sem acesso ao monitor físico; DRM diz conectado, mas não observei imagem.” |
+| Fora do objetivo | Esse recurso não faz parte do uso pretendido | “Não vou usar câmera.” Isso não diz se a câmera funciona. |
+
+Os exemplos acima são **fictícios**. Nenhum deles é um teste realizado automaticamente no OnePlus ou em outro telefone. Uma ficha com todos os estados “Passou” ainda precisa de evidências, versões e condições; ela não libera instalação ou flash.
+
+Não some cenários diferentes numa conclusão única. Se HDMI voltou ao retirar/recolocar, registre esse caso. Retirar o hub altera também USB, negociação de energia, Type-C e entrada; precisa de outro teste. Uma mudança de carregador pode modificar o papel USB do telefone, mesmo se a tela permanecer acesa. Veja [montagem progressiva](../hardware/montagem-validada.md) e [hotplug](../hardware/video-hotplug.md).
+
+## Um registro que outra pessoa consegue entender
+
+Para cada observação, escreva cinco elementos: **data/duração, configuração, ação, resultado e interpretação limitada**. Por exemplo:
+
+```text
+EXEMPLO FICTÍCIO — não é um resultado deste projeto
+Data: 11/10/2026, observação de 10 minutos.
+Configuração: Linux de teste, kernel registrado na ficha, HDMI,
+monitor com energia própria, hub sem PD, mouse na porta de dados.
+Ação: abri um documento, retirei somente HDMI e reconectei.
+Resultado: imagem voltou; documento continuou aberto e ponteiro respondeu.
+Limite: não testei retirada do hub, Bluetooth ou carregamento simultâneo.
+```
+
+Essa observação é melhor que “100% funcionando” porque informa precisamente a cobertura. Para revisar uma falha, acrescente a última mudança e o último cenário que passou. Se tudo foi desconectado de uma vez, registre isso; não conclua qual conexão provocou a falha sem um teste separado.
+
+Na carga, registre nível e horário em pelo menos dois momentos sob uso conhecido, com ressalvas de temperatura e negociação. “Carregando” no sistema e um LED são evidências parciais. Uma bateria no mesmo nível por alguns minutos pode refletir arredondamento, equilíbrio entre consumo e fornecimento ou outro comportamento; não escolha uma causa pela porcentagem isolada. [Energia e bateria](../hardware/energia.md).
+
+## Como guardar e retomar
+
+1. Preencha a identificação e a montagem. Você pode deixar desconhecido o que não confirmou.
+2. Faça apenas testes compatíveis com seu método e estado físico. Descreva o que realmente observou.
+3. Leia os campos e remova dados que não quer conservar ou compartilhar. A marcação de revisão habilita downloads, sem enviar nada.
+4. Baixe **Markdown** para leitura e **JSON** para retomar. Salve ambos numa pasta identificada, como `registros/2026-10-11-montagem-01`, pelo gerenciador de arquivos.
+5. Abra o Markdown num editor e confira texto, estados e lacunas. O JSON também é texto, mas mantém a estrutura que a ferramenta reconhece.
+6. Copie os arquivos para um destino externo. Um registro no próprio telefone pode desaparecer durante uma restauração.
+7. Para continuar, escolha o JSON exportado no campo “Retomar”. Uma ficha válida substitui os campos atuais; conserve antes qualquer trabalho que precisa manter.
+
+Se o arquivo importado for inválido, de outra versão ou exceder os limites, os campos atuais são preservados e surge uma mensagem. A ferramenta não interpreta scripts ou comandos do arquivo. Dados desconhecidos não são incorporados. Uma importação lenta também não deve substituir alterações que você começou a fazer depois de escolhê-la.
+
+**A ficha não é salva em localStorage.** Fechar ou navegar pode perder o preenchimento ainda não exportado. Não há conta, sincronização ou upload. A opção de progresso da trilha é independente e não inclui esta ficha. Os arquivos exportados ficam sob sua responsabilidade e podem conter dados que você digitou; a ferramenta não descobre nem remove automaticamente todos os segredos.
+
+## O que conservar privado
+
+Não informe senha de Wi-Fi, conta bancária, token, chave privada, IMEI, serial, foto pessoal ou dump inteiro. Modelo público, release e topologia de cabos geralmente bastam para a primeira investigação. Em logs, revise nomes de usuário, IPs, MACs, redes e caminhos pessoais antes de compartilhar. Preserve o original de diagnóstico de forma privada quando necessário.
+
+Uma URL de fonte deve apontar à documentação do projeto ou fabricante. Não inclua tokens na URL. A ficha registra esse texto, sem abrir, consultar ou validar a fonte automaticamente. O [guia de leitura de documentação por modelo](../comece-aqui/ler-manual-do-dispositivo.md) ensina a conferir procedência, versão e condições.
+
+Para contribuir com um dispositivo, transforme as anotações no [registro de teste exigido pela comunidade](../comunidade/contribuir.md). Um teste numa variante não se propaga por usar o mesmo processador. A ficha é uma etapa de organização, não uma nova entrada automática do catálogo.
+
+## Fontes e escopo da ferramenta
+
+Estrutura de registro e interface originais, revisão **11/10/2026**. Os critérios de interpretação vêm do [método de diagnóstico](metodo.md) e dos guias vinculados, cada qual com fontes primárias e limites. A implementação é local em [React/MDX](https://docusaurus.io/docs/markdown-features/react). Testes da importação, exportação e interface verificam o site; não demonstram comportamento elétrico, vídeo, entrada, autonomia ou recuperação dos telefones.

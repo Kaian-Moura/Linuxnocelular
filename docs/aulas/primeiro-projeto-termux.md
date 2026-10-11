@@ -1,7 +1,7 @@
 ---
 title: "Aula prática: seu primeiro projeto no Termux"
 description: Do Android sem preparação a um programa Python próprio, com edição, arquivos, exportação, backup e retomada no dia seguinte.
-sidebar_position: 1
+sidebar_position: 2
 last_verified: '2026-10-11'
 verification: documental
 hardware_tested: false

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-11T14:38:25.958Z",
+  "generatedAt": "2026-10-11T15:26:02.435Z",
   "meaning": "Validação sintática apenas; nenhum comando documentado foi executado.",
   "counts": {
-    "bash": 364,
-    "sh": 83,
-    "python": 5
+    "bash": 465,
+    "sh": 117,
+    "python": 8
   },
   "errors": []
 }

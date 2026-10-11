@@ -1,0 +1,29 @@
+{
+  "verifiedAt": "2026-10-11T15:31:10.950831+00:00",
+  "meaning": "Validação do site e ensaios locais de software; não certifica smartphones ou placas.",
+  "unitTests": {
+    "passed": 47,
+    "failed": 0
+  },
+  "browser": {
+    "root": {
+      "passed": 21,
+      "failed": 0
+    },
+    "subpathGuia": {
+      "passed": 21,
+      "failed": 0
+    }
+  },
+  "builds": [
+    "/",
+    "/guia/"
+  ],
+  "internalLinksPerBuild": 7925,
+  "internalLinkErrors": 0,
+  "uiScreenshotsReviewed": 6,
+  "uiPageErrors": [],
+  "phoneAccessed": false,
+  "hardwareUploads": false,
+  "sourceExampleReport": "workshop-examples.json"
+}

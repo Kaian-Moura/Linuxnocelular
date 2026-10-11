@@ -1,7 +1,7 @@
 ---
 title: "Aula prática: Debian com desktop sobre Android"
 description: Instale uma instância Debian identificada, abra uma única sessão XFCE pelo Termux:X11 e aprenda a salvar, exportar, encerrar e retomar.
-sidebar_position: 2
+sidebar_position: 3
 last_verified: '2026-10-11'
 verification: documental
 hardware_tested: false

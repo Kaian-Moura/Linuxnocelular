@@ -1,0 +1,17 @@
+{
+  "verified": "2026-10-11",
+  "meaning": "Revisão delimitada por padrões selecionados; não é auditoria completa nem detecção de todos os segredos.",
+  "sourceFiles": 180,
+  "patterns": [
+    "private_key_payload",
+    "github_token",
+    "aws_access_key",
+    "google_api_key"
+  ],
+  "matches": [],
+  "staticAssets": [
+    "static/img/logo.svg",
+    "static/img/social-card.svg"
+  ],
+  "phoneAccessed": false
+}

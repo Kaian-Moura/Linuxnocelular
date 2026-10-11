@@ -52,6 +52,14 @@ Uma **revisão documental** confirma o que uma fonte primária descreve, na data
 
 Usamos cinco estados: suportado pelo projeto, comunitário, experimental, possibilidade condicionada e não recomendado. “Comunitário” não é sinônimo de defeituoso; indica quem mantém a solução e onde procurar suporte. Um recurso experimental não deve aparecer numa tabela como garantia de funcionamento.
 
+## Aprender com projetos e registrar evidências
+
+A [biblioteca de aulas práticas](aulas/biblioteca.mdx) permite procurar por objetivo, ambiente e experiência. Além das primeiras sessões, há projetos completos de Python, JavaScript, C/C++, Git, SSH, servidor web, backup, Arduino Uno e ESP32. Cada aula separa instalação, criação, execução, verificação, erros e retomada; as ferramentas precisam existir para o host escolhido.
+
+Quando começar a conectar monitor, hub e periféricos, siga a [montagem por etapas](hardware/montagem-validada.md) e preencha a [ficha de bancada](diagnostico/ficha-evidencias.mdx). Ela distingue passou, falhou, inconclusivo e não testado. Você pode exportar Markdown para leitura ou JSON para retomar, sem enviar dados ao projeto. Uma ficha preenchida não certifica compatibilidade.
+
+O guia de [como ler o manual do dispositivo](comece-aqui/ler-manual-do-dispositivo.md) ensina a conferir variante, versão e condições de uma receita. Esse é o passo entre encontrar um tutorial e decidir se ele se aplica ao aparelho que está nas suas mãos.
+
 ## O projeto original e o nome postmarketOS
 
 O projeto original utilizou postmarketOS. Em **27 de setembro de 2026**, o projeto anunciou o nome **Nura**. Esta documentação mantém “postmarketOS/Nura” onde isso ajuda a reconhecer material histórico e registra URLs atuais; ferramentas como `pmbootstrap` não devem ser renomeadas por suposição. [Anúncio do próprio projeto](https://nura.eco/blog/2026/09/27/nura-rename/).

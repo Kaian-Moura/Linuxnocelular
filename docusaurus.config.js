@@ -42,6 +42,7 @@ module.exports = {
         {type: 'docSidebar', sidebarId: 'guide', position: 'left', label: 'Documentação'},
         {to: '/docs/comece-aqui/do-zero/', label: 'Do zero', position: 'left'},
         {to: '/docs/comece-aqui/minha-trilha/', label: 'Minha trilha', position: 'left'},
+        {to: '/docs/aulas/biblioteca/', label: 'Aulas', position: 'left'},
         {to: '/docs/escolha/', label: 'Escolha seu caminho', position: 'left'},
         {to: '/docs/comunidade/contribuir/', label: 'Contribua', position: 'right'},
         ...(repository ? [{href: `https://github.com/${repository}`, label: 'GitHub', position: 'right'}] : []),
@@ -49,7 +50,7 @@ module.exports = {
     },
     footer: {style: 'dark', links: [
       {title: 'Comece', items: [{label: 'Trilha do zero', to: '/docs/comece-aqui/do-zero/'}, {label: 'Downloads e ferramentas', to: '/docs/comece-aqui/downloads/'}, {label: 'Assistente de decisão', to: '/docs/escolha/'}]},
-      {title: 'Aprenda', items: [{label: 'Conceitos fundamentais', to: '/docs/fundamentos/linux-android/'}, {label: 'Perguntas frequentes', to: '/docs/faq/'}]},
+      {title: 'Aprenda', items: [{label: 'Biblioteca de aulas', to: '/docs/aulas/biblioteca/'}, {label: 'Ficha de bancada', to: '/docs/diagnostico/ficha-evidencias/'}, {label: 'Conceitos fundamentais', to: '/docs/fundamentos/linux-android/'}, {label: 'Perguntas frequentes', to: '/docs/faq/'}]},
       {title: 'Construa junto', items: [{label: 'Contribuições', to: '/docs/comunidade/contribuir/'}, {label: 'Fontes e critérios', to: '/docs/comunidade/fontes/'}]},
     ], copyright: 'Conteúdo CC BY-SA 4.0 · Código MIT · Sem telemetria própria'},
     prism: {theme: themes.github, darkTheme: themes.dracula, additionalLanguages: ['bash', 'powershell', 'json', 'python', 'cpp', 'ini', 'yaml', 'docker', 'diff', 'nginx']},

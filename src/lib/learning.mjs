@@ -31,6 +31,29 @@ export const tracks = [
     lesson('native-method', 'Ler a receita específica do port', '/docs/nativo/visao-geral/', 'Escolher um método documentado; não usar imagem de outro modelo.', 'Computador, com recuperação preparada'),
     lesson('native-desktop', 'Configurar um Linux já instalado', '/docs/aulas/mini-pc-nativo/', 'Validar desktop, monitor, periféricos e reinício depois da instalação confirmada.', 'Linux nativo do telefone'),
   ]},
+  {id: 'development', title: 'Construir projetos de programação', level: 'Após o primeiro terminal', change: 'Ferramentas de desenvolvimento e arquivos próprios', description: 'Aprenda versões, Python, JavaScript e C/C++ no ambiente que você já confirmou. Não exige substituir Android.', prerequisite: 'Terminal utilizável, editor, espaço e pacotes disponíveis para o ambiente escolhido; confira onde cada comando executa.', lessons: [
+    ...basics,
+    lesson('development', 'Escolher e conferir meu ambiente', '/docs/projetos/desenvolvimento/', 'Identificar host, arquitetura e gerenciador antes de instalar ferramentas.', 'Termux, distribuição PRoot ou Linux nativo'),
+    lesson('git-workshop', 'Guardar versões do meu trabalho', '/docs/aulas/git-primeiro-repositorio/', 'Criar um histórico local, comparar mudanças e recuperar uma cópia separada.', 'Terminal e pasta nova de exercício'),
+    lesson('python-workshop', 'Construir uma aplicação Python', '/docs/aulas/python-projeto-completo/', 'Criar inventário manual em JSON, tratar erros e executar testes.', 'Ambiente Python identificado na aula'),
+    lesson('javascript-workshop', 'Construir uma aplicação JavaScript', '/docs/aulas/javascript-servidor-local/', 'Servir uma interface local, conferir rotas e encerrar o processo.', 'Ambiente Node.js identificado na aula'),
+    lesson('cpp-workshop', 'Compilar e testar C e C++', '/docs/aulas/c-cpp-compilacao/', 'Distinguir fonte e binário e reconstruir com Make e CMake.', 'Ambiente com compiladores compatíveis'),
+    lesson('backup-workshop', 'Restaurar uma cópia de exercício', '/docs/aulas/backup-restauracao/', 'Comparar arquivos e recuperar em outro diretório sem apagar o original.', 'Projeto de aula e destino externo'),
+  ]},
+  {id: 'server', title: 'Servir e administrar na rede local', level: 'Primeiros serviços', change: 'Um processo local e, se escolhido, acesso restrito pela LAN', description: 'Construa uma página, diferencie cliente e servidor e transfira arquivos. Abrir um serviço na internet exige outro projeto.', prerequisite: 'Python disponível, meio de controle do telefone, rede autorizada para os testes e uma pasta sem dados pessoais.', lessons: [
+    ...basics,
+    lesson('web-workshop', 'Servir minha primeira página', '/docs/aulas/servidor-python/', 'Testar loopback antes de decidir expor a pasta dedicada na rede local.', 'Telefone ou computador com Python'),
+    lesson('ssh-workshop', 'Entrar por SSH e copiar um arquivo', '/docs/aulas/ssh-arquivos/', 'Conferir a chave do servidor e validar um documento transferido.', 'Servidor no telefone e cliente no computador'),
+    lesson('backup-workshop', 'Verificar uma restauração de arquivos', '/docs/aulas/backup-restauracao/', 'Separar cópia, verificação e restauração em pasta nova.', 'Projeto de aula e destino externo'),
+    lesson('maintenance-workshop', 'Manter um registro de mudanças', '/docs/aulas/rotina-manutencao/', 'Anotar versões, consumo, atualizações e testes de retomada.', 'Sistema utilizável e ficha de bancada'),
+  ]},
+  {id: 'electronics', title: 'Começar com Arduino Uno e ESP32', level: 'Requer placa e host compatíveis', change: 'Ferramentas no host e gravação na placa externa identificada', description: 'Separe código, compilação, upload e observação física. Arquitetura ARM64 não comprova que todas as ferramentas executam.', prerequisite: 'Placa exata identificada, cabo de dados, USB/serial suportados, ferramentas disponíveis para a ABI do host e circuito correto.', lessons: [
+    ...basics,
+    lesson('electronics-host', 'Conferir o host de programação', '/docs/projetos/arduino-esp32/', 'Comparar arquitetura, ABI, toolchain e caminho USB antes de escolher telefone ou computador.', 'Computador de apoio ou Linux nativo compatível'),
+    lesson('uno-workshop', 'Fazer o primeiro projeto no Uno', '/docs/aulas/arduino-uno-primeiro-projeto/', 'Identificar Uno R3, compilar e conferir upload e LED da placa.', 'Host compatível e placa da aula'),
+    lesson('esp32-workshop', 'Fazer o primeiro projeto no ESP32', '/docs/aulas/esp32-primeiro-projeto/', 'Conferir modelo e pino do circuito antes de compilar e gravar.', 'Host compatível e placa/circuito da aula'),
+    lesson('backup-workshop', 'Conservar fontes e configurações', '/docs/aulas/backup-restauracao/', 'Guardar sketch, identificação de ferramentas e cópia verificável.', 'Pasta de projeto e destino externo'),
+  ]},
 ];
 
 const ids = new Set(tracks.flatMap(track => track.lessons.map(item => item.id)));

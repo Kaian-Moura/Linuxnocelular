@@ -1,0 +1,55 @@
+---
+title: Biblioteca de aulas — escolha um resultado
+description: Encontre um percurso completo por objetivo, ambiente e experiência, com pré-requisitos explícitos.
+sidebar_position: 1
+last_verified: '2026-10-11'
+verification: documental
+hardware_tested: false
+---
+
+import CourseLibrary from '@site/src/components/CourseLibrary';
+
+Você pode começar por um resultado pequeno: um programa que guarda dados, um documento num desktop, uma página na rede local ou uma placa que responde ao seu código. Esta biblioteca reúne **percursos completos**, desde preparar as ferramentas até conferir, salvar, encerrar e retomar. Os capítulos de referência continuam disponíveis quando uma aula exigir investigar kernel, recuperação ou uma diferença de hardware.
+
+**Dificuldade:** escolha entre primeiros passos e aulas que dependem da prática inicial. **Material para escolher:** somente este navegador. Os materiais do trabalho real estão em cada aula. Nenhum filtro se conecta ao telefone, consulta sua arquitetura ou certifica compatibilidade.
+
+## Encontre a aula pelo que quer produzir
+
+<CourseLibrary />
+
+## Qual ambiente selecionar
+
+O filtro indica **onde os programas da aula podem executar sob os requisitos documentados**. Ele não informa quais drivers existem no seu modelo. Há diferenças fundamentais:
+
+| Ambiente | O que você precisa ter antes | O que a seleção não garante |
+|---|---|---|
+| Termux sobre Android | Android acessível, aplicativo da origem correta e pacotes compatíveis | Root real, drivers nativos, acesso direto a qualquer USB ou funcionamento permanente em segundo plano |
+| Distribuição em PRoot | Termux e uma instância identificada, com versão/método conferidos | Kernel próprio, isolamento de segurança ou serviços de uma máquina convencional |
+| Linux nativo já instalado | Boot compatível, conta, canal de controle e recuperação específica | Instalação universal, GPU, câmera, vídeo ou energia plenamente suportados |
+| Computador de apoio | Sistema/arquitetura do computador e ferramentas próprias | Que instalar algo nele instale a mesma ferramenta no telefone |
+
+Se quer descobrir se é possível substituir Android, use primeiro [Qual caminho devo seguir?](../escolha/index.mdx). Uma aula rotulada “Linux nativo já instalado” começa **depois** de essa instalação estar confirmada. Ela não fornece imagens para gravar em celulares desconhecidos.
+
+## Uma sequência para a primeira semana
+
+Não há prazo obrigatório. Você pode organizar sessões curtas com um objetivo verificável:
+
+1. Faça o [inventário](../compatibilidade/inventario.md), leia as [microaulas](../comece-aqui/micro-aulas.md) e pratique [pastas e arquivos no simulador](../comece-aqui/laboratorio.mdx).
+2. Com Android funcionando, produza seu [primeiro projeto Termux](primeiro-projeto-termux.md). Com Linux nativo já instalado, comece pelo [uso do mini-PC](mini-pc-nativo.md).
+3. Guarde um documento e faça o [laboratório de backup/restauração](backup-restauracao.md). Confira uma cópia fora do aparelho.
+4. Aprenda [Git local](git-primeiro-repositorio.md) para comparar versões. Histórico local e backup externo têm papéis diferentes.
+5. Escolha **uma** próxima aplicação: Python, JavaScript, C/C++, desktop ou servidor. Termine o ciclo de retomada antes de empilhar instalações.
+6. Se precisar do notebook, prepare [SSH e transferência de arquivos](ssh-arquivos.md), conservando um meio independente de controle.
+7. Para periféricos, valide uma [montagem progressiva](../hardware/montagem-validada.md), registrando resultados na [ficha de bancada](../diagnostico/ficha-evidencias.mdx).
+
+Arduino e ESP32 exigem identificar **o computador anfitrião da toolchain e a placa de destino**. Um telefone ARM64 pode não ter os binários de compilador necessários, mesmo quando o arquivo do Arduino CLI está disponível. Os cursos de eletrônica ensinam essa separação e oferecem um computador de apoio quando a rota no telefone não está documentada.
+
+## Como reconhecer uma aula concluída
+
+Você deve conseguir explicar onde executou os comandos, encontrar seus arquivos e repetir o resultado após fechar e abrir a sessão. Guarde a versão das ferramentas, o último checkpoint que passou e qualquer opção adicional utilizada. Uma saída de exemplo ajuda a interpretar; não deve ser copiada para fabricar um resultado.
+
+Se o procedimento divergir, pare naquela etapa e use a seção de erros. **Não reinstale tudo porque um comando falhou.** Comece por ambiente, pasta, versão, permissões, rede e mensagem exata. O [manual de erros](../diagnostico/erros-para-iniciantes.md) organiza esses primeiros testes. A [trilha interativa](../comece-aqui/minha-trilha.mdx) permite marcar o estudo e exportar seu roteiro; as marcações são pessoais, sem medição do aparelho.
+
+## Fontes e manutenção da biblioteca
+
+Catálogo e sequência pedagógica originais, revisados em **11/10/2026**. As fontes técnicas e o escopo de teste estão em cada aula. A biblioteca usa dados locais e [componentes React em Docusaurus](https://docusaurus.io/docs/markdown-features/react). Novos percursos devem seguir o [padrão de contribuição](../comunidade/contribuir.md), indicar pré-requisitos reais e preservar a distinção entre revisão documental e execução em hardware.

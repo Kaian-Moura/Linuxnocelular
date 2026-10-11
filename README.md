@@ -36,6 +36,7 @@ Se `node` ou `npm` não for encontrado, confira instalação e PATH do computado
 npm test
 npm run check:content
 npm run check:snippets
+npm run check:git-workshop
 npm run build
 npm run check:links
 npx playwright install chromium
@@ -45,12 +46,12 @@ npm run check:external
 
 O último comando faz requisições HTTP e registra resultados inconclusivos/bloqueados; não é parte da CI obrigatória. Os testes do site **não validam procedimentos em todos os smartphones**.
 
-`check:snippets` requer Bash e Python 3 e confere apenas sintaxe, sem executar os exemplos. O relatório de validação também contém os comandos para repetir os testes em subdiretório.
+`check:snippets` requer Bash e Python 3 e confere apenas sintaxe, sem executar os exemplos. `check:git-workshop` exige Git e ensaia histórico, diferenças, recuperação e clone somente em uma pasta temporária própria, sem rede ou telefone. O relatório de validação também contém os comandos para repetir os testes em subdiretório.
 
 ## Organização
 
 - `docs/`: conceitos, caminhos, compatibilidade, preparação, hardware, diagnóstico, recuperação, projetos e comunidade.
-- `src/`: home, tema, assistente de decisão, trilhas, simulador e perguntas React, sem backend ou coleta própria; progresso local somente se o leitor optar.
+- `src/`: home, tema, assistente de decisão, trilhas, biblioteca, ficha de bancada, simulador e perguntas React, sem backend ou coleta própria; progresso local somente se o leitor optar.
 - `templates/`: modelos de tutorial, dispositivo e registro de teste.
 - `scripts/`: validação editorial, links internos e disponibilidade de fontes externas.
 - `tests/`: invariantes de decisão e testes de navegador.
@@ -64,7 +65,11 @@ Outra hospedagem estática: build `npm ci && npm run build`, saída `build/`. Co
 
 ## Evidências e limites
 
-Revisão inicial: 10/10/2026; ampliações para iniciantes em 11/10/2026. São 85 páginas, incluindo dez microaulas, três percursos práticos completos, downloads oficiais, ADB/Fastboot, desbloqueio, root com Magisk, kit de recuperação e manual de erros. Três trilhas interativas organizam o estudo; seis exercícios de terminal simulam somente um cenário fictício, e seis perguntas explicam equívocos frequentes. Os capítulos indicam fontes, condições e limites; o anúncio de mudança de postmarketOS para Nura está contextualizado. Informações documentais não são testes em hardware. Adaptações privadas do OnePlus não são distribuídas como suporte genérico. Fontes que bloquearam automação são identificadas.
+Revisão inicial: 10/10/2026; ampliações para iniciantes em 11/10/2026. São **99 páginas**, incluindo dez microaulas, downloads oficiais, ADB/Fastboot, desbloqueio, root com Magisk, kit de recuperação e manual de erros. A [biblioteca](docs/aulas/biblioteca.mdx) organiza **13 aulas práticas**: Termux, Debian/desktop, mini-PC nativo, Python, JavaScript, C/C++, Git, SSH, servidor web, backup, Arduino Uno, ESP32 e manutenção. **Seis trilhas** acompanham o aprendizado; seis exercícios simulam um terminal fictício, e seis perguntas explicam equívocos frequentes.
+
+A [ficha de bancada](docs/diagnostico/ficha-evidencias.mdx) exporta Markdown e JSON e importa somente o formato validado. É preenchida manualmente, sem coleta, armazenamento automático ou envio. A [montagem progressiva](docs/hardware/montagem-validada.md) e a aula de [ler o manual do dispositivo](docs/comece-aqui/ler-manual-do-dispositivo.md) ajudam a registrar evidências e reconhecer quando uma receita não se aplica.
+
+Os capítulos indicam fontes, condições e limites; o anúncio de mudança de postmarketOS para Nura está contextualizado. Os programas originais de várias aulas foram executados no notebook, com o escopo descrito em [VALIDATION.md](VALIDATION.md). Isso não comprova execução em todos os hosts ou suporte em hardware. Adaptações privadas do OnePlus não são distribuídas como suporte genérico. Fontes que bloquearam automação são identificadas.
 
 ## Contribuir e licenças
 

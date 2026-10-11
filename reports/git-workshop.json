@@ -1,0 +1,13 @@
+{
+  "verified": "2026-10-11",
+  "host": "notebook; pasta temporária própria",
+  "tool": "git version 2.56.0",
+  "checks": [
+    "Primeiro commit e arquivo ignorado",
+    "Trabalho/preparação separados e restore --staged preserva edição",
+    "Recuperação em pasta nova sem alterar original",
+    "Branch, bundle verificado e clone com três commits; ignorado ausente"
+  ],
+  "hardwareTested": false,
+  "network": false
+}

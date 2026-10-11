@@ -1,0 +1,147 @@
+{
+  "verified": "2026-10-11",
+  "scope": "Programas originais das aulas em fixtures próprios do notebook Linux x86-64; não é teste de hardware ou de todas as plataformas.",
+  "phoneAccessed": false,
+  "cases": [
+    {
+      "course": "python-projeto-completo",
+      "tools": [
+        "Python 3.14.8"
+      ],
+      "checks": [
+        "4 testes unittest",
+        "CLI de inventário manual JSON",
+        "Preservação de JSON inválido",
+        "Cópia e restauração de dados de exercício"
+      ],
+      "limits": [
+        "Não valida execução Android/ARM64 ou pacotes de todas as releases."
+      ]
+    },
+    {
+      "course": "javascript-servidor-local",
+      "tools": [
+        "Node.js 22.23.1"
+      ],
+      "checks": [
+        "5 testes sem socket",
+        "8 pedidos HTTP reais em loopback",
+        "SIGINT e porta ocupada/inválida",
+        "Cópia e restauração do projeto"
+      ],
+      "limits": [
+        "Não houve exposição na LAN/WAN ou uso no telefone."
+      ]
+    },
+    {
+      "course": "c-cpp-compilacao",
+      "tools": [
+        "GCC 16.2.1",
+        "Make 4.4.1",
+        "CMake 4.3.0"
+      ],
+      "checks": [
+        "Compilação manual C/C++",
+        "Erro intencional e entradas inválidas",
+        "Reconstrução incremental",
+        "3 CTest",
+        "Restauração e reconstrução"
+      ],
+      "limits": [
+        "Não valida ABI Android/bionic ou toolchain ARM64."
+      ]
+    },
+    {
+      "course": "git-primeiro-repositorio",
+      "tools": [
+        "Git 2.56.0"
+      ],
+      "report": "git-workshop.json",
+      "checks": [
+        "Dois commits na main e ignorado fora do histórico",
+        "Diff de trabalho/preparação e restore --staged",
+        "Recuperação em pasta separada preservando original",
+        "Branch, bundle verificado e clone com três commits"
+      ],
+      "limits": [
+        "Sem servidor ou transporte remoto; assinatura desativada somente no fixture."
+      ]
+    },
+    {
+      "course": "servidor-python",
+      "tools": [
+        "Python no notebook"
+      ],
+      "checks": [
+        "HTTP em loopback: 200, título, segundo arquivo e 404",
+        "Edição e parada do processo"
+      ],
+      "limits": [
+        "LAN, túnel SSH e telefone não foram testados."
+      ]
+    },
+    {
+      "course": "backup-restauracao",
+      "tools": [
+        "cp",
+        "tar",
+        "sha256sum",
+        "Python no notebook"
+      ],
+      "checks": [
+        "Cópia/TAR de textos próprios",
+        "Transporte entre pastas de fixture e comparação de hashes",
+        "Alteração deliberada e restauração separada"
+      ],
+      "limits": [
+        "Não valida backup externo real de um telefone, bancos ativos, partições ou restauração de firmware."
+      ]
+    },
+    {
+      "course": "ssh-arquivos",
+      "tools": [
+        "OpenSSH/SFTP no notebook"
+      ],
+      "checks": [
+        "SFTP get/put por subsystem local isolado",
+        "Geração e fingerprint de chave de fixture"
+      ],
+      "limits": [
+        "Sem servidor SSH remoto, autenticação de transporte, LAN ou telefone."
+      ]
+    },
+    {
+      "course": "arduino-uno-primeiro-projeto",
+      "tools": [
+        "Arduino CLI 1.5.1",
+        "arduino:avr 1.8.8"
+      ],
+      "checks": [
+        "Fonte literal da aula, FQBN arduino:avr:uno, compilação --warnings all",
+        "Programa 2.002 bytes e RAM global 212 bytes"
+      ],
+      "limits": [
+        "Compilação cruzada no notebook x86-64/glibc; quatro avisos de parâmetro não usado no core, nenhum no sketch.",
+        "Sem upload, placa, telefone ou validação de host ARM64."
+      ]
+    },
+    {
+      "course": "esp32-primeiro-projeto",
+      "tools": [
+        "Arduino CLI 1.5.1",
+        "esp32 3.3.12"
+      ],
+      "checks": [
+        "Fonte literal da aula",
+        "FQBN esp32:esp32:esp32:FlashSize=4M,PSRAM=disabled,UploadSpeed=115200",
+        "Compilação --jobs 1 --warnings all sem avisos",
+        "Programa 271.760 bytes e RAM global 22.116 bytes"
+      ],
+      "limits": [
+        "Compilação cruzada no notebook x86-64/glibc; não valida host ARM64/musl/bionic.",
+        "Sem upload, placa, circuito ou telefone.",
+        "Core e toolchains ocuparam cerca de 8,1 GiB lógicos no fixture em disco; não foram armazenados no tmpfs."
+      ]
+    }
+  ]
+}

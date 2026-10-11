@@ -34,14 +34,14 @@ export default function Home() {
           <div className={styles.eyebrow}><span/> CONHECIMENTO ABERTO · EM PORTUGUÊS</div>
           <h1>Seu celular ainda<br/>tem muito <em>a fazer.</em></h1>
           <p>Transforme um smartphone em um computador Linux. Escolha um caminho compatível com o seu hardware, entenda cada etapa e construa com segurança.</p>
-          <div className={styles.heroActions}><Link className="button button--primary button--lg" to="/docs/escolha/">Qual caminho devo seguir? <span aria-hidden="true">↗</span></Link><Link className={styles.textLink} to="/docs/comece-aqui/do-zero/">Nunca fiz isso: começar do zero →</Link></div>
+          <div className={styles.heroActions}><Link className="button button--primary button--lg" to="/docs/comece-aqui/minha-trilha/">Começar minha trilha <span aria-hidden="true">↗</span></Link><Link className={styles.textLink} to="/docs/comece-aqui/do-zero/">Nunca fiz isso: começar do zero →</Link><Link className={styles.textLink} to="/docs/escolha/">Qual caminho devo seguir? →</Link></div>
           <div className={styles.heroNote}>Não existe instalação universal. Existe um caminho bem investigado.</div>
         </div>
         <DesktopDiagram/>
       </section>
       <div className={styles.strip}><span>APRENDA</span> Entenda antes de executar.<b aria-hidden="true">/</b><span>VERIFIQUE</span> Compatibilidade tem versão.<b aria-hidden="true">/</b><span>CONTRIBUA</span> Documente o que funcionou.</div>
       <section className={styles.learning} aria-labelledby="learning-title">
-        <div className={styles.learningIntro}><span className={styles.eyebrow}>PARA QUEM ESTÁ COMEÇANDO</span><h2 id="learning-title">Um resultado concreto, passo a passo.</h2><p>Monte sua trilha, pratique num terminal simulado e acompanhe as verificações. As aulas mostram onde baixar, onde digitar, o que deve aparecer e como retomar depois.</p><div className={styles.learningActions}><Link className="button button--primary" to="/docs/comece-aqui/minha-trilha/">Montar minha trilha →</Link><Link className={styles.textLink} to="/docs/comece-aqui/laboratorio/">Praticar sem alterar meu aparelho →</Link></div></div>
+        <div className={styles.learningIntro}><span className={styles.eyebrow}>PARA QUEM ESTÁ COMEÇANDO</span><h2 id="learning-title">Um resultado concreto, passo a passo.</h2><p>Escolha entre seis trilhas ou encontre uma aula pelo seu objetivo e ambiente. Aprenda a programar, guardar versões, servir páginas e trabalhar com Arduino e ESP32, com verificações e retomada.</p><div className={styles.learningActions}><Link className="button button--primary" to="/docs/comece-aqui/minha-trilha/">Montar minha trilha →</Link><Link className={styles.textLink} to="/docs/aulas/biblioteca/">Encontrar minha próxima aula →</Link><Link className={styles.textLink} to="/docs/comece-aqui/laboratorio/">Praticar sem alterar meu aparelho →</Link></div></div>
         <div className={styles.cards}>{courses.map(([tag,title,copy,to,place]) => <Link className={styles.card} to={to} key={to}><span className={styles.courseTag}>{tag}</span><h3>{title}</h3><p>{copy}</p><span className={styles.tag}>{place}</span></Link>)}</div>
         <p className={styles.learningNote}>Concluir uma aula registra aprendizado. Compatibilidade e recuperação precisam de evidências do seu aparelho.</p>
       </section>
@@ -53,7 +53,7 @@ export default function Home() {
         <div><span className={styles.eyebrow}>DE ONDE PARTIMOS</span><h2>Um OnePlus 9 Pro.<br/>Muitas lições para compartilhar.</h2><p>O projeto que inspirou esta base passou por Android, ambientes Linux e postmarketOS. Monitor, periféricos e drivers revelaram o que um tutorial de instalação sozinho não resolve.</p><Link className={styles.textLink} to="/docs/dispositivos/oneplus-9-pro/">Conheça o estudo de caso e suas limitações →</Link></div>
         <div className={styles.caseDetails}><span>SNAPDRAGON 888</span><strong>12 GB</strong><p>de RAM no aparelho do projeto</p><hr/><p><b>Um experimento documentado.</b><br/>As adaptações desse aparelho não são uma imagem pronta para qualquer smartphone.</p></div>
       </section>
-      <section className={styles.bottom}><h2>Seu próximo projeto pode caber no bolso.</h2><p>Programação, servidores, automação e mais — com exemplos, verificações e alternativas.</p><Link className="button button--primary" to="/docs/projetos/desenvolvimento/">Explorar projetos</Link> <Link className="button button--secondary" to="/docs/comunidade/contribuir/">Contribuir com um aparelho</Link></section>
+      <section className={styles.bottom}><h2>Seu próximo projeto pode caber no bolso.</h2><p>Registre sua montagem, teste cada função e compartilhe resultados que outras pessoas possam conferir.</p><Link className="button button--primary" to="/docs/diagnostico/ficha-evidencias/">Criar minha ficha de bancada</Link> <Link className="button button--secondary" to="/docs/comunidade/contribuir/">Contribuir com um aparelho</Link></section>
     </main>
   </Layout>;
 }
