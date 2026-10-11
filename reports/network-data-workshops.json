@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-11T15:59:10.071142+00:00",
+  "agent": "network_data_courses",
+  "environment": {
+    "scope": "isolated temporary directories on notebook",
+    "python": "3.14.8",
+    "architecture": "x86_64",
+    "nginx": "1.30.5",
+    "sqlite_runtime": "3.51.2"
+  },
+  "nginx_source": {
+    "url": "https://nginx.org/download/nginx-1.30.5.tar.gz",
+    "sha256_downloaded_archive": "6c20565aa2325cb82216ae804f4a4ff1875179014759a381c42ddc8e11c4906d",
+    "build": [
+      "./configure --prefix=TEMP/installation",
+      "make -j2"
+    ],
+    "binary_path": "/tmp/celular-linux-nginx-course-h1884iif/nginx-1.30.5/objs/nginx",
+    "make_install_executed": false,
+    "host_os_packages_installed": false,
+    "pgp_signature_verified": false,
+    "source_verification_limit": "Official HTTPS download and recorded archive hash; PGP signature not independently verified.",
+    "temporary_fixture_removed_after_validation": true
+  },
+  "verification": [
+    {
+      "page": "docs/aulas/rede-local-diagnostico.md",
+      "status": "passed",
+      "checks": [
+        "published HTML responds with HTTP 200",
+        "single own loopback TCP endpoint connects",
+        "absent document responds HTTP 404",
+        "server receives Ctrl+C and exits",
+        "connection refused after stop"
+      ],
+      "limits": [
+        "no phone",
+        "no LAN or Wi-Fi",
+        "no Windows/macOS physical client",
+        "no Android process restrictions tested"
+      ]
+    },
+    {
+      "page": "docs/aulas/sqlite-primeiro-banco.md",
+      "status": "passed",
+      "checks": [
+        "published Python programme initializes database",
+        "CRUD persists across separate executions",
+        "apostrophe stored as data through SQL parameters",
+        "empty title constraint rejection",
+        "failed two-statement transaction rolls back both insertions",
+        "absent database operation refuses phantom creation",
+        "schema and integrity query",
+        "consistent API backup",
+        "existing backup refused without hash change",
+        "independent recovery retains identical logical rows and integrity",
+        "latest source schema compatibility corrected to sqlite_master and rechecked"
+      ],
+      "limits": [
+        "fictitious records only",
+        "no phone storage or power-loss tests",
+        "no application concurrency",
+        "recovery HOME paths remapped to isolated temporary fixture"
+      ]
+    },
+    {
+      "page": "docs/aulas/nginx-servidor-local.md",
+      "status": "passed",
+      "checks": [
+        "published configuration passes nginx -t",
+        "HTML HTTP 200 and text/html MIME",
+        "status HTTP 200 with expected message",
+        "text file text/plain MIME",
+        "missing resource HTTP 404",
+        "custom log and PID inside temporary prefix",
+        "configuration change -t and reload produce changed response",
+        "specific graceful -s quit exits and closes endpoint"
+      ],
+      "limits": [
+        "official source compiled on notebook only",
+        "not installed as host service",
+        "no LAN or Android test",
+        "no production TLS/authentication or boot persistence"
+      ]
+    }
+  ],
+  "additional_checks": [
+    "relative links in all three pages resolve",
+    "all Bash fences parse",
+    "Python fences compile"
+  ],
+  "global_limits": [
+    "No phone access",
+    "No host global settings, firewall, init or services changed",
+    "No system package installation",
+    "Not a certification of hardware compatibility or production security"
+  ],
+  "independent_review": {
+    "reviewer": "network_data_courses",
+    "scope": [
+      "docs/aulas/servico-em-background.md",
+      "docs/aulas/diagnostico-desempenho.md",
+      "docs/aulas/logs-primeira-investigacao.md",
+      "docs/aulas/bash-primeiro-script.md"
+    ],
+    "findings": [
+      {
+        "severity": "compatibility",
+        "file": "docs/aulas/servico-em-background.md",
+        "line": 222,
+        "issue": "ps -p 1 -o comm= assumes procps options; BusyBox ps does not guarantee -p.",
+        "recommendation": "Read /proc/1/comm on native Linux with explicit permission caveat, retain rc-status checks for OpenRC.",
+        "source": "https://busybox.net/downloads/BusyBox.html#ps",
+        "edited": false
+      }
+    ],
+    "executed_checks": [
+      "marker finite 3 steps and invalid interval rejection",
+      "marker graceful SIGTERM",
+      "logs success 0 with INFO on stderr",
+      "logs deliberate failure 20 with empty stdout",
+      "logs existing file refusal 3 and byte-preserved original",
+      "Bash exact note counts plus help, missing/extra arguments, missing file, empty file, no final LF, symlink rejection",
+      "performance 3 samples, 8388608-byte fixture, scratch cleanup and existing output rejection"
+    ],
+    "not_executed": [
+      "systemd/OpenRC service installation",
+      "phone/Android/PRoot execution",
+      "hardware or reboot tests"
+    ],
+    "other_findings": "No other blocking problems found in tested own-project paths; conditional native/Android boundaries and rollback explanations are present."
+  }
+}

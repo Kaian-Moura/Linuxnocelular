@@ -12,10 +12,13 @@
     "check:content": "node scripts/check-content.mjs",
     "check:snippets": "node scripts/check-snippets.mjs",
     "check:git-workshop": "node scripts/check-git-workshop.mjs",
+    "examples:generate": "python3 scripts/package-examples.py --write",
+    "check:examples": "python3 scripts/package-examples.py --check",
+    "check:source-workshops": "python3 scripts/check-source-workshops.py",
     "check:links": "node scripts/check-links.mjs",
     "check:external": "node scripts/check-external.mjs",
     "test:browser": "playwright test",
-    "verify": "npm test && npm run check:content && npm run build && npm run check:links"
+    "verify": "npm test && npm run check:content && npm run check:examples && npm run build && npm run check:links"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",

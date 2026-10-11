@@ -1,0 +1,13 @@
+.panel { border: 1px solid var(--ifm-color-emphasis-300); border-radius: 1rem; padding: clamp(1rem, 3vw, 2rem); background: var(--ifm-background-surface-color); margin: 2rem 0; }
+.choose, .step label { display: grid; gap: .5rem; font-weight: 600; }
+.panel select { width: 100%; min-width: 0; padding: .7rem; border: 1px solid var(--ifm-color-emphasis-500); border-radius: .5rem; color: var(--ifm-font-color-base); background: var(--ifm-background-color); font: inherit; }
+.scope { border-left: 3px solid var(--ifm-color-primary); padding: .5rem 1rem; margin: 1rem 0; }
+.steps { display: grid; gap: 1rem; }
+.step { border-top: 1px solid var(--ifm-color-emphasis-300); padding-top: 1rem; }
+.step h3 { font-size: 1.1rem; }
+.step p { margin: .6rem 0 0; font-size: .94rem; }
+.actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.actions button { white-space: normal; }
+.result { border: 2px solid var(--ifm-color-primary); border-radius: .7rem; padding: 1rem; margin-top: 1.5rem; }
+.result:focus-visible { outline: 3px solid var(--ifm-color-primary); outline-offset: 4px; }
+@media (max-width: 600px) { .panel select { font-size: .9rem; } .actions button { width: 100%; } }

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "pack": "uno",
+  "sourceDocument": "docs/aulas/arduino-uno-primeiro-projeto.md",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1100,
+      "sha256": "4dfb80d258ab9d8e2b6e7a833f9ccf9b71dd314d4b71364a554e23624cb339e5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1762,
+      "sha256": "8aebcc1e261c8a857e98879a416fa4851e2fb33b671a0c5ad8a803d85d73eea6"
+    },
+    {
+      "path": "UnoPrimeiro/UnoPrimeiro.ino",
+      "bytes": 254,
+      "sha256": "b6aec9d30d0a37683705a107db5f1e366539382ba17d12dec74cbe1def79a805"
+    }
+  ]
+}

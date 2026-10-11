@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "pack": "bash",
+  "sourceDocument": "docs/aulas/bash-primeiro-script.md",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1100,
+      "sha256": "4dfb80d258ab9d8e2b6e7a833f9ccf9b71dd314d4b71364a554e23624cb339e5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1676,
+      "sha256": "08872a1bc5d845ca198fcfee56cff79773936cb88c910a7860d8721db8eba135"
+    },
+    {
+      "path": "relatorio.sh",
+      "bytes": 1101,
+      "sha256": "bab208237982b78adb63655db3aa2b278f3463d9524bdc52edae8131afb7ef03"
+    }
+  ]
+}

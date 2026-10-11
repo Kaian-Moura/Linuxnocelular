@@ -1,0 +1,74 @@
+[
+  {
+    "id": "python",
+    "title": "Inventário em Python",
+    "doc": "python-projeto-completo",
+    "root": "inventario-python",
+    "description": "Aplicação de terminal com JSON e quatro testes. Sem dependências PyPI.",
+    "limits": "Execute no Python do ambiente identificado. O comando adicionar cria dados na pasta do projeto; use somente itens fictícios nos exercícios.",
+    "filename": "projeto-python.zip",
+    "bytes": 9603,
+    "sha256": "eaf6ccdd444b7767b3ea260b7c991080524f512f4d35ec82d062cc09a5201ea1",
+    "sourceFiles": 3
+  },
+  {
+    "id": "javascript",
+    "title": "Planejador HTTP em JavaScript",
+    "doc": "javascript-servidor-local",
+    "root": "planejador-js",
+    "description": "Formulário, rotas JSON e cinco testes com Node.js. Sem npm install.",
+    "limits": "A última chamada continua em primeiro plano e escuta somente 127.0.0.1:8765. Abra essa URL no mesmo aparelho e encerre com Ctrl+C. Não é um serviço público de produção.",
+    "filename": "projeto-javascript.zip",
+    "bytes": 9995,
+    "sha256": "348adeda1f84afdc56be6010ecd7439d8f3c85db700519d495dc51340fc95a85",
+    "sourceFiles": 3
+  },
+  {
+    "id": "c-cpp",
+    "title": "Calculadora em C e C++",
+    "doc": "c-cpp-compilacao",
+    "root": "energia-c-cpp",
+    "description": "Biblioteca C compartilhada, interfaces C/C++, Make, CMake e CTest.",
+    "limits": "Requer compiladores C/C++ e CMake no host. Compila para o ambiente do compilador, não automaticamente para Arduino ou para outro celular. A alternativa Make está na aula.",
+    "filename": "projeto-c-cpp.zip",
+    "bytes": 9724,
+    "sha256": "aeb865d836efd1dc22178e118e625976dcfc432914d0bab0b3f38953b664d755",
+    "sourceFiles": 8
+  },
+  {
+    "id": "uno",
+    "title": "Primeiro sketch do Uno R3",
+    "doc": "arduino-uno-primeiro-projeto",
+    "root": "arduino-uno-aula",
+    "description": "LED integrado e saída serial para o Arduino Uno R3, ATmega328P.",
+    "limits": "Somente após identificar a placa e preparar CLI/core/toolchain do host conforme a aula. O pacote não inclui firmware pronto, compilador nem upload automático. Uno R4 e outros chips exigem outra receita.",
+    "filename": "projeto-uno.zip",
+    "bytes": 4262,
+    "sha256": "741f8b0dc14f31fe8f3eec59d24e0d47fb70b1f6b7735976e30540b912951472",
+    "sourceFiles": 1
+  },
+  {
+    "id": "esp32",
+    "title": "Primeiro sketch do ESP32 clássico",
+    "doc": "esp32-primeiro-projeto",
+    "root": "esp32-aula",
+    "description": "LED externo no GPIO23 do DevKitC V4 com WROOM-32E-N4, conforme o circuito da aula.",
+    "limits": "Prepare core/toolchain e confira placa e circuito antes. O exemplo não é genérico para ESP32-S2/S3/C3/C6 nem para qualquer LED integrado. Não inclui upload automático ou binário para gravação.",
+    "filename": "projeto-esp32.zip",
+    "bytes": 4348,
+    "sha256": "1bc1ea9c65aaf5289b9eff6ac2f4f336f33f5cbfa0100bd43ad40a281628b157",
+    "sourceFiles": 1
+  },
+  {
+    "id": "bash",
+    "title": "Leitor de anotações em Bash",
+    "doc": "bash-primeiro-script",
+    "root": "relatorio-bash",
+    "description": "Argumentos, aspas, leitura de texto e códigos de saída. Sem alterações de sistema.",
+    "limits": "Crie seu pequeno texto fictício pela aula e passe o caminho entre aspas. Execute com Bash, não com sh ou source. Não é um serviço nem um coletor de logs do telefone.",
+    "filename": "projeto-bash.zip",
+    "bytes": 4956,
+    "sha256": "2367524ce4d6337d078a0ee1dffb33ce27d2d96e8956a6df89225c0a8464da44",
+    "sourceFiles": 1
+  }
+]

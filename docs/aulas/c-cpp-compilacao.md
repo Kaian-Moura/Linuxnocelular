@@ -95,6 +95,7 @@ Se `energia-c-cpp` já existe, pare a criação e confira seu conteúdo. Para re
 
 **Dentro do nano**, cole:
 
+<!-- example-file: c-cpp/ola.c -->
 ```c
 #include <stdio.h>
 
@@ -146,6 +147,7 @@ Vamos separar o cálculo da interface. `energia.h` declara a função; `energia.
 
 **No terminal:** `nano src/energia.h`. **No editor**, cole e salve:
 
+<!-- example-file: c-cpp/src/energia.h -->
 ```c
 #ifndef ENERGIA_H
 #define ENERGIA_H
@@ -167,6 +169,7 @@ As linhas `#ifndef`/`#define` evitam incluir a declaração repetidamente. `doub
 
 **No terminal:** `nano src/energia.c`. **No editor:**
 
+<!-- example-file: c-cpp/src/energia.c -->
 ```c
 #include "energia.h"
 
@@ -181,6 +184,7 @@ Essa função faz uma conta, sem validar a origem dos números. A interface vai 
 
 **No terminal:** `nano src/main.c`. **Dentro do editor:**
 
+<!-- example-file: c-cpp/src/main.c -->
 ```c
 #include <errno.h>
 #include <math.h>
@@ -239,6 +243,7 @@ echo $?
 
 **No terminal:** `nano src/main.cpp`. **Dentro do editor:**
 
+<!-- example-file: c-cpp/src/main.cpp -->
 ```cpp
 #include <iomanip>
 #include <iostream>
@@ -274,6 +279,7 @@ Espere três linhas, com resultados de **10.00**, **20.00** e **30.00 Wh**. Usar
 
 **No terminal:** `nano tests/teste_energia.c`. **Dentro do editor:**
 
+<!-- example-file: c-cpp/tests/teste_energia.c -->
 ```c
 #include <stdio.h>
 #include "energia.h"
@@ -312,6 +318,7 @@ Repetir comandos longos é cansativo e favorece esquecer um arquivo. Um **Makefi
 
 **No terminal, na raiz `energia-c-cpp`:** `nano Makefile`. O nome tem `M` maiúsculo e nenhuma extensão. **No editor:**
 
+<!-- example-file: c-cpp/Makefile -->
 ```makefile
 .RECIPEPREFIX := >
 CC = cc
@@ -363,6 +370,7 @@ Se aparece `missing separator`, confira se a primeira linha foi preservada e se 
 
 **No terminal:** `nano CMakeLists.txt`. **No editor:**
 
+<!-- example-file: c-cpp/CMakeLists.txt -->
 ```cmake
 cmake_minimum_required(VERSION 3.20)
 project(EnergiaDaAula LANGUAGES C CXX)

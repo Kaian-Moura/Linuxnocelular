@@ -1,0 +1,29 @@
+{
+  "scope": "temporary notebook directories; no phone, init, system service or system package changes",
+  "python": "3.14.8",
+  "checks": [
+    "marker finite run: status 0, three steps and normal end",
+    "marker rejects NaN interval",
+    "marker SIGTERM exits gracefully and writes end",
+    "marker rotates an existing own log and retains active log",
+    "isolated tmux session remains detached and marker log grows",
+    "isolated tmux client attaches and detaches without stopping marker",
+    "tmux Ctrl+C ends own process without ending other tmux servers",
+    "measurement status 0, exactly 8 MiB, three samples, three medians",
+    "measurement temporary data is removed",
+    "measurement refuses overwrite and preserves prior JSON",
+    "measurement rejects output outside its project",
+    "logging normal exit 0: useful stdout and INFO stderr",
+    "logging controlled exit 20: empty stdout and contextual error stderr",
+    "logging existing destination exit 3 and prior data preserved",
+    "logging returns to normal with a new result filename",
+    "logging argument error exit 2 before application workflow",
+    "logging preserves success/failure UTC records"
+  ],
+  "notebook_measurement_seconds": {
+    "calculo_s": 0.01653450500452891,
+    "escrita_fsync_s": 0.002226200005679857,
+    "leitura_cache_s": 0.0024754879996180534
+  },
+  "passed": 17
+}

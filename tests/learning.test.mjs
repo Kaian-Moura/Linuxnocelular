@@ -30,7 +30,7 @@ test('cada aula e revisão de conceito aponta a um documento existente', () => {
 });
 
 test('novas trilhas preservam registros antigos e compartilham somente identificadores conhecidos', () => {
-  assert.equal(tracks.length, 6);
+  assert.equal(tracks.length, 7);
   assert.deepEqual(tracks.slice(0, 3).map(track => [track.id, track.lessons.length]), [['termux', 6], ['desktop', 7], ['native', 10]]);
   for (const id of ['development', 'server', 'electronics']) {
     const restored = readProgress(JSON.stringify({version: 1, track: id, completed: ['identity', 'backup-workshop', 'sem-aula']}));

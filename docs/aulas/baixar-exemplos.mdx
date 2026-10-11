@@ -1,0 +1,138 @@
+---
+title: Baixe os projetos — fontes iguais aos das aulas
+description: Obtenha projetos originais completos, confira hashes, extraia numa pasta nova e execute somente depois de preparar seu ambiente.
+sidebar_position: 5
+last_verified: '2026-10-11'
+verification: documental
+hardware_tested: false
+---
+
+import SourcePacks from '@site/src/components/SourcePacks';
+
+Copiar um programa extenso pelo celular pode introduzir aspas erradas, linhas faltando ou nomes trocados. Esta página oferece os **arquivos originais completos** de seis aulas. O download facilita começar e comparar; as explicações, instalação de ferramentas, checkpoints, erros e retomada continuam no tutorial correspondente.
+
+**Resultado:** uma pasta nova com fontes legíveis, README, licença e manifesto de integridade. **Dificuldade:** iniciante. **Materiais:** navegador, espaço pequeno para os arquivos e gerenciador de arquivos/ZIP. Para executar, prepare o ambiente descrito em cada aula. **Risco principal:** extrair sobre seu próprio trabalho ou executar sem compreender o código. Não há firmware, imagem de boot, APK, compilador ou instalador automático nestes pacotes.
+
+## 1. Escolha pelo ambiente e pelo resultado
+
+<SourcePacks />
+
+Os pacotes de Python, Node e Bash usam bibliotecas ou recursos já presentes na ferramenta indicada. Eles não exigem baixar dependências arbitrárias. O projeto C/C++ precisa do compilador do seu ambiente e de Make ou CMake. Os sketches exigem **toolchain e placa de destino identificadas**; baixar o `.ino` não fornece um compilador ARM64 compatível com qualquer distribuição.
+
+Se é sua primeira experiência, siga antes o [primeiro projeto Termux](primeiro-projeto-termux.md) ou [terminal](../comece-aqui/terminal-primeiros-passos.md). O computador em que você baixa e o ambiente em que executa podem ser diferentes. Um programa baixado no notebook não apareceu automaticamente no telefone; use uma transferência controlada, como a [aula SSH/SFTP](ssh-arquivos.md), quando necessário.
+
+## 2. Baixe e encontre o arquivo
+
+Toque em **Baixar fontes** no cartão escolhido. O navegador deve salvar um arquivo cujo nome termina em `.zip`. Em navegadores de desktop, abra a lista de downloads; em Android, procure a ação Downloads do navegador ou o aplicativo Arquivos. O local depende do navegador e das configurações: não presuma um caminho fixo em todo sistema.
+
+Para acompanhar esta explicação, vamos usar **`projeto-python.zip`**. Se escolheu outro cartão, o nome, a pasta interna e os comandos mudam conforme o cartão e o README. Não renomeie um ZIP para `.apk` ou `.img`: a extensão não transforma seu formato nem lhe dá compatibilidade.
+
+**Checkpoint 1:** você encontra o ZIP e sabe onde foi salvo. Se o navegador bloqueou o download, leia sua mensagem. Não desative proteções globalmente. Verifique origem e nome; um arquivo inesperado ou uma página HTML salva como ZIP deve ser investigado, não executado.
+
+## 3. Confira a correspondência do arquivo
+
+Abra **Conferir o SHA-256** no cartão. SHA-256 é um resumo do conteúdo em caracteres hexadecimais. Compare-o com o resumo calculado do arquivo que baixou. Um caractere diferente significa que os arquivos não correspondem; não prossiga como se fossem a mesma versão.
+
+O hash publicado **na mesma página** verifica correspondência com este catálogo. Ele não é uma assinatura independente: se você não confia na origem da página, o número sozinho não resolve isso. Os fontes são abertos e legíveis no repositório e nas aulas, permitindo revisão.
+
+### Linux ou Termux
+
+Abra o terminal no ambiente onde o arquivo está acessível. Entre na pasta do download usando seu caminho real, conforme a [aula de terminal](../comece-aqui/terminal-primeiros-passos.md). Depois:
+
+```sh
+sha256sum projeto-python.zip
+```
+
+Compare os 64 caracteres antes do nome do arquivo com o cartão. Não copie o hash do cartão para um terminal fingindo que calculou o arquivo. Em Termux, acesso ao Downloads do Android pode exigir a permissão de armazenamento preparada no [guia Termux](../android/termux.md); não conceda permissões novas se puder transferir o ZIP diretamente para a pasta privada do app.
+
+### macOS
+
+No Terminal, na pasta correta:
+
+```sh
+shasum -a 256 projeto-python.zip
+```
+
+`shasum` é uma ferramenta diferente com o mesmo algoritmo selecionado. Não troque 256 por outro número e espere o mesmo resumo. Confira o nome do arquivo antes de comparar.
+
+### Windows PowerShell
+
+Abra PowerShell na pasta real do download. Execute:
+
+```powershell
+Get-FileHash -LiteralPath .\projeto-python.zip -Algorithm SHA256
+```
+
+A coluna `Hash` pode usar letras maiúsculas, enquanto o cartão usa minúsculas: isso não muda os dígitos hexadecimais. A comparação é do conteúdo, não do estilo das letras. Consulte a [documentação Microsoft de Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash). Não substitua esse comando por executar o arquivo.
+
+**Checkpoint 2:** o hash calculado corresponde ao catálogo da edição que baixou. Uma edição atualizada pode ter outro hash; preserve o ZIP, a data e o catálogo correspondentes quando registrar seus testes.
+
+## 4. Extraia numa área nova, sem sobrescrever projetos
+
+Crie uma pasta de exercício que ainda não contenha trabalho seu. Pelo gerenciador de arquivos, escolha **Extrair** ou **Extrair tudo** e indique essa área. Verifique a prévia dos arquivos quando disponível. Os ZIPs desta página contêm uma única pasta de projeto, sem caminhos absolutos, links simbólicos ou entradas `..`.
+
+No Windows, a ação costuma ser **Extrair tudo** no menu do ZIP. Em GNOME, Arquivos e o gerenciador de arquivos compactados oferecem extração; em macOS, o utilitário de arquivos abre o ZIP. No Android, use a ação de extração do gerenciador disponível. O nome exato pode variar. Se o aplicativo oferece sobrescrever arquivos, **cancele e escolha uma pasta nova**.
+
+Depois de extrair `projeto-python.zip`, a estrutura deve ser:
+
+```text
+inventario-python/
+  README.md
+  LICENSE
+  MANIFEST.json
+  primeiro.py
+  inventario.py
+  teste_inventario.py
+```
+
+Não há `.venv` pronta. Ambientes virtuais contêm caminhos e executáveis do host que os criou; o seu será criado localmente. Não há `inventario.json` com dados privados; o programa cria seus dados de exercício quando você decide cadastrar itens.
+
+Em Termux, conserve os fontes executáveis de trabalho na **pasta privada do app**, como `$HOME/projetos`, conforme a aula. Armazenamento compartilhado do Android tem políticas e semântica diferentes. Se preferir editar num notebook, preserve uma cópia e transfira apenas os arquivos que quer usar; não misture essa preparação com comandos de boot do telefone.
+
+**Checkpoint 3:** você abre README como texto, vê a lista de fontes e não substituiu outro projeto. Se aparecer apenas uma pasta dupla, entre até o nível com README antes de executar. Não faça upload de arquivos `.ino` antes de confirmar a placa e as condições da aula.
+
+## 5. Leia antes de executar
+
+Abra **README.md** no editor. Ele informa a aula correspondente, requisitos, chamadas de referência e limitações. Abra também o fonte principal e compare o começo/final com o tutorial. Não existe um botão “instalar todos”: preparar Python é diferente de preparar Arduino, e Termux não usa as mesmas bibliotecas de Alpine.
+
+Para o projeto Python, depois de confirmar Python e suporte a `venv` pela aula, no terminal **dentro de `inventario-python`**:
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m unittest -v teste_inventario.py
+.venv/bin/python inventario.py --help
+```
+
+O primeiro cria um ambiente local. O segundo executa quatro testes usando arquivos temporários próprios. O terceiro mostra as opções, ainda sem cadastrar seus itens. Estas chamadas seguem o percurso Linux/Termux da aula. No Windows nativo, os caminhos de venv são diferentes; consulte a [preparação no guia de desenvolvimento](../projetos/desenvolvimento.md), em vez de colar `.venv/bin/python` no PowerShell.
+
+**Checkpoint 4:** os testes passam e você reconhece a ajuda. Continue pelo [curso completo Python](python-projeto-completo.md) para criar, listar, conferir entrada inválida e restaurar. Passar os testes não verifica a política de armazenamento de toda ROM Android ou estabilidade de todo port nativo.
+
+Para JavaScript, o README mostra `node --test` e o servidor em loopback. Para C/C++, mostra configure/build/CTest. Para Bash, mostra sintaxe e ajuda, e você cria seu próprio pequeno texto. Os exemplos do Uno e ESP32 fornecem **somente fontes**; o comando de referência compila e não inclui `--upload`. Siga a aula antes de qualquer ação física na placa.
+
+## 6. Entenda MANIFEST.json
+
+O manifesto descreve a versão do formato, o identificador do pacote, a aula de origem e, para cada fonte/README/licença, caminho, tamanho em bytes e SHA-256. O próprio manifesto não pode incluir seu próprio hash sem criar uma dependência circular; o hash do ZIP cobre o conjunto completo.
+
+Use-o para comparar uma cópia que **ainda não editou**. Depois de mudar `inventario.py`, o hash deve mudar: isso não é corrupção automaticamente, pode ser sua alteração deliberada. Preserve a versão original e registre diferenças com [Git](git-primeiro-repositorio.md). Não atualize o manifesto manualmente para esconder uma divergência não explicada.
+
+O gerador do repositório copia blocos explicitamente identificados nas aulas. Um verificador compara os arquivos, manifesto, catálogo e ZIP byte a byte com o conteúdo documentado. Assim, mudar a aula exige regenerar os downloads correspondentes. Esta é uma garantia de **consistência editorial**, não uma validação de que cada hardware executa o projeto.
+
+## 7. Erros frequentes e retomada
+
+| Sintoma | Verificação inicial | Próximo passo |
+|---|---|---|
+| ZIP não abre | Nome, tamanho e hash; confira se não salvou HTML | Baixe novamente da origem correta e compare |
+| Arquivos estão numa subpasta | Localize README | Abra terminal nesse nível do projeto |
+| `python`, `node`, `cmake` não encontrado | `command -v` e ambiente real | Prepare a ferramenta pelo tutorial, sem misturar gerenciadores |
+| Teste não encontra outro fonte | Lista de arquivos e pasta atual | Extraia o pacote completo numa área nova |
+| Toolchain Arduino indisponível | Arquitetura e libc do host, core e ferramentas | Use a rota suportada no computador de apoio |
+| Nome `.ino.txt` | Extensões reais no gerenciador | Preserve o nome original; não regrave antes de identificar a placa |
+| Resultado difere após editar | Diff com sua cópia original e versão da ferramenta | Corrija a alteração ou retome a cópia guardada, sem apagar dados |
+
+Para retomar, abra a pasta já extraída, leia suas anotações e repita os testes. Não extraia por cima dela apenas porque fechou o terminal. Para voltar ao fonte original, extraia o ZIP verificado em **outra pasta**, compare e copie somente o que decidiu restaurar. Um projeto com dados persistentes precisa de backup dos dados também; fonte original não é backup do trabalho produzido.
+
+## Fontes, licença e escopo de validação
+
+Pacotes e código originais, revisão **11/10/2026**, licença MIT para os fontes; a documentação tem [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Fontes técnicas e testes de cada programa estão nas seis aulas. A publicação dos arquivos usa [assets estáticos do Docusaurus](https://docusaurus.io/docs/static-assets), incluindo suporte ao prefixo de implantação.
+
+A geração determinística e a correspondência dos pacotes foram verificadas. Programas de host receberam testes em diretórios temporários do notebook; os dois sketches tiveram compilação para os alvos documentados em uma rodada anterior, sem upload. Isso não equivale a testes em todos os sistemas operacionais, aparelhos, placas ou ligações USB. Contribuições com novos pacotes devem preservar essa distinção e atualizar o relatório de validação.

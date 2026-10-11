@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-11",
+  "suite": "Linux beginner course examples",
+  "results": [
+    {
+      "course": "arquivos-permissoes",
+      "passed": true,
+      "runtime": "Fedora 44 / Bash 5.3.9 / GNU coreutils 9.10 / uid 1000",
+      "blocks_executed": 13,
+      "assertions": [
+        "independent original/copies",
+        "separate recovery preserves original",
+        "owner read denied and restored",
+        "directory traversal denied and restored",
+        "creation denied while existing file writable",
+        "script fails without x and runs with x",
+        "600/700 modes",
+        "umask confined to subshell"
+      ],
+      "limits": [
+        "single user only",
+        "no phone/shared Android storage/ACL tests"
+      ],
+      "evidence": "Executed twice in isolated temporary directories; assertions passed."
+    },
+    {
+      "course": "processos-terminal",
+      "passed": true,
+      "runtime": "Fedora 44 / Bash 5.3.9 / procps-ng 4.0.6",
+      "assertions": [
+        "natural 20-step completion",
+        "background PID and ps identity",
+        "TERM targeted unique own job",
+        "handled TERM wait status zero",
+        "zero/seven statuses",
+        "stdout/stderr log",
+        "interactive Ctrl+Z stopped job",
+        "bg resumed own job",
+        "fg returned job to foreground",
+        "Ctrl+C handled with status 130"
+      ],
+      "limits": [
+        "own processes only",
+        "no services or phone",
+        "BusyBox/Termux variants reviewed documentally"
+      ],
+      "evidence": "Process exercise passed in both isolated harness runs, with bg additionally checked in second."
+    },
+    {
+      "course": "pacotes-repositorios",
+      "passed": true,
+      "runtime": "Fedora 44 / GNU nano, version 8.7.1",
+      "provider": "nano-8.7.1-2.fc44.x86_64",
+      "assertions": [
+        "installed version queried",
+        "two fictitious lines typed in own PTY",
+        "Ctrl+O and Enter (CR) saved",
+        "Ctrl+X exited",
+        "same content reopened and preserved",
+        "RPM package provider queried"
+      ],
+      "limits": [
+        "no packages installed",
+        "APT/APK/Termux transactions not executed",
+        "no phone access"
+      ],
+      "harness_note": "Initial automation sent LF rather than the Enter key CR; another assertion expected two lines after typing an extra blank line. The PTY input and assertion were corrected, no document command changed. Final create/save/reopen exercise passed."
+    }
+  ],
+  "shell_syntax_blocks_checked": 51,
+  "local_document_links": "all targets exist",
+  "host_changes": "Only dedicated temporary fixtures and their own processes; no packages, accounts, services, global configuration or phone modified."
+}

@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-10-11T16:09:29.776572+00:00",
+  "scope": "Fresh temporary notebook fixtures from published ZIPs and SQLite document; all removed after test.",
+  "versions": {
+    "python": "3.14.8",
+    "sqlite": "3.51.2",
+    "node": "v22.23.1",
+    "bash": "GNU bash, version 5.3.9(1)-release (x86_64-redhat-linux-gnu)",
+    "cmake": "cmake version 4.3.0"
+  },
+  "checks": [
+    {
+      "check": "archive-python",
+      "status": "passed",
+      "details": "SHA-256, bytes, safe regular paths, ZIP integrity and manifest verified after extraction; no hardware execution."
+    },
+    {
+      "check": "archive-javascript",
+      "status": "passed",
+      "details": "SHA-256, bytes, safe regular paths, ZIP integrity and manifest verified after extraction; no hardware execution."
+    },
+    {
+      "check": "archive-c-cpp",
+      "status": "passed",
+      "details": "SHA-256, bytes, safe regular paths, ZIP integrity and manifest verified after extraction; no hardware execution."
+    },
+    {
+      "check": "archive-uno",
+      "status": "passed",
+      "details": "SHA-256, bytes, safe regular paths, ZIP integrity and manifest verified after extraction; no hardware execution."
+    },
+    {
+      "check": "archive-esp32",
+      "status": "passed",
+      "details": "SHA-256, bytes, safe regular paths, ZIP integrity and manifest verified after extraction; no hardware execution."
+    },
+    {
+      "check": "archive-bash",
+      "status": "passed",
+      "details": "SHA-256, bytes, safe regular paths, ZIP integrity and manifest verified after extraction; no hardware execution."
+    },
+    {
+      "check": "python-downloaded-source",
+      "status": "passed",
+      "details": "Four unittest cases and help executed from extracted original ZIP."
+    },
+    {
+      "check": "node-downloaded-source",
+      "status": "passed",
+      "details": "Five no-socket Node tests and syntax check executed from extracted original ZIP."
+    },
+    {
+      "check": "cpp-downloaded-source",
+      "status": "passed",
+      "details": "Fresh CMake configure/build and three CTest cases from extracted ZIP, without system install."
+    },
+    {
+      "check": "bash-downloaded-source",
+      "status": "passed",
+      "details": "Syntax, help, whitespace/path/last line, unchanged input and failure statuses including symbolic link checked."
+    },
+    {
+      "check": "sqlite-published-schema",
+      "status": "passed",
+      "details": "CRUD, apostrophe through UPDATE, empty/long/padded-long title rejection, rollback, integrity and preserved rows in fresh fixture."
+    }
+  ],
+  "limits": [
+    "No phone, Android or PRoot test",
+    "No host package/service/init/firewall change",
+    "No LAN or hardware upload",
+    "Uno and ESP32 only source/archive parity in this run; previous compilation recorded separately",
+    "No production deployment or security certification"
+  ]
+}

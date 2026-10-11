@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "pack": "esp32",
+  "sourceDocument": "docs/aulas/esp32-primeiro-projeto.md",
+  "files": [
+    {
+      "path": "Esp32Primeiro/Esp32Primeiro.ino",
+      "bytes": 314,
+      "sha256": "99877fc0d9e4d5b088ea2589d201d4588572db3551700cdbe507dc9fd9ee65f1"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1100,
+      "sha256": "4dfb80d258ab9d8e2b6e7a833f9ccf9b71dd314d4b71364a554e23624cb339e5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1828,
+      "sha256": "fb5515f262bc26bcf1e04e0c6d599cf497deefd16661a3efaba7a400b18138e8"
+    }
+  ]
+}

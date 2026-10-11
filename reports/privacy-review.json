@@ -1,17 +1,35 @@
 {
-  "verified": "2026-10-11",
-  "meaning": "Revisão delimitada por padrões selecionados; não é auditoria completa nem detecção de todos os segredos.",
-  "sourceFiles": 180,
+  "verified": "2026-10-11T16:19:39.866770+00:00",
+  "meaning": "Limited scan of documentation/source/generated examples and report text. Absence of these patterns is not a complete secret-detection guarantee. Human review also checked the new original code/data and scope of static ZIPs.",
+  "sourceFiles": 219,
   "patterns": [
-    "private_key_payload",
-    "github_token",
-    "aws_access_key",
-    "google_api_key"
+    "private-key",
+    "credential-url",
+    "jwt-shaped"
   ],
   "matches": [],
   "staticAssets": [
     "static/img/logo.svg",
-    "static/img/social-card.svg"
+    "static/img/social-card.svg",
+    "static/downloads/projeto-python.zip",
+    "static/downloads/projeto-javascript.zip",
+    "static/downloads/projeto-c-cpp.zip",
+    "static/downloads/projeto-uno.zip",
+    "static/downloads/projeto-esp32.zip",
+    "static/downloads/projeto-bash.zip",
+    "static/downloads/catalog.json"
   ],
-  "phoneAccessed": false
+  "sourcePackScope": "Six generated original source ZIPs; no firmware, binaries, personal pictures or live data.",
+  "phoneAccessed": false,
+  "resolvedFindings": [
+    "Signed public GitHub release redirects in external-link report contained ephemeral parameters. Parameters removed from final redirect metadata; original public source URLs and HTTP results preserved. Regression tests added."
+  ],
+  "reviewedMatches": [
+    {
+      "file": "tests/report-url.test.mjs",
+      "pattern": "credential-url",
+      "classification": "fictitious test fixture",
+      "reason": "Only the explicitly synthetic aluno/EXEMPLO values for a reserved .invalid host occur in this sanitizer regression fixture; no real credential."
+    }
+  ]
 }

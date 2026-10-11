@@ -193,6 +193,7 @@ notepad .\UnoPrimeiro\UnoPrimeiro.ino
 
 Se o sketch já existir, abra-o sem repetir `sketch new`; preserve um projeto antigo antes de substituí-lo. Apague somente o texto inicial **desse novo arquivo** e coloque:
 
+<!-- example-file: uno/UnoPrimeiro/UnoPrimeiro.ino -->
 ```cpp
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);

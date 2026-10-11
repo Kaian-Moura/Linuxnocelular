@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "pack": "javascript",
+  "sourceDocument": "docs/aulas/javascript-servidor-local.md",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1100,
+      "sha256": "4dfb80d258ab9d8e2b6e7a833f9ccf9b71dd314d4b71364a554e23624cb339e5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1701,
+      "sha256": "904879e92f8e013d3fb838e9e96891355379e27fb1169f286408d95b4f937181"
+    },
+    {
+      "path": "primeiro.cjs",
+      "bytes": 76,
+      "sha256": "e1ad8c05472a670e88decb076abee21cfd9dd789b1fe94839440e2374de7eb46"
+    },
+    {
+      "path": "servidor.cjs",
+      "bytes": 4266,
+      "sha256": "e0baadcd464ffc1f55bb8e3166c163374829c7bdba0cd2f2cd45b29ed024b4bc"
+    },
+    {
+      "path": "teste-servidor.cjs",
+      "bytes": 1204,
+      "sha256": "eef8204a657f88f377fab7c210c16db0f0e784e3e0a7d6b4cd1fa5e8921ecf6c"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import {mkdir, writeFile} from 'node:fs/promises';
 import path from 'node:path';
 import {documents, root} from './files.mjs';
+import {reportUrl} from './report-url.mjs';
 
 const refs = new Map();
 for (const doc of await documents()) {
@@ -19,7 +20,8 @@ async function worker() {
     try {
       const response = await fetch(url, {signal: AbortSignal.timeout(12000), redirect: 'follow', headers: {'User-Agent': 'CelularLinuxDocs-LinkCheck/1.0 (documentation reference availability)'}});
       result.status = response.status;
-      result.finalUrl = response.url;
+      result.finalUrl = reportUrl(response.url);
+      if (result.finalUrl !== response.url) result.finalUrlParametersRemoved = true;
       result.redirected = response.redirected;
       const reader = response.body?.getReader();
       let sample = '', bytes = 0;

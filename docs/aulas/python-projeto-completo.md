@@ -127,6 +127,7 @@ nano primeiro.py
 
 O editor ocupa a tela. **Dentro do nano**, cole estas duas linhas, sem as crases do bloco:
 
+<!-- example-file: python/primeiro.py -->
 ```python
 nome = "Meu inventário"
 print(nome)
@@ -153,6 +154,7 @@ nano inventario.py
 
 **Dentro do nano**, cole todo o código abaixo. Preserve os espaços no início das linhas: em Python a indentação define os blocos. Salve com Ctrl+O, Enter e Ctrl+X.
 
+<!-- example-file: python/inventario.py -->
 ```python
 import argparse
 import json
@@ -311,6 +313,7 @@ nano teste_inventario.py
 
 **Dentro do editor:**
 
+<!-- example-file: python/teste_inventario.py -->
 ```python
 import json
 from pathlib import Path

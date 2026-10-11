@@ -54,6 +54,19 @@ export const tracks = [
     lesson('esp32-workshop', 'Fazer o primeiro projeto no ESP32', '/docs/aulas/esp32-primeiro-projeto/', 'Conferir modelo e pino do circuito antes de compilar e gravar.', 'Host compatível e placa/circuito da aula'),
     lesson('backup-workshop', 'Conservar fontes e configurações', '/docs/aulas/backup-restauracao/', 'Guardar sketch, identificação de ferramentas e cópia verificável.', 'Pasta de projeto e destino externo'),
   ]},
+  {id: 'administration', title: 'Cuidar e investigar meu sistema', level: 'Após o primeiro terminal', change: 'Exercícios locais e instalações condicionais; hardware só com evidências', description: 'Aprenda arquivos, processos, repositórios, logs e rede com programas próprios. Separe o que é consulta, instalação e integração de boot.', prerequisite: 'Um ambiente utilizável e identificado, editor, pasta de exercícios e meio de recuperação; os guias não substituem uma receita de instalação nativa.', lessons: [
+    ...basics,
+    lesson('permissions', 'Entender permissões com meus próprios arquivos', '/docs/aulas/arquivos-permissoes/', 'Comparar leitura, escrita e execução numa pasta de exercício e restaurar a referência.', 'Terminal do ambiente identificado'),
+    lesson('processes', 'Suspender e retomar meu próprio programa', '/docs/aulas/processos-terminal/', 'Distinguir shell, tarefa e processo; encerrar somente o exercício.', 'Terminal interativo com Bash'),
+    lesson('packages', 'Escolher o repositório e revisar a instalação', '/docs/aulas/pacotes-repositorios/', 'Identificar gerenciador, release e origem antes de instalar um editor.', 'Termux, APT ou APK, em rotas separadas'),
+    lesson('bash', 'Automatizar uma leitura de texto', '/docs/aulas/bash-primeiro-script/', 'Testar argumentos, aspas e falhas sem modificar a entrada.', 'Bash na sua pasta de projeto'),
+    lesson('logs', 'Investigar uma falha com logs pequenos', '/docs/aulas/logs-primeira-investigacao/', 'Relacionar mensagem, saída e estado e preparar um registro sanitizado.', 'Programa fictício na pasta do exercício'),
+    lesson('network', 'Separar as camadas da rede', '/docs/aulas/rede-local-diagnostico/', 'Distinguir interface, endereço, rota, nome e serviço com testes locais.', 'Aparelhos e rede sob seu controle'),
+    lesson('background', 'Retomar uma tarefa em segundo plano', '/docs/aulas/servico-em-background/', 'Usar tmux e encerrar a instância própria, reconhecendo limites de boot/Android.', 'Ambiente identificado; integração de boot é condicional'),
+    lesson('performance', 'Criar uma linha de base do desempenho', '/docs/aulas/diagnostico-desempenho/', 'Repetir amostras e separar gargalos, sem forçar clocks ou desativar proteções.', 'Notebook ou ambiente Linux do telefone'),
+    lesson('backup-workshop', 'Restaurar uma cópia de exercício', '/docs/aulas/backup-restauracao/', 'Preservar a referência e testar retorno numa pasta separada.', 'Ambiente e destino de backup'),
+    lesson('layers', 'Organizar uma falha por camadas', '/docs/diagnostico/assistente-camadas/', 'Encontrar a primeira lacuna manual e abrir a próxima verificação.', 'Somente no navegador para organizar'),
+  ]},
 ];
 
 const ids = new Set(tracks.flatMap(track => track.lessons.map(item => item.id)));

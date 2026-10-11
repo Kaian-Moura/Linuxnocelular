@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-11T15:26:00.794Z",
-  "pages": 99,
-  "words": 168940,
+  "generatedAt": "2026-10-11T16:09:59.595Z",
+  "pages": 111,
+  "words": 198236,
   "metrics": [
     {
       "file": "docs/android/chroot.md",
@@ -68,6 +68,14 @@
       "sourceCount": 13
     },
     {
+      "file": "docs/aulas/arquivos-permissoes.md",
+      "title": "Arquivos e permissões: aprenda sem mexer no sistema",
+      "lastVerified": "2026-10-11",
+      "words": 2678,
+      "commandBlocks": 18,
+      "sourceCount": 6
+    },
+    {
       "file": "docs/aulas/backup-restauracao.md",
       "title": "Faça um backup e prove que consegue restaurar seu projeto",
       "lastVerified": "2026-10-11",
@@ -76,10 +84,26 @@
       "sourceCount": 4
     },
     {
+      "file": "docs/aulas/baixar-exemplos.mdx",
+      "title": "Baixe os projetos — fontes iguais aos das aulas",
+      "lastVerified": "2026-10-11",
+      "words": 1663,
+      "commandBlocks": 3,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/aulas/bash-primeiro-script.md",
+      "title": "Bash — seu primeiro script útil, com erros e testes",
+      "lastVerified": "2026-10-11",
+      "words": 1963,
+      "commandBlocks": 9,
+      "sourceCount": 6
+    },
+    {
       "file": "docs/aulas/biblioteca.mdx",
       "title": "Biblioteca de aulas — escolha um resultado",
       "lastVerified": "2026-10-11",
-      "words": 666,
+      "words": 789,
       "commandBlocks": 0,
       "sourceCount": 1
     },
@@ -98,6 +122,14 @@
       "words": 4473,
       "commandBlocks": 31,
       "sourceCount": 18
+    },
+    {
+      "file": "docs/aulas/diagnostico-desempenho.md",
+      "title": "Descobrir por que o mini-PC está lento",
+      "lastVerified": "2026-10-11",
+      "words": 2469,
+      "commandBlocks": 9,
+      "sourceCount": 9
     },
     {
       "file": "docs/aulas/esp32-primeiro-projeto.md",
@@ -124,12 +156,36 @@
       "sourceCount": 8
     },
     {
+      "file": "docs/aulas/logs-primeira-investigacao.md",
+      "title": "Primeira investigação de erro: logs e evidências",
+      "lastVerified": "2026-10-11",
+      "words": 2561,
+      "commandBlocks": 11,
+      "sourceCount": 7
+    },
+    {
       "file": "docs/aulas/mini-pc-nativo.md",
       "title": "Aula: use seu primeiro mini-PC com Linux nativo",
       "lastVerified": "2026-10-11",
       "words": 4038,
       "commandBlocks": 10,
       "sourceCount": 12
+    },
+    {
+      "file": "docs/aulas/nginx-servidor-local.md",
+      "title": "Sirva uma página com Nginx sem alterar o servidor do sistema",
+      "lastVerified": "2026-10-11",
+      "words": 2633,
+      "commandBlocks": 13,
+      "sourceCount": 7
+    },
+    {
+      "file": "docs/aulas/pacotes-repositorios.md",
+      "title": "Pacotes e repositórios: instale a ferramenta certa no lugar certo",
+      "lastVerified": "2026-10-11",
+      "words": 2784,
+      "commandBlocks": 17,
+      "sourceCount": 14
     },
     {
       "file": "docs/aulas/primeiro-projeto-termux.md",
@@ -140,12 +196,28 @@
       "sourceCount": 10
     },
     {
+      "file": "docs/aulas/processos-terminal.md",
+      "title": "Processos: inicie, acompanhe e encerre seu próprio programa",
+      "lastVerified": "2026-10-11",
+      "words": 2632,
+      "commandBlocks": 16,
+      "sourceCount": 5
+    },
+    {
       "file": "docs/aulas/python-projeto-completo.md",
       "title": "Aula de Python: um projeto completo de inventário",
       "lastVerified": "2026-10-11",
       "words": 2544,
       "commandBlocks": 20,
       "sourceCount": 7
+    },
+    {
+      "file": "docs/aulas/rede-local-diagnostico.md",
+      "title": "Entenda a rede local e descubra onde a conexão falha",
+      "lastVerified": "2026-10-11",
+      "words": 2802,
+      "commandBlocks": 11,
+      "sourceCount": 10
     },
     {
       "file": "docs/aulas/rotina-manutencao.md",
@@ -156,11 +228,27 @@
       "sourceCount": 2
     },
     {
+      "file": "docs/aulas/servico-em-background.md",
+      "title": "Deixar um programa trabalhando e retomá-lo",
+      "lastVerified": "2026-10-11",
+      "words": 2608,
+      "commandBlocks": 19,
+      "sourceCount": 7
+    },
+    {
       "file": "docs/aulas/servidor-python.md",
       "title": "Publique sua primeira página local com Python",
       "lastVerified": "2026-10-11",
       "words": 2939,
       "commandBlocks": 8,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/aulas/sqlite-primeiro-banco.md",
+      "title": "Construa um banco de tarefas com SQLite e Python",
+      "lastVerified": "2026-10-11",
+      "words": 2577,
+      "commandBlocks": 15,
       "sourceCount": 5
     },
     {
@@ -348,6 +436,14 @@
       "sourceCount": 3
     },
     {
+      "file": "docs/diagnostico/assistente-camadas.mdx",
+      "title": "Onde a cadeia parou? — diagnóstico guiado",
+      "lastVerified": "2026-10-11",
+      "words": 1768,
+      "commandBlocks": 0,
+      "sourceCount": 3
+    },
+    {
       "file": "docs/diagnostico/boot-crash.md",
       "title": "Boot travado, tela preta e Qualcomm CrashDump",
       "lastVerified": "2026-10-10",
@@ -383,7 +479,7 @@
       "file": "docs/diagnostico/metodo.md",
       "title": "Método de diagnóstico e coleta de evidências",
       "lastVerified": "2026-10-10",
-      "words": 888,
+      "words": 923,
       "commandBlocks": 2,
       "sourceCount": 4
     },

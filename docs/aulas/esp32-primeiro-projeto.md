@@ -137,6 +137,7 @@ notepad .\Esp32Primeiro\Esp32Primeiro.ino
 
 Se essa pasta já contém um projeto, preserve-o ou escolha outro nome, mantendo iguais os nomes da pasta e do `.ino`. Substitua o texto inicial do **novo arquivo** por:
 
+<!-- example-file: esp32/Esp32Primeiro/Esp32Primeiro.ino -->
 ```cpp
 constexpr unsigned LED_PIN = 23;
 

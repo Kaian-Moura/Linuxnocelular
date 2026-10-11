@@ -18,6 +18,7 @@ jobs:
       - run: npm run verify
       - run: npm run check:snippets
       - run: npm run check:git-workshop
+      - run: npm run check:source-workshops
       - run: npx playwright install --with-deps chromium
       - run: npm run test:browser
       - run: npm run build -- --out-dir build-subpath

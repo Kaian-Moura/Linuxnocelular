@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "pack": "c-cpp",
+  "sourceDocument": "docs/aulas/c-cpp-compilacao.md",
+  "files": [
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 948,
+      "sha256": "8875c87241c1d866493e9ca274606e9b452d89a6c0dede49acdc3b5d1b35a2a8"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1100,
+      "sha256": "4dfb80d258ab9d8e2b6e7a833f9ccf9b71dd314d4b71364a554e23624cb339e5"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 806,
+      "sha256": "6f6470f49cc31ba0d9cc16ee17b1f92892bdf76b321f13b5a6efecabc873fe3d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1697,
+      "sha256": "c820423197a9747a0ed304046bde1c1ce2a53e90bd84f3fa277b92db6efd2307"
+    },
+    {
+      "path": "ola.c",
+      "bytes": 95,
+      "sha256": "7a3df14deeae735d914cfb8b433af7d73a09afd9766687b6cb9bc759c88c6751"
+    },
+    {
+      "path": "src/energia.c",
+      "bytes": 98,
+      "sha256": "3e8ad6dcfcb7b5fa2a8ee318b71496f4485a1d8aa395d0b1c5cddf823616cbb6"
+    },
+    {
+      "path": "src/energia.h",
+      "bytes": 161,
+      "sha256": "dce31b4a8d4e35515cc0e2e0c0645d3e58419714c4f345fcd5eab5de60e6c8e3"
+    },
+    {
+      "path": "src/main.c",
+      "bytes": 905,
+      "sha256": "a2ae8bb3a39e8659488fe72d64d6a913a369f88a97c199f110aac40c5cb5c4a3"
+    },
+    {
+      "path": "src/main.cpp",
+      "bytes": 407,
+      "sha256": "c2beefd47816444347d05902b15a27ef65ae464c8068c41b29442a7ff85b7c97"
+    },
+    {
+      "path": "tests/teste_energia.c",
+      "bytes": 524,
+      "sha256": "2c0903c56dea670c1e20c344571296b1f50664be982020ca769ae2940a81c591"
+    }
+  ]
+}

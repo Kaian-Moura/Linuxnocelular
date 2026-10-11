@@ -94,6 +94,7 @@ O segundo `mkdir` deve criar uma pasta nova. Se ela já existe, confira os arqui
 
 **No editor**, cole:
 
+<!-- example-file: javascript/primeiro.cjs -->
 ```javascript
 const minutos = 3 * 25;
 console.log(`Tempo planejado: ${minutos} minutos`);
@@ -120,6 +121,7 @@ nano servidor.cjs
 
 **Dentro do nano**, cole o arquivo inteiro, preservando pontuação e aspas. Salve e saia:
 
+<!-- example-file: javascript/servidor.cjs -->
 ```javascript
 const http = require('node:http');
 
@@ -311,6 +313,7 @@ nano teste-servidor.cjs
 
 **Dentro do editor:**
 
+<!-- example-file: javascript/teste-servidor.cjs -->
 ```javascript
 const test = require('node:test');
 const assert = require('node:assert/strict');

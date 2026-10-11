@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "pack": "python",
+  "sourceDocument": "docs/aulas/python-projeto-completo.md",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1100,
+      "sha256": "4dfb80d258ab9d8e2b6e7a833f9ccf9b71dd314d4b71364a554e23624cb339e5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1701,
+      "sha256": "679ec133b12c8607fb9539b1e71e3ac613f14d615ace6060b41f5d855b2b26dd"
+    },
+    {
+      "path": "inventario.py",
+      "bytes": 3679,
+      "sha256": "bc2549a5ef48c732ea5af270a092de6be14d7b2dca036ce5e213b76fd0558820"
+    },
+    {
+      "path": "primeiro.py",
+      "bytes": 37,
+      "sha256": "951efbcde0efe293a1327752dd15ce2b9944dccfa47e9a78e8e229371b825ff9"
+    },
+    {
+      "path": "teste_inventario.py",
+      "bytes": 1393,
+      "sha256": "a80c69dd75af3abc8d91fc5f909fae9241f41b87a1df5bee63fe0f368287cbea"
+    }
+  ]
+}

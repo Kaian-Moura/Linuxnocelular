@@ -1,0 +1,94 @@
+---
+title: Onde a cadeia parou? — diagnóstico guiado
+description: Organize observações de teclado USB, monitor, SSH e carga para escolher a próxima verificação sem inventar uma causa.
+sidebar_position: 3
+last_verified: '2026-10-11'
+verification: documental
+hardware_tested: false
+---
+
+import LayerGuide from '@site/src/components/LayerGuide';
+
+Você conectou um periférico e nada aconteceu. Antes de instalar um driver, reiniciar um serviço ou trocar o kernel, transforme esse “nada” em uma observação: o sistema está vivo? O dispositivo apareceu? Há eventos? A aplicação recebeu o resultado? Este assistente ajuda a organizar **a primeira etapa ainda sem evidência**, usando respostas que você fornece.
+
+**Resultado esperado:** uma próxima verificação justificada e um pequeno registro das marcações. **Dificuldade:** iniciante para organizar; cada teste real pode exigir conhecimento adicional. **Materiais desta página:** somente o navegador. **Materiais dos testes reais:** estão nos guias vinculados a cada etapa. **Pré-requisito:** identificar o ambiente, a montagem e um meio de controle. O assistente não usa ADB, SSH, Bluetooth, USB ou sensores; nenhuma resposta é medida automaticamente.
+
+## 1. Prepare uma tentativa que possa ser comparada
+
+Escolha **um sintoma e uma tentativa**. Anote fora do formulário: horário, sistema/release, kernel quando pertinente, cabo, porta, hub, fonte, monitor ou periférico. Se o telefone foi reiniciado entre as observações, isso é outra tentativa. “Funcionou ontem” não é “sim” para o estado atual.
+
+O objetivo inicial é observar. Uma ligação pode perder seu único meio de acesso; conserve o método de recuperação documentado antes de provocar a falha novamente. Se o aparelho está em CrashDump ou sem controle, vá para [boot e crash](boot-crash.md). Se há bateria inchada, dano ou aquecimento anormal, interrompa o uso dessa montagem e procure assistência. Uma falha física perigosa não deve ser tratada como ajuste de software.
+
+Não instale todas as ferramentas listadas em todos os guias. Identifique o ambiente e prepare somente as necessárias ao teste escolhido em [instalar ferramentas de diagnóstico](instalar-ferramentas.md). Android, PRoot e Linux nativo oferecem acessos diferentes ao kernel e aos dispositivos. Um comando bloqueado pelo Android não comprova driver ausente. Registre **inconclusivo** quando não conseguiu observar.
+
+## 2. Preencha a cadeia e encontre a próxima etapa
+
+<LayerGuide />
+
+As respostas ficam na memória desta página. Recarregar, fechar ou sair pode apagá-las. O download Markdown contém somente o sintoma escolhido e as marcações padronizadas; não coleta endereços, modelo, senhas ou logs. Para guardar a montagem e as evidências que você revisar, use a [ficha de bancada](ficha-evidencias.mdx). Não marque “sim” porque um exemplo de saída na documentação parece convincente: a resposta deve descrever **o seu teste**.
+
+## 3. Como interpretar a indicação
+
+O assistente percorre as etapas na ordem mostrada. “Sim” significa **você informou que observou**, não que a página certificou. A primeira resposta “não” abre uma fronteira de investigação, quando as anteriores foram confirmadas. A primeira resposta “não verifiquei/inconclusivo” abre uma lacuna. Ambas levam ao guia da etapa, mas têm significados distintos:
+
+| Resposta | Conclusão permitida | Conclusão indevida |
+|---|---|---|
+| Não verifiquei enumeração | Falta observar o barramento | O controlador USB está quebrado |
+| Teclado não enumera nesta tentativa | O caminho não chegou à enumeração confirmada | É necessariamente falta de `usbhid` |
+| Há eventos de teclas, campo não recebe | O input funcionou para as teclas observadas; falta entrega à sessão/aplicação | Todo hardware e toda política de input estão perfeitos |
+| Há monitor detectado, não há imagem física | Detecção e resultado físico divergem | Um framebuffer ativo prova vídeo no monitor |
+| Todas as etapas marcadas sim | O resultado foi relatado nessa tentativa | O sistema foi certificado para qualquer hub, boot ou periférico |
+
+Um dispositivo pode ter **falhas intermitentes**. Uma evidência posterior não corrige automaticamente a ausência de outra anterior. Talvez pertençam a horários diferentes, a outro nó de entrada ou a outra sessão. Quando você preenche etapas posteriores, o assistente preserva essas marcações e pede contexto; não declara que seus dados são falsos.
+
+Essa ordem é uma organização didática. Ela não modela cada dependência interna do kernel nem substitui leitura dos logs. Um conector detectado e um aplicativo renderizando podem coexistir com falha no transporte de pixels. Alimentação e papel de dados podem mudar separadamente. O diagnóstico real exige relacionar esses caminhos com a implementação do port.
+
+## 4. Exemplo fictício: mouse funciona, teclado não
+
+Imagine esta tentativa **ilustrativa**, sem relação com um aparelho medido nesta página: Linux acessível por SSH; hub e papel host confirmados; mouse e teclado aparecem separados; interface de teclado associada a HID; um leitor do nó correto vê pressionamento/soltura de letras; no desktop desejado não há texto.
+
+Nesse cenário, marque as cinco primeiras etapas do teclado como “sim” e a sessão/aplicação como “não”. O assistente encaminha para sessão e acesso remoto. Você já tem evidência para não começar reinstalando o controlador USB. Ainda precisa conferir **qual sessão recebe o dispositivo**, permissões, seat, compositor e foco. Uma sessão remota virtual pode não compartilhar os mesmos periféricos da sessão física.
+
+Agora altere o cenário: só o mouse aparece na árvore USB; o teclado nem enumera. Marque essa etapa como “não”, conservando somente a montagem realmente observada. A investigação passa a hub, energia, cabo, controlador e enumeração, antes de keymap. Não use o fato de o mouse funcionar para preencher como “sim” todos os passos do teclado.
+
+As consultas e a interpretação estão em [teclados USB](../hardware/teclados-usb.md). Uma captura de eventos pode registrar o que você digita. Faça o teste com texto fictício, por tempo curto, e encerre o leitor antes de entrar em contas. Compare `/dev/input` e identificadores reais; nomes `event0`, `event1` não são uma identidade fixa entre boots.
+
+## 5. Exemplo fictício: monitor volta no HDMI, mas não no hub
+
+Considere uma montagem com Linux vivo, cadeia documentada, monitor detectado e modo habilitado. A área de trabalho aparece na primeira ligação. Ao retirar **somente o hub**, a imagem não retorna, mas seu controle alternativo continua. Aqui a tentativa é um **ensaio antes/depois**: as etapas 2–5 do vídeo registram a ligação inicial, e a etapa 6 registra a reconexão prevista. A etapa 1 deve continuar verdadeira ao longo do ensaio, sem crash ou reinício. Marque a última como falha e preserve os horários dos dois momentos na ficha; não apresente os “sim” iniciais como se fossem detecção e pixels confirmados depois da falha.
+
+O resultado inicial não resolve o **hotplug**. Compare antes/depois: identidade do boot, evento de desconexão, estado do conector, saída do compositor e processo da aplicação. Se o boot mudou, não é apenas uma janela reposicionada. Se o kernel continua mas o supervisor reinicia a sessão, o problema também pode fechar aplicativos. Se a sessão permanece, mas o monitor não recebe pixels, investigue a cadeia de vídeo.
+
+O [guia de vídeo e hotplug](../hardware/video-hotplug.md) explica consultas e limites. A [sessão portátil](../desktop/sessao-portatil.md) distingue preservação de aplicações de recuperação de saída. Não comece com reset de controladores, troca de papel USB ou parâmetros de clocks: isso pode derrubar vídeo, controle ou o aparelho. A ferramenta deliberadamente oferece **a próxima observação**, não um botão de “corrigir tudo”.
+
+Se você usa USB-C de dados do hub para um monitor que exige DisplayPort Alt Mode, falta primeiro confirmar a função dessa porta. Monitor alimentado só demonstra alimentação. Não marque a cadeia como compatível apenas por o conector caber. Os conceitos estão em [USB-C, hubs e funções](../hardware/usb-c-hubs.md).
+
+## 6. Exemplo fictício: SSH dá timeout
+
+Você sabe o IP atual e a porta do servidor no destino, mas o cliente não chega a iniciar a conversa SSH. A etapa de transporte não foi confirmada. Não apague uma chave nem redefina a senha: identidade e autenticação ainda não foram alcançadas. Compare rede do cliente, rota, isolamento de Wi-Fi e política específica da porta.
+
+Um **timeout**, uma **conexão recusada** e uma **falha de autenticação** são mensagens diferentes. Uma conexão recusada também pode vir de política de rede; a mensagem sozinha não prova qual processo estava no destino. Ping bloqueado não prova que SSH está bloqueado. IP válido não prova que o cliente e o destino têm caminho entre si.
+
+Aprenda a cadeia em [rede local e diagnóstico](../aulas/rede-local-diagnostico.md), depois siga [SSH e arquivos](../aulas/ssh-arquivos.md). Os exemplos começam em rede autorizada. Não abra portas do roteador ou desligue o firewall inteiro para transformar uma falha local numa exposição pública.
+
+## 7. Exemplo fictício: mostra alimentação, porcentagem não aumenta
+
+Uma entrada de alimentação registrada pelo port não comprova **ganho líquido de energia**. O telefone pode consumir mais do que recebe, estar perto do limite de carga, limitar corrente por temperatura ou ter telemetria incompleta. Uma amostra de poucos segundos não resolve essas alternativas.
+
+Registre fonte, cabo, porta PD, estado disponível no driver e amostras com horário, sob carga de trabalho conhecida. Use as unidades e convenções do port, em vez de assumir que todo `current_now` usa o mesmo sinal. Não some números de interfaces distintas como se fossem um medidor elétrico calibrado. A aula de [energia](../hardware/energia.md) explica como montar essa observação e quando ela permanece inconclusiva.
+
+Se a alimentação conecta, o mouse apaga e o vídeo permanece, descreva também a **transição**. A bateria e o barramento de dados são caminhos relacionados, mas distintos. Não marque periféricos como funcionando porque o status diz “charging”. Repita a [montagem progressiva](../hardware/montagem-validada.md) somente nas condições adequadas e preserve o meio de controle.
+
+## 8. Da indicação para uma correção real
+
+Abra o guia apontado, identifique o teste que separa hipóteses e anote o resultado literal, com privacidade. Formule uma conclusão pequena: “o nó correto gera as três teclas testadas”, “o conector não registrou a reconexão”, “a porta não estava escutando”. Não escreva uma causa maior que a evidência.
+
+Quando uma hipótese justificar mudança, preserve a configuração anterior, altere uma coisa, repita o teste e registre reversão. Uma correção persistente exige saber quem reaplica a configuração no boot e verificar reboot/reconexão. Não transformar um comando temporário em serviço antes de entender a falha é parte do diagnóstico, não falta de ambição.
+
+Para pedir ajuda, envie versão, montagem sanitizada, sintoma, último passo confirmado e trecho mínimo de erro. Consulte [como coletar logs](../aulas/logs-primeira-investigacao.md) e [método de diagnóstico](metodo.md). O registro exportado é um índice da tentativa; acrescente evidências revisadas antes de publicar uma issue. Ele não contém a autorização nem os artefatos para flash.
+
+## Fontes e escopo da ferramenta
+
+Critérios pedagógicos e componente originais, revisados em **11/10/2026**. A estrutura USB é documentada na [API host do kernel](https://www.kernel.org/doc/html/latest/driver-api/usb/usb.html); energia e autosuspend em [Power Management for USB](https://www.kernel.org/doc/html/latest/driver-api/usb/power-management.html); conector, status e modos em [KMS](https://www.kernel.org/doc/html/latest/gpu/drm-kms.html). Os detalhes de cada teste estão nas páginas vinculadas, com suas fontes e limites por ambiente.
+
+Foram verificados lógica, navegação e uso do componente em navegador; nenhum campo detecta hardware. O assistente não implementa diagnóstico médico de bateria, calibração elétrica, teste de stress, recuperação remota de CrashDump ou compatibilidade de firmware. Se o sintoma não está entre os quatro casos, use o método geral e documente a cadeia correspondente, em vez de adaptar respostas para obter um resultado desejado.

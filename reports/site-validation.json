@@ -1,17 +1,24 @@
 {
-  "verifiedAt": "2026-10-11T15:31:10.950831+00:00",
-  "meaning": "Validação do site e ensaios locais de software; não certifica smartphones ou placas.",
+  "verifiedAt": "2026-10-11T16:20:20.363231+00:00",
+  "meaning": "Site validation and isolated notebook exercises; does not certify phone hardware or boards.",
+  "documentationPages": 111,
+  "proseWords": 198236,
+  "practicalCourses": 23,
+  "learningTracks": 7,
+  "sourcePacks": 6,
+  "manualDiagnosticCases": 4,
+  "manualDiagnosticSteps": 23,
   "unitTests": {
-    "passed": 47,
+    "passed": 60,
     "failed": 0
   },
   "browser": {
     "root": {
-      "passed": 21,
+      "passed": 26,
       "failed": 0
     },
     "subpathGuia": {
-      "passed": 21,
+      "passed": 26,
       "failed": 0
     }
   },
@@ -19,11 +26,21 @@
     "/",
     "/guia/"
   ],
-  "internalLinksPerBuild": 7925,
+  "htmlPagesPerBuild": 114,
+  "internalLinksPerBuild": 9332,
   "internalLinkErrors": 0,
   "uiScreenshotsReviewed": 6,
   "uiPageErrors": [],
   "phoneAccessed": false,
   "hardwareUploads": false,
-  "sourceExampleReport": "workshop-examples.json"
+  "sourceExampleReports": [
+    "workshop-examples.json",
+    "git-workshop.json",
+    "linux-basics-workshops.json",
+    "network-data-workshops.json",
+    "operations-workshops.json",
+    "source-workshops.json"
+  ],
+  "dependenciesChanged": false,
+  "publicDeploymentExecuted": false
 }

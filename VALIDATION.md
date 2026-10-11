@@ -14,23 +14,25 @@ A segunda ampliação acrescentou **nove páginas**, com três percursos complet
 
 A terceira ampliação acrescentou **14 páginas** e dez aulas práticas: aplicações completas Python/JavaScript/C/C++, Git, SSH/SFTP, servidor Python, backup/restauração, Arduino Uno, ESP32 e manutenção. Também acrescentou montagem progressiva, leitura de receitas específicas, biblioteca com filtros e ficha de bancada exportável/importável. Há agora **13 aulas e seis trilhas**, preservando os IDs e roteiros anteriores. A ficha registra nove campos e treze cenários manualmente, sem coleta, persistência automática ou envio. As aulas têm instalação por ambiente, edição, execução, checkpoints, erros, encerramento e retomada; portas, placas, toolchains e ABI continuam condicionais.
 
+A quarta ampliação acrescentou **12 páginas**: dez aulas sobre arquivos/permissões, processos, pacotes, Bash, rede, SQLite, Nginx, segundo plano, desempenho e logs, além dos guias de downloads e diagnóstico interativo. O catálogo agora tem **23 aulas e sete trilhas**, sem alterar IDs dos seis roteiros anteriores. Seis pacotes originais contêm fontes iguais aos blocos identificados das aulas, README, licença e manifesto. O diagnóstico organiza quatro sintomas em 23 etapas manuais; não mede o aparelho nem declara causa raiz.
+
 O site inclui busca local em português/inglês, temas claro/escuro, sumário, navegação móvel, oito diagramas Mermaid, avisos, destaque de código e referências cruzadas. Código original tem licença MIT; documentação original, CC BY-SA 4.0. Há modelos de contribuição, aula prática e plano de recuperação, CI e workflow manual de GitHub Pages.
 
 ## Verificações efetivamente realizadas
 
 | Verificação | Resultado |
 | --- | --- |
-| Regras, catálogo, metadados, progresso, biblioteca, ficha, simulação e regressão de UTF-8 | 47 testes unitários passaram |
-| Revisão editorial automática | 99 páginas, zero erros; dois avisos revisados |
-| Sintaxe dos exemplos | 465 blocos Bash, 117 `sh` e oito Python; zero erros, sem executar o conteúdo |
-| Build de produção na raiz | Passou; 102 páginas HTML contando home, busca e 404 |
-| Links/âncoras na raiz | 7.925 verificados; zero erros e zero HTML com NUL |
-| Build de produção em `/guia/` | Passou; 102 páginas HTML |
-| Links/âncoras em `/guia/` | 7.925 verificados; zero erros e zero HTML com NUL |
-| Chromium/Playwright na raiz | 21 testes passaram |
-| Chromium/Playwright em `/guia/` | Os mesmos 21 testes passaram |
-| Referências externas | 503 URLs consultadas: 490 alcançáveis, dez respostas HTTP inconclusivas e três falhas de rede; nenhum 404/410 |
-| Programas originais das aulas no notebook | Ensaios de nove cursos, com limites separados em `reports/workshop-examples.json`; sem upload ou telefone |
+| Regras, catálogo, metadados, progresso, biblioteca, ficha, simulação e regressão de UTF-8 | 60 testes unitários passaram |
+| Revisão editorial automática | 111 páginas, zero erros; dois avisos revisados |
+| Sintaxe dos exemplos | 556 blocos Bash, 167 `sh` e 12 Python; zero erros, sem executar o conteúdo |
+| Build de produção na raiz | Passou; 114 páginas HTML contando home, busca e 404 |
+| Links/âncoras na raiz | 9.332 verificados; zero erros e zero HTML com NUL |
+| Build de produção em `/guia/` | Passou; 114 páginas HTML |
+| Links/âncoras em `/guia/` | 9.332 verificados; zero erros e zero HTML com NUL |
+| Chromium/Playwright na raiz | 26 testes passaram |
+| Chromium/Playwright em `/guia/` | Os mesmos 26 testes passaram |
+| Referências externas | 570 URLs consultadas: 559 alcançáveis, oito respostas HTTP inconclusivas e três falhas de rede; nenhum 404/410 |
+| Programas originais das aulas no notebook | Ensaios com limites separados por rodada, em `reports/*workshops.json` e `workshop-examples.json`; sem upload ou telefone |
 | Revisão de privacidade dos fontes | Não foram encontrados os identificadores/segredos privados procurados; nenhuma foto pessoal, dump ou firmware foi incluído |
 
 Os testes de navegador conferiram temas, navegação, recomendações condicionais, busca real por “Bluetooth”, largura de 390 px, limpeza do formulário, sumário, filtros do catálogo e a renderização dos oito diagramas. O percurso **home → trilha iniciante → downloads → root** verifica links e condições expressas. Os seis cenários novos verificam progresso sem salvamento por padrão, restauração após optar, mudança de trilha, remoção somente da chave própria, armazenamento inválido/bloqueado, exportação baixável, reset, simulação por teclado, recuperação de pasta, rolagem de saída sem perder a revisão do histórico, explicação do erro, pontuação da primeira tentativa, foco nas perguntas e ajuda comum.
@@ -39,7 +41,9 @@ Os sete cenários acrescentados na terceira ampliação verificam filtros combin
 
 Foram inspecionadas seis novas capturas: home, biblioteca desktop/móvel, ficha escura desktop/móvel e seis trilhas, além das capturas anteriores. A navegação dessas seis capturas não registrou erros JavaScript da página. Isso não representa uma certificação completa de acessibilidade ou de todos os navegadores.
 
-Os **590 blocos** passaram somente por parsers Bash/Python. Esse verificador não executa comandos, nem analisa PowerShell, C/C++, JavaScript ou firmware. Ensaios reais de alguns programas são uma evidência separada, descrita abaixo; não são execução de todos os exemplos. Disponibilidade HTTP também não comprova a precisão do conteúdo nem o suporte de um dispositivo.
+Os **735 blocos** passaram somente por parsers Bash/Python. Esse verificador não executa comandos, nem analisa PowerShell, C/C++, JavaScript ou firmware. Ensaios reais de alguns programas são uma evidência separada, descrita abaixo; não são execução de todos os exemplos. Disponibilidade HTTP também não comprova a precisão do conteúdo nem o suporte de um dispositivo.
+
+Os cinco novos cenários de navegador verificam primeira lacuna sem inferir falha, foco/limpeza/invalidação do resultado, etapas posteriores e troca de sintoma, exportação manual, seis downloads com SHA-256/tamanho reais, uso por teclado, largura móvel e a nova trilha de administração. Os mesmos casos passaram na raiz e em `/guia/`. Seis novas capturas foram inspecionadas (downloads desktop/móvel, diagnóstico desktop claro/escuro/móvel e biblioteca de administração móvel), sem erro JavaScript de página. A captura escura foi refeita após estabilizar a transição de tema; isso não é certificação completa de acessibilidade.
 
 ## Ensaios de software das aulas
 
@@ -57,6 +61,15 @@ Em fixtures próprios do notebook, foram conferidos:
 
 Arduino CLI veio do release oficial, com SHA-256 comparado ao manifesto. Cores, downloads, configurações e cache ficaram em um fixture próprio; não houve instalação de pacotes do SO ou scripts de configuração pós-instalação. As compilações cruzadas no notebook x86-64/glibc não comprovam ferramentas funcionando em ARM64/musl/bionic, upload, pinos/circuito, USB de celular ou execução física na placa. Nenhum telefone, placa, LAN/WAN ou serviço remoto foi acessado nesses ensaios. Versões e limites específicos constam nas próprias aulas e no relatório JSON.
 
+Nesta quarta ampliação, os exercícios novos foram executados em diretórios temporários próprios do notebook:
+
+- **Base Linux:** cópias/restauração, modos como usuário comum, negação e recuperação de acesso, travessia de diretório, execução e umask; processos/job control em PTY, `bg/fg`, sinais próprios e encerramento; nano com gravação/reabertura. Consultas/transações APT/APK/Termux continuam documentais, sem instalação no host.
+- **Rede/SQLite/Nginx:** TCP e HTTP somente em loopback, resposta 200/404 e parada; CRUD parametrizado, persistência, constraint, rollback, schema, integridade e backup/restauração; Nginx 1.30.5 compilado de fonte HTTPS oficial em temporário, sem `make install`, validando configuração, MIME, log/PID próprios, reload e quit específico. Registrado hash do download; assinatura PGP não foi verificada independentemente.
+- **Operação:** 17 verificações do marcador com rotação/limite/sinais, tmux com socket privado/PTY, três amostras de 8 MiB e limpeza/recusa de sobrescrita, stdout/stderr/status e preservação de dados em falhas.
+- **ZIPs publicados:** seis pacotes com integridade, arquivos regulares/caminhos relativos e hash por arquivo. Após extrair em temporários, quatro unittest Python, cinco testes Node sem socket e três CTest passaram; Bash passou sintaxe, ajuda, espaço/última linha/entrada intacta e códigos de falha. O SQLite publicado foi reextraído e revalidado após corrigir o limite bruto de 120 caracteres. A rotina repetível é `scripts/check-source-workshops.py`; ela não testa hardware ou compila sketches.
+
+Evidências detalhadas: `reports/linux-basics-workshops.json`, `network-data-workshops.json`, `operations-workshops.json` e `source-workshops.json`. Compilações anteriores de Uno/ESP32 seguem no relatório da rodada anterior; nesta rodada foram conferidos os fontes/arquivos, sem novo download de toolchain, compilação ou upload físico. Nenhum telefone, Android/PRoot real, LAN, init, serviço global, firewall ou pacote do SO foi alterado.
+
 Os avisos editoriais restantes são intencionais: a página do catálogo tem 422 palavras mais o componente interativo, e o guia de publicação usa um domínio `.example` explicitamente identificado como ilustração.
 
 ## Ambiente e reprodução
@@ -70,6 +83,8 @@ npm ci
 npm run verify
 npm run check:snippets
 npm run check:git-workshop
+npm run check:examples
+npm run check:source-workshops
 npx playwright install chromium
 npm run test:browser
 ```
@@ -97,6 +112,10 @@ A revisão técnica também corrigiu exemplos de chroot, certificados, montagens
 A segunda revisão por pares corrigiu fluxo PowerShell sem PATH, cópia MTP indevidamente generalizada ao macOS, inventário/backup anterior à atualização do PRoot, listagem de instâncias legadas e restrições Android às consultas de rede. Os componentes passaram a preservar registros inválidos, focar a próxima pergunta, usar IDs estáveis no histórico, explicar desvios de pasta e acompanhar somente a saída que o leitor não estava revendo. A trilha nativa prepara ADB antes da detecção exigida no plano de recuperação. Essas correções foram incluídas na rodada final dos testes acima.
 
 A terceira revisão cruzada corrigiu a identidade explícita do túnel SSH: a chave de exercício tem nome não padrão, e o comando agora a seleciona com `-i` nos hosts tratados e detecta falha de forwarding. Na ficha, um surrogate UTF-16 isolado podia quebrar `encodeURIComponent`; a importação agora recusa texto malformado e o download trata-o defensivamente. Uma importação lenta podia conservar a revisão marcada antes dos novos dados: a conclusão atual repõe a revisão, e uma edição cancela o resultado atrasado sem manter o seletor preso ao mesmo arquivo. Esses comportamentos têm regressões unitárias e de navegador. Documentos e componentes receberam leitura independente, com achados materiais corrigidos antes da entrega.
+
+A quarta revisão independente corrigiu a leitura de PID 1 para não presumir `ps -p` em BusyBox, limite de título bruto no SQLite e exemplo que dizia conter apóstrofo sem contê-lo. No diagnóstico, análise/exportação passaram a normalizar igualmente tipos inválidos, e a página distingue baseline e reconexão. O gerador agora valida todos os pais antes de qualquer escrita; uma reprodução com diretório simbólico confirmou o problema inicial, e um teste garante a recusa sem escrita externa. Corrigidos também link GNOME e `--jobs 1` da referência ESP32. Os testes de regressão foram incluídos na rodada final.
+
+A revisão de relatórios encontrou parâmetros temporários assinados nos redirects públicos de downloads do GitHub. Eles foram retirados da URL final registrada, conservando a URL pública de origem e o resultado HTTP. O verificador agora aplica essa política em novas consultas, com três testes de regressão. A busca limitada por chave privada, credencial em URL e JWT não deixou achados reais não resolvidos; uma URL de credenciais fictícias no teste, com domínio `.invalid`, foi revisada e identificada como fixture. Essa busca não garante ausência de todo segredo possível.
 
 ## Dependências e alerta ainda aberto
 

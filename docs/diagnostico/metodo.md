@@ -7,6 +7,8 @@ last_verified: '2026-10-10'
 
 Diagnosticar não é escolher um palpite e repetir resets. O processo começa por uma referência, uma cadeia de funcionamento, testes capazes de separar causas e registros comparáveis. Cada alteração deve produzir uma conclusão verificável ou ser revertida.
 
+Para organizar teclado USB, vídeo, SSH ou carga antes de escolher ferramentas, use o [diagnóstico guiado por camadas](assistente-camadas.mdx). Ele trabalha somente com respostas manuais e abre o guia da primeira etapa ainda sem evidência suficiente.
+
 **Dificuldade:** básica a avançada conforme a falha. **Resultado esperado:** um relatório reproduzível que indique o primeiro ponto da cadeia a falhar, as hipóteses descartadas e os limites. **Materiais:** terminal, relógio, espaço para logs, documentação do modelo e acesso de manutenção. Os comandos desta página consultam o sistema; não fazem flash nem escrevem configuração de hardware.
 
 ## 1. Defina o sintoma e a referência

@@ -37,6 +37,8 @@ npm test
 npm run check:content
 npm run check:snippets
 npm run check:git-workshop
+npm run check:examples
+npm run check:source-workshops
 npm run build
 npm run check:links
 npx playwright install chromium
@@ -48,10 +50,14 @@ O último comando faz requisições HTTP e registra resultados inconclusivos/blo
 
 `check:snippets` requer Bash e Python 3 e confere apenas sintaxe, sem executar os exemplos. `check:git-workshop` exige Git e ensaia histórico, diferenças, recuperação e clone somente em uma pasta temporária própria, sem rede ou telefone. O relatório de validação também contém os comandos para repetir os testes em subdiretório.
 
+Os testes unitários e `verify` também requerem **Python 3.9 ou posterior**, chamado `python3`, para verificar pacotes de fontes. `check:examples` compara bytes e hashes sem executar projetos. `check:source-workshops` exige Python, Node, Bash, compiladores C/C++, CMake e CTest já disponíveis: extrai ZIPs originais em temporários e executa exemplos de host e o SQLite publicado. Não instala ferramentas, abre serviços de rede ou faz upload para placas. Essa rotina de ensaios usa ambiente Linux; se uma ferramenta faltar, prepare o computador conforme a distribuição ou execute somente as verificações disponíveis e registre a lacuna. O build do site por si só continua exigindo Node/npm, sem compiladores para placas.
+
 ## Organização
 
 - `docs/`: conceitos, caminhos, compatibilidade, preparação, hardware, diagnóstico, recuperação, projetos e comunidade.
-- `src/`: home, tema, assistente de decisão, trilhas, biblioteca, ficha de bancada, simulador e perguntas React, sem backend ou coleta própria; progresso local somente se o leitor optar.
+- `src/`: home, tema, assistentes de decisão/diagnóstico, trilhas, biblioteca, downloads, ficha de bancada, simulador e perguntas React, sem backend ou coleta própria; progresso local somente se o leitor optar.
+- `examples/`: fontes gerados dos blocos identificados das aulas, com README, licença e manifesto.
+- `static/downloads/`: seis ZIPs determinísticos e catálogo SHA-256; regenere por `npm run examples:generate`.
 - `templates/`: modelos de tutorial, dispositivo e registro de teste.
 - `scripts/`: validação editorial, links internos e disponibilidade de fontes externas.
 - `tests/`: invariantes de decisão e testes de navegador.
@@ -65,7 +71,9 @@ Outra hospedagem estática: build `npm ci && npm run build`, saída `build/`. Co
 
 ## Evidências e limites
 
-Revisão inicial: 10/10/2026; ampliações para iniciantes em 11/10/2026. São **99 páginas**, incluindo dez microaulas, downloads oficiais, ADB/Fastboot, desbloqueio, root com Magisk, kit de recuperação e manual de erros. A [biblioteca](docs/aulas/biblioteca.mdx) organiza **13 aulas práticas**: Termux, Debian/desktop, mini-PC nativo, Python, JavaScript, C/C++, Git, SSH, servidor web, backup, Arduino Uno, ESP32 e manutenção. **Seis trilhas** acompanham o aprendizado; seis exercícios simulam um terminal fictício, e seis perguntas explicam equívocos frequentes.
+Revisão inicial: 10/10/2026; ampliações para iniciantes em 11/10/2026. São **111 páginas**, incluindo dez microaulas, downloads oficiais, ADB/Fastboot, desbloqueio, root com Magisk, kit de recuperação e manual de erros. A [biblioteca](docs/aulas/biblioteca.mdx) organiza **23 aulas práticas**: Termux, Debian/desktop, mini-PC nativo, Python, JavaScript, C/C++, Git, SSH, servidor web, backup, Arduino Uno, ESP32, manutenção, permissões, processos, pacotes, Bash, rede, SQLite, Nginx, tarefas em segundo plano, desempenho e logs. **Sete trilhas** acompanham o aprendizado; seis exercícios simulam um terminal fictício, e seis perguntas explicam equívocos frequentes.
+
+Os [seis projetos para download](docs/aulas/baixar-exemplos.mdx) têm fontes iguais aos tutoriais, README e manifesto. O [diagnóstico guiado](docs/diagnostico/assistente-camadas.mdx) organiza quatro sintomas em 23 etapas manuais, distingue lacuna de falha e aponta à próxima observação. A nova trilha de administração usa exercícios próprios e explicita limites de boot/Android.
 
 A [ficha de bancada](docs/diagnostico/ficha-evidencias.mdx) exporta Markdown e JSON e importa somente o formato validado. É preenchida manualmente, sem coleta, armazenamento automático ou envio. A [montagem progressiva](docs/hardware/montagem-validada.md) e a aula de [ler o manual do dispositivo](docs/comece-aqui/ler-manual-do-dispositivo.md) ajudam a registrar evidências e reconhecer quando uma receita não se aplica.
 

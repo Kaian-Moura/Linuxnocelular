@@ -1,4 +1,5 @@
 import {test, expect} from '@playwright/test';
+import {courses} from '../../src/lib/courses.mjs';
 import {createBench} from '../../src/lib/bench.mjs';
 const route = pathname => (process.env.DOCUSAURUS_BASE_URL || '/') + pathname.replace(/^\//, '');
 const jsonFile = value => ({name: 'ficha.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(value))});
@@ -6,7 +7,7 @@ const jsonFile = value => ({name: 'ficha.json', mimeType: 'application/json', bu
 test('biblioteca combina filtros, pesquisa sem acento e explica ausência de resultado', async ({page}) => {
   await page.goto(route('/docs/aulas/biblioteca/'));
   const panel = page.getByRole('region', {name: 'Biblioteca de aulas práticas'});
-  await expect(panel.getByRole('status')).toContainText('13 aula(s)');
+  await expect(panel.getByRole('status')).toContainText(`${courses.length} aula(s)`);
   await panel.getByLabel('O que você quer construir?').fill('compilacao');
   await expect(panel.getByRole('status')).toContainText('2 aula(s)');
   await panel.getByRole('combobox', {name: 'Objetivo', exact: true}).selectOption('programming');
@@ -15,7 +16,7 @@ test('biblioteca combina filtros, pesquisa sem acento e explica ausência de res
   await panel.getByRole('combobox', {name: 'Objetivo', exact: true}).selectOption('electronics');
   await expect(panel).toContainText('Isso não prova incompatibilidade');
   await panel.getByRole('button', {name: 'Mostrar todas as aulas'}).click();
-  await expect(panel.getByRole('status')).toContainText('13 aula(s)');
+  await expect(panel.getByRole('status')).toContainText(`${courses.length} aula(s)`);
   await panel.getByRole('combobox', {name: 'Objetivo', exact: true}).selectOption('electronics');
   await expect(panel.getByRole('status')).toContainText('2 aula(s)');
   await panel.getByRole('link', {name: 'Abrir aula: Arduino Uno: primeiro projeto', exact: true}).click();
@@ -26,7 +27,7 @@ test('biblioteca combina filtros, pesquisa sem acento e explica ausência de res
 test('novas trilhas compartilham marcações sem alterar os roteiros antigos', async ({page}) => {
   await page.goto(route('/docs/comece-aqui/minha-trilha/'));
   const panel = page.getByRole('region', {name: 'Meu roteiro de aprendizado'});
-  await expect(panel.getByRole('radio')).toHaveCount(6);
+  await expect(panel.getByRole('radio')).toHaveCount(7);
   await panel.getByLabel('Estudei e conferi esta aula: Conhecer meu aparelho', {exact: true}).check();
   await panel.getByRole('radio', {name: /Construir projetos de programação/}).check();
   await expect(panel).toContainText('1 de 9 aulas marcadas');
@@ -145,5 +146,5 @@ test('biblioteca, ficha e aulas extensas permanecem utilizáveis no celular', as
   const panel = page.getByRole('region', {name: 'Biblioteca de aulas práticas'});
   await panel.getByLabel('O que você quer construir?').fill('Python');
   await panel.getByRole('button', {name: 'Limpar filtros'}).click();
-  await expect(panel.getByRole('status')).toContainText('13 aula(s)');
+  await expect(panel.getByRole('status')).toContainText(`${courses.length} aula(s)`);
 });

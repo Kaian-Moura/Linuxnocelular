@@ -11,8 +11,8 @@ Este projeto é um site estático Docusaurus em português brasileiro. O conteú
 | Regras de decisão | `src/lib/recommend.mjs` | Recomendações determinísticas, avisos e condições para avaliação nativa |
 | Formulário | `src/components/PathAssistant/` | Perguntas, foco, leitura dos resultados e links aos tutoriais |
 | Registros | `data/devices.json` e `src/components/DeviceCatalog/` | Evidências de combinações específicas, filtros e limites |
-| Aprendizado | `src/lib/learning.mjs`, `LearningPath/`, `KnowledgeCheck/` | Seis roteiros, marcações opcionais, exportação e perguntas com explicação |
-| Biblioteca | `src/lib/courses.mjs` e `CourseLibrary/` | Treze aulas e filtros por objetivo, ambiente, nível e texto, sem inferir compatibilidade |
+| Aprendizado | `src/lib/learning.mjs`, `LearningPath/`, `KnowledgeCheck/` | Sete roteiros, marcações opcionais, exportação e perguntas com explicação |
+| Biblioteca | `src/lib/courses.mjs` e `CourseLibrary/` | Vinte e três aulas e filtros por objetivo, ambiente, nível e texto, sem inferir compatibilidade |
 | Ficha de bancada | `src/lib/bench.mjs` e `BenchRecord/` | Relato manual em memória, validação de importação e exportação local após revisão |
 | Laboratório | `src/lib/terminal-lab.mjs` e `TerminalLab/` | Sistema de arquivos fictício e comandos limitados, sem execução no host |
 | Ajuda em páginas | `src/theme/DocItem/Content/` | Data e escopo declarados nos metadados, links de orientação comuns |
@@ -31,7 +31,7 @@ Para alterar regras, escreva primeiro o cenário esperado e acrescente um teste 
 
 ## Aprendizado sem acesso ao aparelho
 
-`docs/aulas/` contém treze percursos completos, do primeiro projeto/desktop a linguagens, Git, SSH, servidor web, backup, placas e manutenção. `docs/comece-aqui/` acrescenta microaulas, treino de terminal e perguntas de compreensão. As seis trilhas reaproveitam IDs compartilhados e preservam os três roteiros anteriores e seus registros. Concluir um roteiro não desbloqueia flash nem modifica a recomendação de compatibilidade.
+`docs/aulas/` contém vinte e três percursos completos, do primeiro projeto/desktop a linguagens, Git, SSH, servidor web, backup, placas e manutenção. `docs/comece-aqui/` acrescenta microaulas, treino de terminal e perguntas de compreensão. As sete trilhas reaproveitam IDs compartilhados e preservam os seis roteiros anteriores e seus registros. Concluir um roteiro não desbloqueia flash nem modifica a recomendação de compatibilidade.
 
 `LearningPath` mantém marcações na memória da página por padrão. Somente ao optar por salvar usa a chave versionada `celular-linux:learning:v1`: versão, trilha e IDs conhecidos das aulas. Não grava modelo, respostas do assistente, serial, credenciais ou arquivos do leitor. O parser rejeita versões desconhecidas, limita o tamanho e descarta campos/IDs inesperados. A desativação explícita remove somente essa chave; registros inválidos não são apagados ao visitar a página. Erros de armazenamento são informados sem impedir o estudo. O arquivo Markdown exportado é gerado localmente e suas marcações continuam sendo declarações do leitor.
 
@@ -47,6 +47,12 @@ Os ensaios de programas da documentação são separados dos testes do site. `sc
 
 ## Adicionar e revisar páginas
 
+O diagnóstico guiado usa `layer-guide.mjs` e `LayerGuide/`: quatro investigações e estados `unknown/yes/no`. A primeira etapa sem sim relatado é uma lacuna ou fronteira, nunca causa raiz certificada. Observações posteriores não preenchem a lacuna por inferência. Vídeo distingue a ligação inicial da reconexão no mesmo ensaio. A interface não persiste dados, invalida resultado após edição e foca a indicação por ação do leitor. Markdown contém somente estados padronizados, sem coleta ou execução de comandos.
+
+Os seis downloads usam `source-packs.json`, `package-examples.py` e `SourcePacks/`. Comentários `example-file` identificam blocos completos nas aulas; a lista explícita define arquivos, pasta e instruções. O gerador rejeita divergências, duplicação, travessia e symlinks em toda a cadeia de saída antes de escrever; não apaga arquivos inesperados. ZIP usa timestamp fixo e arquivos regulares sem compressão variável. `--check` compara texto, exemplos, manifestos e ZIP byte a byte, sem escrever. A interface usa `useBaseUrl` para downloads e `Link` para guias.
+
+`check-source-workshops.py` extrai os pacotes conhecidos em temporários próprios e executa quatro testes Python, cinco Node sem socket, três CTest e casos Bash, além do SQLite extraído da aula. Exige ferramentas existentes, não instala dependências. Sketches recebem somente verificação de fonte/arquivo nesta rotina; a compilação anterior está registrada separadamente. Não testa telefone, upload, reboot, LAN, Android ou PRoot. Os validadores de pacotes exigem Python 3.9 ou posterior; veja os outros requisitos no README.
+
 Use os modelos em `templates/` e o padrão descrito em `CONTRIBUTING.md`. Metadados incluem título, descrição e `last_verified`; páginas técnicas distinguem revisão documental, evidência histórica e teste físico. Uma nova data só deve ser registrada quando a informação for revista. As fontes devem sustentar condições e comandos, e não aparecer apenas como uma lista decorativa.
 
 A entrada para iniciantes fica em `docs/comece-aqui/`: escolha de caminho, preparação do computador, primeira aula de terminal, origens de download e um ambiente Linux temporário no notebook. Um tutorial técnico deve explicar a cadeia **origem → escolha do arquivo → download → extração/instalação → abrir → verificar**, identificar onde cada comando roda e apresentar o resultado esperado. Os capítulos avançados podem reutilizar esses fundamentos por links, mas não dispensar os requisitos específicos de hardware, firmware, privilégios e recuperação.
@@ -55,7 +61,7 @@ Links entre documentos usam caminhos relativos quando possível. Links de compon
 
 ## Construção e portabilidade
 
-`npm ci` reproduz o lockfile em Node.js 22. `npm run verify` executa os testes de regras, revisão editorial, build e verificação de rotas/âncoras. Links e âncoras quebrados reprovam o build; a checagem do HTML acrescenta conferência do resultado gerado. O build gera HTML, recursos e índice local de busca em `build/`. O teste de navegador revisa o resultado de produção, pois o servidor de desenvolvimento não fornece a mesma busca.
+`npm ci` reproduz o lockfile em Node.js 22. `npm run verify` executa os testes de regras, revisão editorial, paridade de fontes, build e verificação de rotas/âncoras. Links e âncoras quebrados reprovam o build; a checagem do HTML acrescenta conferência do resultado gerado. O build gera HTML, recursos e índice local de busca em `build/`. O teste de navegador revisa o resultado de produção, pois o servidor de desenvolvimento não fornece a mesma busca.
 
 A configuração aceita `DOCUSAURUS_URL` e `DOCUSAURUS_BASE_URL`. Um build separado em `build-subpath/` permite verificar publicação em subdiretório sem substituir a prévia local. O verificador aceita `DOCUSAURUS_BUILD_DIR` e gera um relatório distinto para esse caso. Ambientes e artefatos temporários ficam fora do Git.
 
