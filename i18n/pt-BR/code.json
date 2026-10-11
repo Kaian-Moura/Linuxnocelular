@@ -1,0 +1,12 @@
+{
+  "theme.SearchBar.label": {"message": "Pesquisar", "description": "Rótulo e placeholder da busca local"},
+  "theme.SearchBar.noResultsText": {"message": "Nenhum resultado encontrado.", "description": "Busca vazia"},
+  "theme.SearchBar.seeAll": {"message": "Ver todos os resultados", "description": "Link para página de busca"},
+  "theme.SearchBar.seeAllOutsideContext": {"message": "Ver resultados fora de \"{context}\""},
+  "theme.SearchBar.searchInContext": {"message": "Ver resultados em \"{context}\""},
+  "theme.SearchPage.existingResultsTitle": {"message": "Resultados da busca por \"{query}\""},
+  "theme.SearchPage.emptyResultsTitle": {"message": "Pesquisar na documentação"},
+  "theme.SearchPage.searchContext.everywhere": {"message": "Toda a documentação"},
+  "theme.SearchPage.documentsFound.plurals": {"message": "Um documento encontrado|{count} documentos encontrados"},
+  "theme.SearchPage.noResultsText": {"message": "Nenhum resultado. Tente outro termo ou consulte a navegação lateral."}
+}

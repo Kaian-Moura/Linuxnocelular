@@ -1,0 +1,36 @@
+---
+title: Registros de dispositivos desta base
+description: Consulte combinações documentadas, evidências e limitações sem inferir suporte automático.
+sidebar_position: 4
+last_verified: '2026-10-10'
+---
+
+import DeviceCatalog from '@site/src/components/DeviceCatalog';
+
+Esta tabela reúne **registros desta base**, não todos os aparelhos suportados por Linux móvel. Nesta edição há um estudo experimental e um exemplo com procedimento primário documentado. Não preenchemos centenas de entradas usando apenas nomes comerciais: cada registro exige evidências e limites próprios.
+
+<DeviceCatalog />
+
+## Como interpretar uma entrada
+
+O nome do modelo identifica o objeto do registro; não elimina variantes. “Ambiente” indica a combinação observada ou documentada, não todos os sistemas possíveis. “Revisão documental” significa que as fontes foram lidas, sem afirmar execução física nesta edição. “Experimental” identifica uma integração que tem resultados e limitações específicas.
+
+A fonte pública do OnePlus é histórica. Ela ajuda a distinguir o port público do estudo, mas não distribui as adaptações privadas nem comprova seu estado atual. A entrada Fairphone aponta ao catálogo UBports, que também pode mudar: confirme a release e os requisitos na fonte antes de usar o instalador.
+
+Nenhum registro é importado pelo assistente para declarar compatibilidade. O [assistente de caminhos](../escolha/index.mdx) aplica requisitos às respostas do leitor e pede conferir modelo, firmware, kernel, funções essenciais e recuperação. Encontrar o nome aqui não preenche esses campos automaticamente.
+
+## Meu aparelho não aparece
+
+Não aparecer significa apenas que esta base ainda não tem um registro revisado dele. Consulte o [inventário](inventario.md) e os catálogos dos projetos em [matriz de suporte](matriz.md). Se Android estiver funcional, um caminho Termux/PRoot pode ser útil mesmo sem port nativo. Se encontrar um port, compare a variante e as versões antes de copiar instruções.
+
+Você pode contribuir sem prometer suporte completo. Descreva uma função e seu teste, por exemplo entrada USB, conexão de rede ou reinicialização. Preserve negativos e incertezas. Um aparelho que só inicializa pode ser documentado com esse limite, sem receber o título de desktop funcional.
+
+## Atualizar os dados
+
+O arquivo `data/devices.json` contém a tabela; o componente só filtra texto e renderiza os registros. Para adicionar uma entrada, use um identificador estável, modelo/variante, ambiente/versionamento, estado, descrição da evidência, data, guia existente, fonte primária e limites. Os testes do repositório verificam integridade básica, não hardware.
+
+O guia correspondente deve conter os detalhes que não cabem numa célula: boot, firmware base, recuperação, passos, recursos testados e regressões. Consulte [como registrar um dispositivo](../dispositivos/registrar-dispositivo.md) e o modelo editorial em `templates/dispositivo.md`. Revise datas quando houver novas evidências, sem apagar o histórico de testes antigos relevantes.
+
+## Fontes e verificação
+
+Revisão em **10/10/2026**. [FP4 no UBports](https://devices.ubuntu-touch.io/device/fp4/), [MR histórica OnePlus](https://gitlab.com/postmarketOS/pmaports/-/merge_requests/4729) e os guias vinculados explicam o escopo. As duas entradas não representam uma lista de compra recomendada nem uma certificação de compatibilidade.

@@ -1,0 +1,2738 @@
+{
+  "generatedAt": "2026-10-11T02:18:08.315Z",
+  "meaning": "Disponibilidade HTTP; não valida conteúdo ou suporte de hardware. Bloqueios/timeouts são inconclusivos.",
+  "counts": {
+    "reachable": 217,
+    "inconclusive-http": 20,
+    "inconclusive-network": 4
+  },
+  "results": [
+    {
+      "url": "https://android.googlesource.com/platform/hardware/libhardware/+/refs/heads/android12-release/include/hardware/camera3.h",
+      "pages": [
+        "docs/dispositivos/oneplus-9-pro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://android.googlesource.com/platform/hardware/libhardware/+/refs/heads/android12-release/include/hardware/camera3.h",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://chromium.googlesource.com/chromium/src/+/main/sandbox/linux/README.md",
+      "pages": [
+        "docs/fundamentos/seguranca.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://chromium.googlesource.com/chromium/src/+/main/sandbox/linux/README.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://cloud.debian.org/images/cloud/",
+      "pages": [
+        "docs/android/virtualizacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://cloud.debian.org/images/cloud/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://cloud.debian.org/images/cloud/trixie/latest/",
+      "pages": [
+        "docs/android/virtualizacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://cloud.debian.org/images/cloud/trixie/latest/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "pages": [
+        "docs/comunidade/contribuir.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://developer.android.com/ndk/guides/abis",
+      "pages": [
+        "docs/compatibilidade/inventario.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://developer.android.com/ndk/guides/abis?hl=fr",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://developer.android.com/studio/run/device",
+      "pages": [
+        "docs/preparacao/adb-fastboot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://developer.android.com/studio/run/device?hl=zh-cn",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://developer.android.com/studio/run/oem-usb",
+      "pages": [
+        "docs/preparacao/adb-fastboot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://developer.android.com/studio/run/oem-usb",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://developer.android.com/tools/adb",
+      "pages": [
+        "docs/compatibilidade/inventario.md",
+        "docs/diagnostico/boot-crash.md",
+        "docs/diagnostico/tela-quebrada.md",
+        "docs/preparacao/adb-fastboot.md",
+        "docs/preparacao/backup.md",
+        "docs/preparacao/tela-quebrada.md",
+        "docs/recuperacao/triagem.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://developer.android.com/tools/adb?hl=it",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://developer.android.com/tools/releases/platform-tools",
+      "pages": [
+        "docs/preparacao/adb-fastboot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://developer.android.com/tools/releases/platform-tools",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://developer.android.com/training/monitoring-device-state/doze-standby",
+      "pages": [
+        "docs/android/termux.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://developer.android.com/training/monitoring-device-state/doze-standby",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://developers.google.com/android/images",
+      "pages": [
+        "docs/dispositivos/variantes-fabricantes.md",
+        "docs/preparacao/backup.md",
+        "docs/recuperacao/restaurar-android.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://developers.google.com/android/images?hl=fa",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://developers.google.com/android/ota",
+      "pages": [
+        "docs/dispositivos/variantes-fabricantes.md",
+        "docs/recuperacao/restaurar-android.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://developers.google.com/android/ota",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://devices.droidian.org/",
+      "pages": [
+        "docs/compatibilidade/matriz.md",
+        "docs/nativo/mobian-droidian.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://devices.droidian.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://devices.ubuntu-touch.io/",
+      "pages": [
+        "docs/compatibilidade/matriz.md",
+        "docs/comunidade/fontes.md",
+        "docs/dispositivos/variantes-fabricantes.md",
+        "docs/nativo/ubuntu-touch.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://devices.ubuntu-touch.io/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://devices.ubuntu-touch.io/device/fp4/",
+      "pages": [
+        "docs/compatibilidade/catalogo.mdx",
+        "docs/nativo/fairphone-4.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://devices.ubuntu-touch.io/device/fp4/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.alpinelinux.org/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.alpinelinux.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html",
+      "pages": [
+        "docs/fundamentos/terminal-pacotes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.alpinelinux.org/user-handbook/0.1a/Working/apk.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.arduino.cc/arduino-cli/getting-started/",
+      "pages": [
+        "docs/projetos/arduino-esp32.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.arduino.cc/arduino-cli/getting-started/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.arduino.cc/arduino-cli/installation/",
+      "pages": [
+        "docs/projetos/arduino-esp32.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.arduino.cc/arduino-cli/installation/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.arduino.cc/arduino-cli/installation/#download",
+      "pages": [
+        "docs/projetos/arduino-esp32.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.arduino.cc/arduino-cli/installation/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.arduino.cc/arduino-cli/package_index_json-specification/",
+      "pages": [
+        "docs/projetos/arduino-esp32.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.arduino.cc/arduino-cli/package_index_json-specification/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.arduino.cc/hardware/uno-rev3/",
+      "pages": [
+        "docs/projetos/arduino-esp32.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.arduino.cc/hardware/uno-rev3/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.cloud-init.io/en/latest/reference/datasources/nocloud.html",
+      "pages": [
+        "docs/android/virtualizacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.cloud-init.io/en/latest/reference/datasources/nocloud.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.docker.com/engine/install/",
+      "pages": [
+        "docs/projetos/containers.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.docker.com/engine/install/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.docker.com/engine/install/debian/",
+      "pages": [
+        "docs/projetos/containers.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.docker.com/engine/install/debian/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.docker.com/engine/network/port-publishing/",
+      "pages": [
+        "docs/projetos/automacao-iot.md",
+        "docs/projetos/containers.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.docker.com/engine/network/port-publishing/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.docker.com/engine/security/",
+      "pages": [
+        "docs/projetos/containers.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.docker.com/engine/security/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.droidian.org/",
+      "pages": [
+        "docs/compatibilidade/matriz.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.droidian.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.droidian.org/porting-guide/",
+      "pages": [
+        "docs/nativo/mobian-droidian.md",
+        "docs/nativo/porting.md",
+        "docs/nativo/visao-geral.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.droidian.org/porting-guide/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html",
+      "pages": [
+        "docs/projetos/arduino-esp32.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.github.com/en/pages",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.github.com/en/pages",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "pages": [
+        "docs/comunidade/publicacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.gtk.org/gio/class.Settings.html",
+      "pages": [
+        "docs/projetos/pc-portatil.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.gtk.org/gio/class.Settings.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.halium.org/en/latest/porting/first-steps.html",
+      "pages": [
+        "docs/nativo/porting.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.halium.org/en/latest/porting/first-steps.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/",
+      "pages": [
+        "docs/comunidade/fontes.md",
+        "docs/glossario.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "pages": [
+        "docs/projetos/containers.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/pm/cpufreq.html",
+      "pages": [
+        "docs/projetos/pc-portatil.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/admin-guide/pm/cpufreq.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/pm/sleep-states.html",
+      "pages": [
+        "docs/hardware/energia.md",
+        "docs/projetos/pc-portatil.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/admin-guide/pm/sleep-states.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/ramoops.html",
+      "pages": [
+        "docs/diagnostico/boot-crash.md",
+        "docs/nativo/porting.md",
+        "docs/recuperacao/modos-emergencia.md",
+        "docs/recuperacao/triagem.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/admin-guide/ramoops.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/reporting-issues.html",
+      "pages": [
+        "docs/diagnostico/boot-crash.md",
+        "docs/diagnostico/metodo.md",
+        "docs/dispositivos/registrar-dispositivo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/admin-guide/reporting-issues.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/sysfs-rules.html",
+      "pages": [
+        "docs/fundamentos/terminal-pacotes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/admin-guide/sysfs-rules.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/admin-guide/tainted-kernels.html",
+      "pages": [
+        "docs/nativo/porting.md",
+        "docs/recuperacao/triagem.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/admin-guide/tainted-kernels.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/devicetree/usage-model.html",
+      "pages": [
+        "docs/fundamentos/boot-kernel.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/devicetree/usage-model.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/driver-api/dma-buf.html",
+      "pages": [
+        "docs/hardware/gpu.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/driver-api/dma-buf.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/driver-api/thermal/sysfs-api.html",
+      "pages": [
+        "docs/hardware/energia.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/driver-api/thermal/sysfs-api.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/driver-api/usb/error-codes.html",
+      "pages": [
+        "docs/hardware/usb-c-hubs.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/driver-api/usb/error-codes.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/driver-api/usb/power-management.html",
+      "pages": [
+        "docs/hardware/energia.md",
+        "docs/hardware/usb-c-hubs.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/driver-api/usb/power-management.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/driver-api/usb/typec_bus.html",
+      "pages": [
+        "docs/hardware/video-hotplug.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/driver-api/usb/typec_bus.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/driver-api/usb/typec.html",
+      "pages": [
+        "docs/diagnostico/tela-quebrada.md",
+        "docs/glossario.md",
+        "docs/hardware/usb-c-hubs.md",
+        "docs/hardware/video-hotplug.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/driver-api/usb/typec.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/driver-api/usb/usb.html",
+      "pages": [
+        "docs/hardware/usb-c-hubs.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/driver-api/usb/usb.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/filesystems/sysfs.html",
+      "pages": [
+        "docs/diagnostico/metodo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/filesystems/sysfs.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/gpu/drm-kms.html",
+      "pages": [
+        "docs/desktop/sessao-portatil.md",
+        "docs/hardware/video-hotplug.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/gpu/drm-kms.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/hid/hidintro.html",
+      "pages": [
+        "docs/hardware/teclados-usb.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/hid/hidintro.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/hid/uhid.html",
+      "pages": [
+        "docs/hardware/bluetooth.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/hid/uhid.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/input/event-codes.html",
+      "pages": [
+        "docs/diagnostico/metodo.md",
+        "docs/hardware/teclados-usb.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/input/event-codes.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/kbuild/kconfig.html",
+      "pages": [
+        "docs/nativo/porting.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/kbuild/kconfig.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/power/power_supply_class.html",
+      "pages": [
+        "docs/hardware/energia.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/power/power_supply_class.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.kernel.org/userspace-api/media/v4l/v4l2.html",
+      "pages": [
+        "docs/hardware/cameras.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.kernel.org/userspace-api/media/v4l/v4l2.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.libcamera.org/master/",
+      "pages": [
+        "docs/hardware/cameras.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.libcamera.org/master/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.mesa3d.org/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.mesa3d.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.mesa3d.org/drivers/freedreno.html",
+      "pages": [
+        "docs/dispositivos/oneplus-9-pro.md",
+        "docs/hardware/gpu.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.mesa3d.org/drivers/freedreno.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.mesa3d.org/drivers/zink.html",
+      "pages": [
+        "docs/hardware/gpu.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.mesa3d.org/drivers/zink.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.mesa3d.org/envvars.html",
+      "pages": [
+        "docs/hardware/gpu.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.mesa3d.org/envvars.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.npmjs.com/cli/commands/npm-ci",
+      "pages": [
+        "docs/projetos/desenvolvimento.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.npmjs.com/cli/commands/npm-ci/",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.nura.eco/pmaports/main/packaging/device-packages/deviceinfo-reference.html",
+      "pages": [
+        "docs/nativo/postmarketos-pmbootstrap.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.nura.eco/pmaports/main/packaging/device-packages/deviceinfo-reference.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.nura.eco/pmaports/main/packaging/firmware-packages.html",
+      "pages": [
+        "docs/nativo/postmarketos-pmbootstrap.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.nura.eco/pmaports/main/packaging/firmware-packages.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.nura.eco/pmbootstrap/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.nura.eco/pmbootstrap/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.nura.eco/pmbootstrap/main/installation.html",
+      "pages": [
+        "docs/nativo/postmarketos-pmbootstrap.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.nura.eco/pmbootstrap/main/installation.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.nura.eco/pmbootstrap/main/usage.html",
+      "pages": [
+        "docs/nativo/postmarketos-pmbootstrap.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.nura.eco/pmbootstrap/main/usage.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.ollama.com/api/generate",
+      "pages": [
+        "docs/projetos/ia-local.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.ollama.com/api/generate",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.pipewire.org/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.pipewire.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.pipewire.org/page_man_pw-cat_1.html",
+      "pages": [
+        "docs/projetos/assistente-voz.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.pipewire.org/page_man_pw-cat_1.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.pipewire.org/page_overview.html",
+      "pages": [
+        "docs/hardware/audio.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.pipewire.org/page_overview.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.pipewire.org/page_portal.html",
+      "pages": [
+        "docs/hardware/cameras.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.pipewire.org/page_portal.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.podman.io/en/latest/markdown/podman.1.html",
+      "pages": [
+        "docs/projetos/containers.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.podman.io/en/latest/markdown/podman.1.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.postmarketos.org/pmbootstrap/",
+      "pages": [
+        "docs/nativo/postmarketos-imagens.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.nura.eco/pmbootstrap/",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.python.org/3/library/http.server.html",
+      "pages": [
+        "docs/projetos/servidor-web.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.python.org/3/library/http.server.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.python.org/3/library/venv.html",
+      "pages": [
+        "docs/projetos/desenvolvimento.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.python.org/3/library/venv.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.sailfishos.org/Support/Supported_Devices/",
+      "pages": [
+        "docs/compatibilidade/matriz.md",
+        "docs/nativo/mobian-droidian.md",
+        "docs/nativo/visao-geral.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.sailfishos.org/Support/Supported_Devices/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.syncthing.net/users/security.html",
+      "pages": [
+        "docs/projetos/arquivos-nas.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.syncthing.net/users/security.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.syncthing.net/users/versioning.html",
+      "pages": [
+        "docs/projetos/arquivos-nas.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.syncthing.net/users/versioning.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.ubports.com/en/latest/porting/introduction/index.html",
+      "pages": [
+        "docs/dispositivos/registrar-dispositivo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.ubports.com/en/latest/porting/introduction/index.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.ubports.com/en/latest/porting/introduction/Intro.html",
+      "pages": [
+        "docs/nativo/ubuntu-touch.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.ubports.com/en/latest/porting/introduction/Intro.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.ubports.com/en/latest/userguide/advanceduse/ssh.html",
+      "pages": [
+        "docs/nativo/ubuntu-touch.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.ubports.com/en/latest/userguide/advanceduse/ssh.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.ubports.com/en/latest/userguide/dailyuse/libertine.html",
+      "pages": [
+        "docs/nativo/ubuntu-touch.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.ubports.com/en/latest/userguide/dailyuse/libertine.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.ubports.com/en/latest/userguide/dailyuse/waydroid.html",
+      "pages": [
+        "docs/nativo/ubuntu-touch.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.ubports.com/en/latest/userguide/dailyuse/waydroid.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docs.ubports.com/en/latest/userguide/install.html",
+      "pages": [
+        "docs/comunidade/fontes.md",
+        "docs/escolha/index.mdx",
+        "docs/nativo/ubuntu-touch.md",
+        "docs/nativo/visao-geral.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docs.ubports.com/en/latest/userguide/install.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docusaurus.io/docs",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docusaurus.io/docs",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docusaurus.io/docs/deployment",
+      "pages": [
+        "docs/comunidade/publicacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docusaurus.io/docs/deployment",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docusaurus.io/docs/installation",
+      "pages": [
+        "docs/comunidade/publicacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docusaurus.io/docs/installation",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://docusaurus.io/docs/markdown-features/diagrams",
+      "pages": [
+        "docs/comunidade/publicacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://docusaurus.io/docs/markdown-features/diagrams",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://download.samba.org/pub/rsync/rsync.1",
+      "pages": [
+        "docs/projetos/arquivos-nas.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://download.samba.org/pub/rsync/rsync.1",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://droidian.org/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://droidian.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://en.miui.com/unlock/download_en.html",
+      "pages": [
+        "docs/dispositivos/variantes-fabricantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://en.miui.com/unlock/download_en.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://esphome.io/install/getting-started/",
+      "pages": [
+        "docs/projetos/automacao-iot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://esphome.io/install/getting-started/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html",
+      "pages": [
+        "docs/projetos/desenvolvimento.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/96boards/documentation/blob/master/consumer/guides/qdl.md",
+      "pages": [
+        "docs/recuperacao/modos-emergencia.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/96boards/documentation/blob/master/consumer/guides/qdl.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/actions/configure-pages/blob/main/action.yml",
+      "pages": [
+        "docs/comunidade/publicacao.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/actions/configure-pages/blob/main/action.yml",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/alsa-project/alsa-ucm-conf",
+      "pages": [
+        "docs/hardware/audio.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/alsa-project/alsa-ucm-conf",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/arduino/arduino-cli/releases/tag/v1.5.1",
+      "pages": [
+        "docs/projetos/arduino-esp32.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/arduino/arduino-cli/releases/tag/v1.5.1",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/bluez/bluez",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/bluez/bluez",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/bluez/bluez/blob/master/doc/bluetoothctl.rst",
+      "pages": [
+        "docs/hardware/bluetooth.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/bluez/bluez/blob/master/doc/bluetoothctl.rst",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/bluez/bluez/blob/master/doc/org.bluez.Device.rst",
+      "pages": [
+        "docs/hardware/bluetooth.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/bluez/bluez/blob/master/doc/org.bluez.Device.rst",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/bluez/bluez/wiki/btmon",
+      "pages": [
+        "docs/hardware/bluetooth.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/bluez/bluez/wiki/btmon",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/droidian-images/droidian",
+      "pages": [
+        "docs/nativo/mobian-droidian.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/droidian-images/droidian",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/droidian-releng/droidian-installer",
+      "pages": [
+        "docs/nativo/mobian-droidian.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/droidian-releng/droidian-installer",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/easyops-cn/docusaurus-search-local",
+      "pages": [
+        "docs/comunidade/publicacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/easyops-cn/docusaurus-search-local",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/elogind/elogind",
+      "pages": [
+        "docs/desktop/gnome-nativo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/elogind/elogind",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/espeak-ng/espeak-ng",
+      "pages": [
+        "docs/projetos/assistente-voz.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/espeak-ng/espeak-ng",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/Genymobile/scrcpy",
+      "pages": [
+        "docs/diagnostico/tela-quebrada.md",
+        "docs/preparacao/tela-quebrada.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/Genymobile/scrcpy",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/Genymobile/scrcpy/blob/master/doc/connection.md",
+      "pages": [
+        "docs/preparacao/tela-quebrada.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/Genymobile/scrcpy/blob/master/doc/connection.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/Genymobile/scrcpy/blob/master/doc/otg.md",
+      "pages": [
+        "docs/preparacao/tela-quebrada.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/Genymobile/scrcpy/blob/master/doc/otg.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "pages": [
+        "docs/projetos/ia-local.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/ggml-org/llama.cpp",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/master/docs/android.md",
+      "pages": [
+        "docs/projetos/ia-local.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/ggml-org/llama.cpp/blob/master/docs/android.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md",
+      "pages": [
+        "docs/projetos/ia-local.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/llama-bench/README.md",
+      "pages": [
+        "docs/projetos/ia-local.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/ggml-org/llama.cpp/blob/master/tools/llama-bench/README.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md",
+      "pages": [
+        "docs/projetos/ia-local.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/ggml-org/whisper.cpp",
+      "pages": [
+        "docs/projetos/assistente-voz.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/ggml-org/whisper.cpp",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/ggml-org/whisper.cpp/blob/master/models/README.md",
+      "pages": [
+        "docs/projetos/assistente-voz.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/ggml-org/whisper.cpp/blob/master/models/README.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/linux-msm/qdl",
+      "pages": [
+        "docs/recuperacao/modos-emergencia.md",
+        "docs/recuperacao/triagem.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/linux-msm/qdl",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/meefik/linuxdeploy",
+      "pages": [
+        "docs/android/linux-deploy.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/meefik/linuxdeploy",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/meefik/linuxdeploy-cli",
+      "pages": [
+        "docs/android/linux-deploy.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/meefik/linuxdeploy-cli",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/meefik/linuxdeploy/releases",
+      "pages": [
+        "docs/android/linux-deploy.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/meefik/linuxdeploy/releases",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/OHF-Voice/piper1-gpl",
+      "pages": [
+        "docs/projetos/assistente-voz.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/OHF-Voice/piper1-gpl",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/OnePlusOSS/android_kernel_modules_and_devicetree_oneplus_sm8350",
+      "pages": [
+        "docs/dispositivos/oneplus-9-pro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/OnePlusOSS/android_kernel_modules_and_devicetree_oneplus_sm8350",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/OnePlusOSS/android_kernel_oneplus_sm8350",
+      "pages": [
+        "docs/dispositivos/oneplus-9-pro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/OnePlusOSS/android_kernel_oneplus_sm8350",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/proot-distro",
+      "pages": [
+        "docs/android/visao-geral.md",
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/proot-distro",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/proot-distro/blob/master/README.md",
+      "pages": [
+        "docs/android/proot-distro.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/termux/proot-distro/blob/master/README.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/termux/proot-distro/releases",
+      "pages": [
+        "docs/android/proot-distro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/proot-distro/releases",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-api",
+      "pages": [
+        "docs/projetos/assistente-voz.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-api",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-app",
+      "pages": [
+        "docs/android/visao-geral.md",
+        "docs/comunidade/fontes.md",
+        "docs/escolha/index.mdx",
+        "docs/faq.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-app",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-app#installation",
+      "pages": [
+        "docs/android/termux.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-app",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-boot",
+      "pages": [
+        "docs/projetos/ssh-remoto.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-boot",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-packages",
+      "pages": [
+        "docs/android/termux.md",
+        "docs/comunidade/fontes.md",
+        "docs/projetos/desenvolvimento.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-packages",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-packages/tree/master/packages/openssh",
+      "pages": [
+        "docs/projetos/ssh-remoto.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-packages/tree/master/packages/openssh",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-packages/tree/master/packages/proot-distro",
+      "pages": [
+        "docs/android/proot-distro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-packages/tree/master/packages/proot-distro",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-packages/tree/master/x11-packages",
+      "pages": [
+        "docs/android/desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-packages/tree/master/x11-packages",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-services",
+      "pages": [
+        "docs/projetos/ssh-remoto.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-services",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-tools",
+      "pages": [
+        "docs/android/termux.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-tools",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-x11",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-x11",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/termux/termux-x11/blob/master/README.md",
+      "pages": [
+        "docs/android/desktop.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/termux/termux-x11/blob/master/README.md",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/termux/termux-x11/releases/tag/nightly",
+      "pages": [
+        "docs/android/desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/termux/termux-x11/releases/tag/nightly",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/torvalds/linux/blob/master/drivers/bluetooth/hci_qca.c",
+      "pages": [
+        "docs/hardware/bluetooth.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/torvalds/linux/blob/master/drivers/bluetooth/hci_qca.c",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/torvalds/linux/tree/master/Documentation/devicetree/bindings",
+      "pages": [
+        "docs/diagnostico/metodo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/torvalds/linux/tree/master/Documentation/devicetree/bindings",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/ubports/installer-configs/blob/master/v2/devices/FP4.yml",
+      "pages": [
+        "docs/nativo/fairphone-4.md"
+      ],
+      "status": 503,
+      "finalUrl": "https://github.com/ubports/installer-configs/blob/master/v2/devices/FP4.yml",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://github.com/ubports/ubports-installer/issues/4714",
+      "pages": [
+        "docs/nativo/fairphone-4.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/ubports/ubports-installer/issues/4714",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://github.com/ubports/ubports-installer/releases",
+      "pages": [
+        "docs/nativo/fairphone-4.md",
+        "docs/nativo/ubuntu-touch.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/ubports/ubports-installer/releases",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://gitlab.com/postmarketOS/pmaports/-/commit/cfbc1de3c7de56251800d53d20afcf92c313aa12",
+      "pages": [
+        "docs/dispositivos/oneplus-9-pro.md"
+      ],
+      "status": 403,
+      "finalUrl": "https://gitlab.com/postmarketOS/pmaports/-/commit/cfbc1de3c7de56251800d53d20afcf92c313aa12",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://gitlab.com/postmarketOS/pmaports/-/merge_requests/4729",
+      "pages": [
+        "docs/compatibilidade/catalogo.mdx",
+        "docs/dispositivos/oneplus-9-pro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://gitlab.com/postmarketOS/pmaports/-/merge_requests/4729",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://gitlab.freedesktop.org/upower/power-profiles-daemon",
+      "pages": [
+        "docs/projetos/pc-portatil.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://gitlab.freedesktop.org/upower/power-profiles-daemon",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://gitlab.freedesktop.org/wayland/weston/-/tree/main/libweston/backend-drm",
+      "pages": [
+        "docs/desktop/sessao-portatil.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://gitlab.freedesktop.org/wayland/weston/-/tree/main/libweston/backend-drm",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://gitlab.gnome.org/GNOME/gnome-session",
+      "pages": [
+        "docs/desktop/gnome-nativo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://gitlab.gnome.org/GNOME/gnome-session",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://gitlab.gnome.org/GNOME/mutter",
+      "pages": [
+        "docs/desktop/gnome-nativo.md",
+        "docs/desktop/sessao-portatil.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://gitlab.gnome.org/GNOME/mutter",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://help.gnome.org/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://help.gnome.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://help.gnome.org/gnome-help/power-suspend.html",
+      "pages": [
+        "docs/projetos/pc-portatil.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://help.gnome.org/gnome-help/power-suspend.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://help.gnome.org/gnome-help/sharing-desktop.html",
+      "pages": [
+        "docs/desktop/acesso-remoto.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://help.gnome.org/gnome-help/sharing-desktop.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://man.openbsd.org/sftp",
+      "pages": [
+        "docs/projetos/arquivos-nas.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://man.openbsd.org/sftp",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://man.openbsd.org/ssh",
+      "pages": [
+        "docs/android/desktop.md",
+        "docs/projetos/laboratorio-redes.md",
+        "docs/projetos/servidor-web.md",
+        "docs/projetos/ssh-remoto.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://man.openbsd.org/ssh",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://man.openbsd.org/ssh-keygen",
+      "pages": [
+        "docs/projetos/ssh-remoto.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://man.openbsd.org/ssh-keygen",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://man.openbsd.org/sshd_config",
+      "pages": [
+        "docs/desktop/acesso-remoto.md",
+        "docs/projetos/ssh-remoto.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://man.openbsd.org/sshd_config",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/chroot.2.html",
+      "pages": [
+        "docs/android/chroot.md"
+      ],
+      "outcome": "inconclusive-network",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/namespaces.7.html",
+      "pages": [
+        "docs/projetos/containers.md"
+      ],
+      "outcome": "inconclusive-network",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man8/mount.8.html",
+      "pages": [
+        "docs/android/chroot.md"
+      ],
+      "outcome": "inconclusive-network",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://manpages.debian.org/trixie/debootstrap/debootstrap.8.en.html",
+      "pages": [
+        "docs/android/chroot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://manpages.debian.org/trixie/debootstrap/debootstrap.8.en.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://mobian.org/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://mobian.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://mosquitto.org/man/mosquitto_pub-1.html",
+      "pages": [
+        "docs/projetos/automacao-iot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://mosquitto.org/man/mosquitto_pub-1.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://mosquitto.org/man/mosquitto-conf-5.html",
+      "pages": [
+        "docs/projetos/automacao-iot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://mosquitto.org/man/mosquitto-conf-5.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://networkmanager.dev/docs/api/latest/NetworkManager.conf.html",
+      "pages": [
+        "docs/hardware/wifi.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://networkmanager.dev/docs/api/latest/NetworkManager.conf.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://networkmanager.dev/docs/api/latest/nm-settings-nmcli.html",
+      "pages": [
+        "docs/hardware/wifi.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://networkmanager.dev/docs/api/latest/nm-settings-nmcli.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://networkmanager.dev/docs/api/latest/nmcli.html",
+      "pages": [
+        "docs/hardware/wifi.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://networkmanager.dev/docs/api/latest/nmcli.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://nginx.org/en/docs/control.html",
+      "pages": [
+        "docs/projetos/servidor-web.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nginx.org/en/docs/control.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://nginx.org/en/docs/http/ngx_http_core_module.html",
+      "pages": [
+        "docs/projetos/servidor-web.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nginx.org/en/docs/http/ngx_http_core_module.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://nginx.org/en/docs/ngx_core_module.html",
+      "pages": [
+        "docs/projetos/servidor-web.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nginx.org/en/docs/ngx_core_module.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://nmap.org/book/legal-issues.html",
+      "pages": [
+        "docs/projetos/laboratorio-redes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nmap.org/book/legal-issues.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://nmap.org/book/man-port-scanning-techniques.html",
+      "pages": [
+        "docs/projetos/laboratorio-redes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nmap.org/book/man-port-scanning-techniques.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+      "pages": [
+        "docs/projetos/desenvolvimento.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nodejs.org/learn/getting-started/introduction-to-nodejs",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://nura.eco/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nura.eco/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://nura.eco/blog/2026/09/27/nura-rename/",
+      "pages": [
+        "docs/compatibilidade/matriz.md",
+        "docs/comunidade/fontes.md",
+        "docs/faq.md",
+        "docs/intro.md",
+        "docs/nativo/postmarketos-imagens.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nura.eco/blog/2026/09/27/nura-rename/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://nura.eco/install/",
+      "pages": [
+        "docs/compatibilidade/matriz.md",
+        "docs/comunidade/fontes.md",
+        "docs/nativo/fairphone-4.md",
+        "docs/nativo/postmarketos-imagens.md",
+        "docs/nativo/visao-geral.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nura.eco/install/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://opendevices.sony.net/aosp-on-xperia-open-devices/get-started/unlock-bootloader",
+      "pages": [
+        "docs/compatibilidade/bootloader.md",
+        "docs/dispositivos/variantes-fabricantes.md",
+        "docs/recuperacao/restaurar-android.md"
+      ],
+      "outcome": "inconclusive-network",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://pipewire.pages.freedesktop.org/wireplumber/man/wpctl.html",
+      "pages": [
+        "docs/hardware/audio.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://pipewire.pages.freedesktop.org/wireplumber/man/wpctl.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://playwright.dev/docs/browsers",
+      "pages": [
+        "docs/comunidade/publicacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://playwright.dev/docs/browsers",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://postmarketos.org/devicepkg",
+      "pages": [
+        "docs/dispositivos/registrar-dispositivo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://nura.eco/devicepkg/",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://proot-me.github.io/",
+      "pages": [
+        "docs/android/proot-distro.md",
+        "docs/fundamentos/seguranca.md",
+        "docs/intro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://proot-me.github.io/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/architecture",
+      "pages": [
+        "docs/comunidade/fontes.md",
+        "docs/escolha/index.mdx",
+        "docs/fundamentos/linux-android.md",
+        "docs/glossario.md",
+        "docs/intro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/architecture?hl=pt-br",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/architecture/bootloader/boot-image-header",
+      "pages": [
+        "docs/nativo/postmarketos-pmbootstrap.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/architecture/bootloader/boot-image-header?hl=pl",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/architecture/bootloader/fastbootd",
+      "pages": [
+        "docs/compatibilidade/bootloader.md",
+        "docs/preparacao/adb-fastboot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/architecture/bootloader/fastbootd",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/architecture/bootloader/locking_unlocking",
+      "pages": [
+        "docs/compatibilidade/bootloader.md",
+        "docs/faq.md",
+        "docs/preparacao/backup.md",
+        "docs/recuperacao/triagem.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/architecture/bootloader/locking_unlocking?hl=hi",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/architecture/kernel",
+      "pages": [
+        "docs/fundamentos/boot-kernel.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/architecture/kernel",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/architecture/kernel/modules",
+      "pages": [
+        "docs/nativo/porting.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/architecture/kernel/modules?hl=ru",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/architecture/partitions",
+      "pages": [
+        "docs/compatibilidade/inventario.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/architecture/partitions?hl=it",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/architecture/partitions/generic-boot",
+      "pages": [
+        "docs/nativo/visao-geral.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/architecture/partitions/generic-boot?hl=pl",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/camera",
+      "pages": [
+        "docs/hardware/cameras.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/camera?hl=it",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/ota/ab",
+      "pages": [
+        "docs/preparacao/adb-fastboot.md",
+        "docs/recuperacao/restaurar-android.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/ota/ab?hl=es-419",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/ota/dynamic_partitions",
+      "pages": [
+        "docs/fundamentos/boot-kernel.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/ota/dynamic_partitions?hl=ru",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/core/ota/dynamic_partitions/implement",
+      "pages": [
+        "docs/recuperacao/restaurar-android.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/core/ota/dynamic_partitions/implement",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/security/features/selinux",
+      "pages": [
+        "docs/android/chroot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/security/features/selinux",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/security/features/verifiedboot",
+      "pages": [
+        "docs/comunidade/fontes.md",
+        "docs/fundamentos/boot-kernel.md",
+        "docs/fundamentos/seguranca.md",
+        "docs/recuperacao/modos-emergencia.md",
+        "docs/recuperacao/restaurar-android.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/security/features/verifiedboot",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/security/features/verifiedboot/avb",
+      "pages": [
+        "docs/compatibilidade/bootloader.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/security/features/verifiedboot/avb",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://source.android.com/docs/setup/test/running",
+      "pages": [
+        "docs/diagnostico/boot-crash.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://source.android.com/docs/setup/test/running?hl=bn",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://support.fairphone.com/hc/en-us/articles/10492476238865-How-to-unlock-and-re-lock-the-bootloader",
+      "pages": [
+        "docs/compatibilidade/bootloader.md",
+        "docs/nativo/fairphone-4.md",
+        "docs/recuperacao/restaurar-android.md"
+      ],
+      "status": 403,
+      "finalUrl": "https://support.fairphone.com/hc/en-us/articles/10492476238865-How-to-unlock-and-re-lock-the-bootloader",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://support.fairphone.com/hc/en-us/articles/18896094650513-How-to-manually-install-Android-on-your-Fairphone",
+      "pages": [
+        "docs/nativo/fairphone-4.md",
+        "docs/preparacao/backup.md",
+        "docs/recuperacao/restaurar-android.md"
+      ],
+      "status": 403,
+      "finalUrl": "https://support.fairphone.com/hc/en-us/articles/18896094650513-How-to-manually-install-Android-on-your-Fairphone",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://tigervnc.org/",
+      "pages": [
+        "docs/desktop/acesso-remoto.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://tigervnc.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://tigervnc.org/doc/Xvnc.html",
+      "pages": [
+        "docs/android/desktop.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://tigervnc.org/doc/Xvnc.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://update.kies.samsung.com/SmartSwitchPC_recovery_guide/firmware/emergencyrecovery/",
+      "pages": [
+        "docs/recuperacao/modos-emergencia.md",
+        "docs/recuperacao/restaurar-android.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://update.kies.samsung.com/SmartSwitchPC_recovery_guide/firmware/emergencyrecovery/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wayland.freedesktop.org/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wayland.freedesktop.org/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wayland.freedesktop.org/architecture.html",
+      "pages": [
+        "docs/fundamentos/linux-android.md",
+        "docs/glossario.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wayland.freedesktop.org/architecture.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wayland.freedesktop.org/libinput/doc/latest/device-configuration-via-udev.html",
+      "pages": [
+        "docs/hardware/teclados-usb.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wayland.freedesktop.org/libinput/doc/latest/device-configuration-via-udev.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wayland.freedesktop.org/libinput/doc/latest/tools.html",
+      "pages": [
+        "docs/hardware/teclados-usb.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wayland.freedesktop.org/libinput/doc/latest/tools.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://webrtc.org/getting-started/media-devices",
+      "pages": [
+        "docs/hardware/cameras.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://webrtc.org/getting-started/media-devices?hl=zh-cn",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.alpinelinux.org/wiki/Gnome",
+      "pages": [
+        "docs/desktop/gnome-nativo.md"
+      ],
+      "status": 403,
+      "finalUrl": "https://wiki.alpinelinux.org/wiki/Gnome?__goaway_challenge=cookie&__goaway_id=e18d5f6697019ccc5328743aee15e469",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://wiki.debian.org/InstallingDebianOn/OnePlus/OnePlus6",
+      "pages": [
+        "docs/nativo/mobian-droidian.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wiki.debian.org/InstallingDebianOn/OnePlus/OnePlus6",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.debian.org/Mobian/",
+      "pages": [
+        "docs/nativo/mobian-droidian.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wiki.debian.org/Mobian/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.debian.org/Mobian/Devices",
+      "pages": [
+        "docs/compatibilidade/matriz.md",
+        "docs/nativo/mobian-droidian.md",
+        "docs/nativo/visao-geral.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wiki.debian.org/Mobian/Devices",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.debian.org/Mobian/FAQ",
+      "pages": [
+        "docs/nativo/mobian-droidian.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wiki.debian.org/Mobian/FAQ",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.linuxfoundation.org/networking/iproute2",
+      "pages": [
+        "docs/projetos/laboratorio-redes.md"
+      ],
+      "status": 403,
+      "finalUrl": "https://wiki.linuxfoundation.org/networking/iproute2",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "inconclusive-http"
+    },
+    {
+      "url": "https://wiki.postmarketos.org/wiki/Devices",
+      "pages": [
+        "docs/compatibilidade/matriz.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wiki.nura.eco/wiki/Devices",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.postmarketos.org/wiki/Fairphone_4_%28fairphone-fp4%29",
+      "pages": [
+        "docs/nativo/fairphone-4.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wiki.nura.eco/wiki/Fairphone_4_%28fairphone-fp4%29",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.postmarketos.org/wiki/GNOME",
+      "pages": [
+        "docs/desktop/gnome-nativo.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wiki.nura.eco/wiki/GNOME",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.postmarketos.org/wiki/Installation",
+      "pages": [
+        "docs/nativo/postmarketos-imagens.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wiki.nura.eco/wiki/Installation",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wiki.postmarketos.org/wiki/OnePlus_9_%26_9_Pro_%28oneplus-lemonade_%26_oneplus-lemonadep%29",
+      "pages": [
+        "docs/dispositivos/oneplus-9-pro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wiki.nura.eco/wiki/OnePlus_9_%26_9_Pro_%28oneplus-lemonade_%26_oneplus-lemonadep%29",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://wireless.docs.kernel.org/en/latest/",
+      "pages": [
+        "docs/hardware/wifi.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://wireless.docs.kernel.org/en/latest/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.debian.org/doc/",
+      "pages": [
+        "docs/comunidade/fontes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.debian.org/doc/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.debian.org/doc/manuals/debian-reference/ch02.en.html",
+      "pages": [
+        "docs/fundamentos/terminal-pacotes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.debian.org/doc/manuals/debian-reference/ch02.en.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/CLI/",
+      "pages": [
+        "docs/hardware/audio.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/CLI/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.gnu.org/software/coreutils/manual/html_node/chroot-invocation.html",
+      "pages": [
+        "docs/android/visao-geral.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.gnu.org/software/coreutils/manual/html_node/chroot-invocation.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems/",
+      "pages": [
+        "docs/projetos/automacao-iot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.home-assistant.io/installation/",
+      "pages": [
+        "docs/projetos/automacao-iot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.home-assistant.io/installation/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.home-assistant.io/installation/linux",
+      "pages": [
+        "docs/projetos/automacao-iot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.home-assistant.io/installation/linux",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.kernel.org/doc/Documentation/filesystems/sharedsubtree.txt",
+      "pages": [
+        "docs/android/chroot.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.kernel.org/doc/Documentation/filesystems/sharedsubtree.txt",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.kernel.org/doc/html/latest/admin-guide/README.html",
+      "pages": [
+        "docs/fundamentos/linux-android.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.kernel.org/doc/html/latest/admin-guide/README.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.kernel.org/doc/html/latest/devicetree/usage-model.html",
+      "pages": [
+        "docs/nativo/porting.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.kernel.org/doc/html/latest/devicetree/usage-model.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.openssh.com/manual.html",
+      "pages": [
+        "docs/desktop/acesso-remoto.md",
+        "docs/diagnostico/tela-quebrada.md",
+        "docs/fundamentos/seguranca.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.openssh.org/manual.html",
+      "redirected": true,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.qemu.org/docs/master/system/arm/virt.html",
+      "pages": [
+        "docs/android/virtualizacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.qemu.org/docs/master/system/arm/virt.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.qemu.org/docs/master/system/introduction.html",
+      "pages": [
+        "docs/android/virtualizacao.md",
+        "docs/android/visao-geral.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.qemu.org/docs/master/system/introduction.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.qemu.org/docs/master/user/main.html",
+      "pages": [
+        "docs/android/virtualizacao.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.qemu.org/docs/master/user/main.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html",
+      "pages": [
+        "docs/projetos/arquivos-nas.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.samsung.com/us/business/solutions/samsung-knox/",
+      "pages": [
+        "docs/dispositivos/variantes-fabricantes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.samsung.com/us/business/solutions/samsung-knox/",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    },
+    {
+      "url": "https://www.tcpdump.org/manpages/tcpdump.1.html",
+      "pages": [
+        "docs/projetos/laboratorio-redes.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tcpdump.org/manpages/tcpdump.1.html",
+      "redirected": false,
+      "automationBlocked": false,
+      "outcome": "reachable"
+    }
+  ]
+}

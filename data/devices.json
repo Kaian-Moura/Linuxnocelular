@@ -1,0 +1,26 @@
+[
+  {
+    "id": "oneplus-lemonadep-case",
+    "manufacturer": "OnePlus",
+    "model": "9 Pro (lemonadep), aparelho do estudo",
+    "environment": "postmarketOS com adaptações privadas; kernel vendor 5.4.147",
+    "status": "experimental",
+    "evidence": "Teste local documentado em setembro de 2026; não equivale ao port público",
+    "lastReviewed": "2026-10-10",
+    "guide": "/docs/dispositivos/oneplus-9-pro/",
+    "source": "https://gitlab.com/postmarketOS/pmaports/-/merge_requests/4729",
+    "limits": "Transição PD e orientação USB-C ainda problemáticas; câmera/GPU dependem da combinação experimental. A fonte pública é histórica, não certifica as adaptações privadas."
+  },
+  {
+    "id": "fairphone-fp4-ubports",
+    "manufacturer": "Fairphone",
+    "model": "4 (FP4), conferir variante e base exigida",
+    "environment": "Ubuntu Touch; integração Halium 11 no catálogo consultado",
+    "status": "documental",
+    "evidence": "Página primária de dispositivo e configuração do UBports Installer lidas; sem teste físico nesta edição",
+    "lastReviewed": "2026-10-10",
+    "guide": "/docs/nativo/fairphone-4/",
+    "source": "https://devices.ubuntu-touch.io/device/fp4/",
+    "limits": "Requer firmware base e desbloqueio especificados pelo port. Desktop GNOME, outros sistemas e variantes não herdam a compatibilidade dessa entrada."
+  }
+]

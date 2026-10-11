@@ -1,0 +1,45 @@
+{
+  "name": "smartphone-linux-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Base de conhecimento em português sobre smartphones como computadores Linux",
+  "scripts": {
+    "start": "docusaurus start --host 127.0.0.1 --no-open",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve --host 127.0.0.1 --no-open",
+    "clear": "docusaurus clear",
+    "test": "node --test tests/*.test.mjs",
+    "check:content": "node scripts/check-content.mjs",
+    "check:snippets": "node scripts/check-snippets.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:external": "node scripts/check-external.mjs",
+    "test:browser": "playwright test",
+    "verify": "npm test && npm run check:content && npm run build && npm run check:links"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@docusaurus/theme-mermaid": "3.10.2",
+    "@easyops-cn/docusaurus-search-local": "0.55.3",
+    "@mermaid-js/layout-elk": "0.1.9",
+    "clsx": "2.1.1",
+    "prism-react-renderer": "2.4.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "cheerio": "1.0.0",
+    "yaml": "2.9.1"
+  },
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "overrides": {
+    "tinypool": "2.1.2",
+    "serialize-javascript": "7.0.5",
+    "postcss-selector-parser": "7.1.6",
+    "uuid": "11.1.1",
+    "katex": "0.18.2"
+  }
+}

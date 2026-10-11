@@ -1,0 +1,28 @@
+name: Relato de dispositivo
+description: Documentar suporte, falha ou regressão com evidências reproduzíveis.
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Modelo, código e variante exatos
+    validations:
+      required: true
+  - type: textarea
+    id: versions
+    attributes:
+      label: Distribuição, kernel, firmware base e periféricos
+      description: Não inclua credenciais, serial pessoal ou firmware privado.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Passos, resultado esperado e observado
+      description: Inclua boot, reconexão, energia e momento da falha quando relevantes.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Fontes e evidências sanitizadas
+      description: Separe teste em hardware de revisão documental. Não execute instruções perigosas para preencher este relato.

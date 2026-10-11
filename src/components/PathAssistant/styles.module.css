@@ -1,0 +1,11 @@
+.assistant {margin: 1.5rem 0;}
+.notice {padding: 1rem 1.2rem; border-left: 4px solid var(--ifm-color-primary); background: var(--guide-soft); border-radius: 0 10px 10px 0;}
+.assistant fieldset {border: 1px solid var(--guide-line); border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; min-width: 0;}
+.assistant legend {font-weight: 700; padding: 0 .5rem; font-size: 1.08rem;}
+.grid {display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;}
+.assistant label {display: flex; flex-direction: column; gap: .55rem; font-size: .93rem; font-weight: 600;}
+.assistant select, .assistant input {width: 100%; min-width: 0; padding: .7rem; border: 1px solid var(--guide-line); background: var(--ifm-background-color); color: var(--ifm-font-color-base); border-radius: 7px; font: inherit; font-weight: 400;}
+.actions {display: flex; gap: .8rem; flex-wrap: wrap;}
+.result {padding: 1.8rem; border: 2px solid var(--ifm-color-primary); border-radius: 14px; margin-top: 2rem; background: var(--guide-soft); scroll-margin-top: 6rem;}
+.eyebrow {font-size: .75rem; text-transform: uppercase; font-weight: 800; letter-spacing: .1em; color: var(--ifm-color-primary);}
+@media (max-width: 600px) {.grid {grid-template-columns: 1fr;}.result {padding: 1.2rem;}}

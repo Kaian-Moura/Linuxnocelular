@@ -1,0 +1,532 @@
+{
+  "generatedAt": "2026-10-11T02:38:30.884Z",
+  "pages": 65,
+  "words": 58629,
+  "metrics": [
+    {
+      "file": "docs/android/chroot.md",
+      "title": "chroot com Android e root real",
+      "lastVerified": "2026-10-10",
+      "words": 1109,
+      "commandBlocks": 8,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/android/desktop.md",
+      "title": "Desktop sobre Android — Termux:X11 e VNC",
+      "lastVerified": "2026-10-10",
+      "words": 865,
+      "commandBlocks": 7,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/android/linux-deploy.md",
+      "title": "Linux Deploy — avaliar uma solução legada",
+      "lastVerified": "2026-10-10",
+      "words": 1002,
+      "commandBlocks": 2,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/android/proot-distro.md",
+      "title": "PRoot-distro — distribuição sem root",
+      "lastVerified": "2026-10-10",
+      "words": 961,
+      "commandBlocks": 5,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/android/termux.md",
+      "title": "Termux — primeiro ambiente de terminal",
+      "lastVerified": "2026-10-10",
+      "words": 929,
+      "commandBlocks": 4,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/android/virtualizacao.md",
+      "title": "QEMU, emulação e virtualização",
+      "lastVerified": "2026-10-10",
+      "words": 938,
+      "commandBlocks": 5,
+      "sourceCount": 6
+    },
+    {
+      "file": "docs/android/visao-geral.md",
+      "title": "Linux mantendo o Android — panorama",
+      "lastVerified": "2026-10-10",
+      "words": 943,
+      "commandBlocks": 1,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/compatibilidade/bootloader.md",
+      "title": "Bootloader, root e autorização para substituir o sistema",
+      "lastVerified": "2026-10-10",
+      "words": 864,
+      "commandBlocks": 3,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/compatibilidade/catalogo.mdx",
+      "title": "Registros de dispositivos desta base",
+      "lastVerified": "2026-10-10",
+      "words": 422,
+      "commandBlocks": 0,
+      "sourceCount": 2
+    },
+    {
+      "file": "docs/compatibilidade/inventario.md",
+      "title": "Identifique exatamente o seu aparelho",
+      "lastVerified": "2026-10-10",
+      "words": 947,
+      "commandBlocks": 3,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/compatibilidade/matriz.md",
+      "title": "Avalie uma matriz de suporte sem cair em falsas garantias",
+      "lastVerified": "2026-10-10",
+      "words": 1075,
+      "commandBlocks": 0,
+      "sourceCount": 8
+    },
+    {
+      "file": "docs/comunidade/contribuir.md",
+      "title": "Como contribuir",
+      "lastVerified": "2026-10-10",
+      "words": 706,
+      "commandBlocks": 0,
+      "sourceCount": 1
+    },
+    {
+      "file": "docs/comunidade/fontes.md",
+      "title": "Referências, evidências e confiabilidade",
+      "lastVerified": "2026-10-10",
+      "words": 726,
+      "commandBlocks": 0,
+      "sourceCount": 25
+    },
+    {
+      "file": "docs/comunidade/publicacao.md",
+      "title": "Executar, revisar e publicar o site",
+      "lastVerified": "2026-10-10",
+      "words": 891,
+      "commandBlocks": 6,
+      "sourceCount": 7
+    },
+    {
+      "file": "docs/desktop/acesso-remoto.md",
+      "title": "SSH, VNC e RDP sem dependência obrigatória do notebook",
+      "lastVerified": "2026-10-10",
+      "words": 753,
+      "commandBlocks": 4,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/desktop/gnome-nativo.md",
+      "title": "GNOME nativo como desktop principal",
+      "lastVerified": "2026-10-10",
+      "words": 936,
+      "commandBlocks": 4,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/desktop/sessao-portatil.md",
+      "title": "Preservar aplicações ao desconectar o monitor",
+      "lastVerified": "2026-10-10",
+      "words": 748,
+      "commandBlocks": 1,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/diagnostico/boot-crash.md",
+      "title": "Boot travado, tela preta e Qualcomm CrashDump",
+      "lastVerified": "2026-10-10",
+      "words": 815,
+      "commandBlocks": 2,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/diagnostico/metodo.md",
+      "title": "Método de diagnóstico e coleta de evidências",
+      "lastVerified": "2026-10-10",
+      "words": 848,
+      "commandBlocks": 2,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/diagnostico/tela-quebrada.md",
+      "title": "Celular com tela quebrada ou sem imagem",
+      "lastVerified": "2026-10-10",
+      "words": 771,
+      "commandBlocks": 2,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/dispositivos/oneplus-9-pro.md",
+      "title": "OnePlus 9 Pro — estudo de caso e limitações reais",
+      "lastVerified": "2026-10-10",
+      "words": 1546,
+      "commandBlocks": 0,
+      "sourceCount": 7
+    },
+    {
+      "file": "docs/dispositivos/registrar-dispositivo.md",
+      "title": "Registrar e validar um novo dispositivo",
+      "lastVerified": "2026-10-10",
+      "words": 778,
+      "commandBlocks": 0,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/dispositivos/variantes-fabricantes.md",
+      "title": "Fabricantes, variantes e guias de referência",
+      "lastVerified": "2026-10-10",
+      "words": 864,
+      "commandBlocks": 1,
+      "sourceCount": 6
+    },
+    {
+      "file": "docs/escolha/criterios.md",
+      "title": "Critérios e limites das recomendações",
+      "lastVerified": "2026-10-10",
+      "words": 755,
+      "commandBlocks": 0,
+      "sourceCount": 0
+    },
+    {
+      "file": "docs/escolha/index.mdx",
+      "title": "Qual caminho devo seguir com meu celular?",
+      "lastVerified": "2026-10-10",
+      "words": 623,
+      "commandBlocks": 0,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/faq.md",
+      "title": "Perguntas frequentes",
+      "lastVerified": "2026-10-10",
+      "words": 957,
+      "commandBlocks": 0,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/fundamentos/boot-kernel.md",
+      "title": "Bootloader, kernel, partições e firmware",
+      "lastVerified": "2026-10-10",
+      "words": 747,
+      "commandBlocks": 1,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/fundamentos/linux-android.md",
+      "title": "Linux, Android e as camadas do sistema",
+      "lastVerified": "2026-10-10",
+      "words": 866,
+      "commandBlocks": 1,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/fundamentos/seguranca.md",
+      "title": "Segurança do mini-PC e dos dados",
+      "lastVerified": "2026-10-10",
+      "words": 743,
+      "commandBlocks": 0,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/fundamentos/terminal-pacotes.md",
+      "title": "Terminal, arquivos, permissões e pacotes",
+      "lastVerified": "2026-10-10",
+      "words": 831,
+      "commandBlocks": 1,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/glossario.md",
+      "title": "Glossário técnico",
+      "lastVerified": "2026-10-10",
+      "words": 1115,
+      "commandBlocks": 0,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/hardware/audio.md",
+      "title": "Áudio no telefone, HDMI, USB e Bluetooth",
+      "lastVerified": "2026-10-10",
+      "words": 714,
+      "commandBlocks": 3,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/hardware/bluetooth.md",
+      "title": "Bluetooth, pareamento e periféricos",
+      "lastVerified": "2026-10-10",
+      "words": 738,
+      "commandBlocks": 2,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/hardware/cameras.md",
+      "title": "Câmera, V4L2, libcamera, PipeWire e navegador",
+      "lastVerified": "2026-10-10",
+      "words": 777,
+      "commandBlocks": 2,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/hardware/energia.md",
+      "title": "Bateria, temperatura, suspensão e desempenho",
+      "lastVerified": "2026-10-10",
+      "words": 693,
+      "commandBlocks": 3,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/hardware/gpu.md",
+      "title": "GPU, Mesa, Adreno e aceleração gráfica",
+      "lastVerified": "2026-10-10",
+      "words": 694,
+      "commandBlocks": 1,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/hardware/teclados-usb.md",
+      "title": "Teclado USB não funciona, mas o mouse funciona",
+      "lastVerified": "2026-10-10",
+      "words": 755,
+      "commandBlocks": 6,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/hardware/usb-c-hubs.md",
+      "title": "USB-C, OTG, hubs e alimentação PD",
+      "lastVerified": "2026-10-10",
+      "words": 813,
+      "commandBlocks": 2,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/hardware/video-hotplug.md",
+      "title": "Monitor externo, DisplayPort e hotplug",
+      "lastVerified": "2026-10-10",
+      "words": 764,
+      "commandBlocks": 3,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/hardware/wifi.md",
+      "title": "Wi-Fi, firmware, endereço e acesso estável",
+      "lastVerified": "2026-10-10",
+      "words": 691,
+      "commandBlocks": 3,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/intro.md",
+      "title": "Comece aqui",
+      "lastVerified": "2026-10-10",
+      "words": 887,
+      "commandBlocks": 0,
+      "sourceCount": 3
+    },
+    {
+      "file": "docs/nativo/fairphone-4.md",
+      "title": "Fairphone 4 — exemplo de instalação por modelo",
+      "lastVerified": "2026-10-10",
+      "words": 1195,
+      "commandBlocks": 3,
+      "sourceCount": 8
+    },
+    {
+      "file": "docs/nativo/mobian-droidian.md",
+      "title": "Mobian, Droidian e outras alternativas móveis",
+      "lastVerified": "2026-10-10",
+      "words": 1083,
+      "commandBlocks": 2,
+      "sourceCount": 9
+    },
+    {
+      "file": "docs/nativo/porting.md",
+      "title": "Adaptação avançada de kernel, device tree e firmware",
+      "lastVerified": "2026-10-10",
+      "words": 1119,
+      "commandBlocks": 3,
+      "sourceCount": 7
+    },
+    {
+      "file": "docs/nativo/postmarketos-imagens.md",
+      "title": "Instale postmarketOS/Nura a partir de uma imagem publicada",
+      "lastVerified": "2026-10-10",
+      "words": 1215,
+      "commandBlocks": 3,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/nativo/postmarketos-pmbootstrap.md",
+      "title": "Gere uma imagem com pmbootstrap",
+      "lastVerified": "2026-10-10",
+      "words": 1147,
+      "commandBlocks": 7,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/nativo/ubuntu-touch.md",
+      "title": "Instale Ubuntu Touch em um aparelho suportado",
+      "lastVerified": "2026-10-10",
+      "words": 1063,
+      "commandBlocks": 2,
+      "sourceCount": 7
+    },
+    {
+      "file": "docs/nativo/visao-geral.md",
+      "title": "O que uma instalação Linux nativa realmente exige",
+      "lastVerified": "2026-10-10",
+      "words": 960,
+      "commandBlocks": 1,
+      "sourceCount": 6
+    },
+    {
+      "file": "docs/preparacao/adb-fastboot.md",
+      "title": "Prepare ADB e Fastboot e identifique cada modo",
+      "lastVerified": "2026-10-10",
+      "words": 875,
+      "commandBlocks": 6,
+      "sourceCount": 6
+    },
+    {
+      "file": "docs/preparacao/backup.md",
+      "title": "Backup verificável e plano de recuperação",
+      "lastVerified": "2026-10-10",
+      "words": 995,
+      "commandBlocks": 2,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/preparacao/tela-quebrada.md",
+      "title": "Planeje o acesso com tela ou touchscreen quebrados",
+      "lastVerified": "2026-10-10",
+      "words": 983,
+      "commandBlocks": 2,
+      "sourceCount": 4
+    },
+    {
+      "file": "docs/projetos/arduino-esp32.md",
+      "title": "Arduino Uno e ESP32 pelo mini PC",
+      "lastVerified": "2026-10-10",
+      "words": 973,
+      "commandBlocks": 7,
+      "sourceCount": 7
+    },
+    {
+      "file": "docs/projetos/arquivos-nas.md",
+      "title": "Arquivos, backups e um pequeno NAS",
+      "lastVerified": "2026-10-10",
+      "words": 889,
+      "commandBlocks": 3,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/projetos/assistente-voz.md",
+      "title": "Assistente por voz — áudio, transcrição e resposta",
+      "lastVerified": "2026-10-10",
+      "words": 864,
+      "commandBlocks": 6,
+      "sourceCount": 6
+    },
+    {
+      "file": "docs/projetos/automacao-iot.md",
+      "title": "Automação doméstica, MQTT e ESP32",
+      "lastVerified": "2026-10-10",
+      "words": 960,
+      "commandBlocks": 4,
+      "sourceCount": 7
+    },
+    {
+      "file": "docs/projetos/containers.md",
+      "title": "Containers — Docker e Podman com requisitos reais",
+      "lastVerified": "2026-10-10",
+      "words": 1051,
+      "commandBlocks": 6,
+      "sourceCount": 7
+    },
+    {
+      "file": "docs/projetos/desenvolvimento.md",
+      "title": "Programação — Python, JavaScript, C e C++",
+      "lastVerified": "2026-10-10",
+      "words": 781,
+      "commandBlocks": 7,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/projetos/ia-local.md",
+      "title": "IA local e acesso a modelos remotos",
+      "lastVerified": "2026-10-10",
+      "words": 959,
+      "commandBlocks": 6,
+      "sourceCount": 6
+    },
+    {
+      "file": "docs/projetos/laboratorio-redes.md",
+      "title": "Laboratório de redes e observabilidade",
+      "lastVerified": "2026-10-10",
+      "words": 856,
+      "commandBlocks": 5,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/projetos/pc-portatil.md",
+      "title": "Uso cotidiano, energia e operação portátil",
+      "lastVerified": "2026-10-10",
+      "words": 1057,
+      "commandBlocks": 4,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/projetos/servidor-web.md",
+      "title": "Servidor web local no smartphone",
+      "lastVerified": "2026-10-10",
+      "words": 798,
+      "commandBlocks": 4,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/projetos/ssh-remoto.md",
+      "title": "SSH, administração remota e túneis",
+      "lastVerified": "2026-10-10",
+      "words": 1103,
+      "commandBlocks": 6,
+      "sourceCount": 6
+    },
+    {
+      "file": "docs/recuperacao/modos-emergencia.md",
+      "title": "Modos de emergência, EDL e limites de recuperação",
+      "lastVerified": "2026-10-10",
+      "words": 961,
+      "commandBlocks": 2,
+      "sourceCount": 5
+    },
+    {
+      "file": "docs/recuperacao/restaurar-android.md",
+      "title": "Restaure o firmware original com condições verificadas",
+      "lastVerified": "2026-10-10",
+      "words": 1101,
+      "commandBlocks": 2,
+      "sourceCount": 9
+    },
+    {
+      "file": "docs/recuperacao/triagem.md",
+      "title": "Sistema travado, logo permanente ou tela preta",
+      "lastVerified": "2026-10-10",
+      "words": 1041,
+      "commandBlocks": 4,
+      "sourceCount": 5
+    }
+  ],
+  "warnings": [
+    "docs/compatibilidade/catalogo.mdx: 422 palavras; confira se o escopo está completo",
+    "docs/comunidade/publicacao.md: contém domínio ilustrativo; confirme identificação explícita"
+  ],
+  "errors": []
+}
