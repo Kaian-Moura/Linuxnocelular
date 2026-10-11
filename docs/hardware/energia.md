@@ -11,6 +11,8 @@ Um celular usado como PC enfrenta carga contínua, hub, monitor e uma bateria en
 
 ## Preparação
 
+Para localizar os controles de tela, bloqueio, suspensão e perfis no GNOME, siga [primeira configuração do desktop](../desktop/primeira-configuracao.md). Para instalar/encontrar as ferramentas de consulta usadas abaixo, veja [pacotes de diagnóstico](../diagnostico/instalar-ferramentas.md). Faça as consultas no telefone: a bateria e os sensores do notebook são outro conjunto de hardware.
+
 Não use bateria inchada, perfurada, excessivamente quente ou com vazamento. Não remova a bateria nem alimente seus terminais com uma fonte improvisada. Consulte assistência apropriada. Para testes do port, reserve carga suficiente para recuperar o telefone sem depender do hub que está sob investigação.
 
 Desligar a tela reduz parte do consumo; suspender o sistema muda estados do SoC, rede e periféricos. A presença de `mem` em `/sys/power/state` não garante que suspend/resume funcione nesse port.

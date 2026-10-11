@@ -11,6 +11,8 @@ last_verified: '2026-10-10'
 
 ## Preparação e segurança
 
+Comece pelo [teste visual de saída e entrada no GNOME](../desktop/primeira-configuracao.md). Se precisar dos comandos abaixo, consulte [comando → pacote → instalação](../diagnostico/instalar-ferramentas.md) para ALSA utils (`aplay`/`arecord`), WirePlumber (`wpctl`) e PulseAudio utils (`pactl`). Instalar esses utilitários não exige iniciar um segundo servidor de áudio nem substituir a configuração do seu aparelho.
+
 Reduza o volume antes de testar. Amplificadores internos podem precisar de calibração e limites definidos pelo fabricante; escrever valores aleatórios em controles ALSA pode gerar volume perigoso ou comportamento inadequado. Registre configuração anterior e não substitua todos os arquivos de áudio por exemplos de outro telefone.
 
 ## 1. Existe dispositivo ALSA?

@@ -13,6 +13,7 @@ module.exports = {
   favicon: 'img/logo.svg',
   trailingSlash: true,
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
   markdown: {mermaid: true, hooks: {onBrokenMarkdownLinks: 'throw'}},
   i18n: {defaultLocale: 'pt-BR', locales: ['pt-BR']},
   presets: [['classic', {
@@ -39,17 +40,18 @@ module.exports = {
       title: 'Celular → Linux', logo: {alt: '', src: 'img/logo.svg'},
       items: [
         {type: 'docSidebar', sidebarId: 'guide', position: 'left', label: 'Documentação'},
+        {to: '/docs/comece-aqui/do-zero/', label: 'Do zero', position: 'left'},
         {to: '/docs/escolha/', label: 'Escolha seu caminho', position: 'left'},
         {to: '/docs/comunidade/contribuir/', label: 'Contribua', position: 'right'},
         ...(repository ? [{href: `https://github.com/${repository}`, label: 'GitHub', position: 'right'}] : []),
       ],
     },
     footer: {style: 'dark', links: [
-      {title: 'Comece', items: [{label: 'Guia inicial', to: '/docs/intro/'}, {label: 'Assistente de decisão', to: '/docs/escolha/'}]},
+      {title: 'Comece', items: [{label: 'Trilha do zero', to: '/docs/comece-aqui/do-zero/'}, {label: 'Downloads e ferramentas', to: '/docs/comece-aqui/downloads/'}, {label: 'Assistente de decisão', to: '/docs/escolha/'}]},
       {title: 'Aprenda', items: [{label: 'Conceitos fundamentais', to: '/docs/fundamentos/linux-android/'}, {label: 'Perguntas frequentes', to: '/docs/faq/'}]},
       {title: 'Construa junto', items: [{label: 'Contribuições', to: '/docs/comunidade/contribuir/'}, {label: 'Fontes e critérios', to: '/docs/comunidade/fontes/'}]},
     ], copyright: 'Conteúdo CC BY-SA 4.0 · Código MIT · Sem telemetria própria'},
-    prism: {theme: themes.github, darkTheme: themes.dracula, additionalLanguages: ['bash', 'json', 'python', 'cpp', 'ini', 'yaml', 'docker', 'diff', 'nginx']},
+    prism: {theme: themes.github, darkTheme: themes.dracula, additionalLanguages: ['bash', 'powershell', 'json', 'python', 'cpp', 'ini', 'yaml', 'docker', 'diff', 'nginx']},
     tableOfContents: {minHeadingLevel: 2, maxHeadingLevel: 3},
     mermaid: {theme: {light: 'neutral', dark: 'dark'}},
     metadata: [{name: 'theme-color', content: '#167867'}],

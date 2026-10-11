@@ -69,7 +69,7 @@ Cada tutorial abaixo explica como concluir essas etapas até o ponto em que prec
 ```bash
 cat /etc/os-release
 uname -a
-ps -p 1 -o comm=
+cat /proc/1/comm
 df -h
 ip address
 ```

@@ -19,6 +19,10 @@ Copie um modelo de `templates/` para iniciar uma página fora de `docs/` durante
 
 ## Padrão de tutorial
 
+O público inclui pessoas que nunca extraíram um ZIP nem abriram um terminal. Cada ferramenta precisa de **link oficial → escolha de versão/arquitetura → baixar → extrair/instalar → abrir → conferir**. Cada etapa precisa de **local de execução → ação → resultado esperado → erro/alternativa**. Não deixe “instale os drivers”, “faça root” ou “configure o kernel” como pré-requisito sem um tutorial aplicável.
+
+Use a [trilha do zero](../comece-aqui/do-zero.md) para fundamentos comuns, mas mantenha os passos específicos do programa na sua página. Separe PowerShell, Bash, Android e shell convidado; ensine a substituir nomes exemplificativos antes do comando. Uma operação de flash precisa das condições exatas do dispositivo, não só de uma lista de advertências. O modelo `templates/tutorial.md` inclui essa revisão didática.
+
 Cada tutorial precisa apresentar resultado, dificuldade, compatibilidade, materiais, preparação, backup/riscos, passos, comandos explicados, critérios intermediários, falhas e alternativas, rollback, testes finais e fontes. Use `last_verified` no frontmatter e diga se houve revisão documental ou teste em hardware.
 
 Explique o ambiente de execução: notebook, Termux, distribuição convidada ou Linux nativo. Indique privilégios. Um comando que modifica boot precisa de condições específicas, fonte correspondente e recuperação. Não substitua uma lacuna por um comando de outro dispositivo.

@@ -28,6 +28,8 @@ O monitor informa modos através de EDID. A detecção de conexão produz evento
 
 ## Preparação e backup
 
+Se o monitor já foi reconhecido, o [roteiro visual de telas no GNOME](../desktop/primeira-configuracao.md) ensina seleção de saída, modo e confirmação. Antes dos diagnósticos por terminal, prepare [ferramentas e acesso](../diagnostico/instalar-ferramentas.md). As consultas devem executar no telefone; uma sessão remota no notebook pode usar outra saída e não comprova o HDMI físico.
+
 Salve trabalhos abertos. Não altere a imagem de boot para investigar um cabo. Reserve um terminal SSH e registre configuração gráfica antes de qualquer teste. Se estiver em Wayland, `xrandr` geralmente consulta Xwayland; ele não administra o monitor físico do Mutter.
 
 ## Teste por camadas

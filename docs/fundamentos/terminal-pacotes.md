@@ -7,6 +7,8 @@ last_verified: '2026-10-10'
 
 ## Terminal e shell
 
+Se nunca abriu um terminal ou salvou um arquivo por comando, faça primeiro a [aula prática do zero](../comece-aqui/terminal-primeiros-passos.md). Para localizar downloads, extrair ZIP e escolher Windows/Linux/macOS, use [preparação do computador](../comece-aqui/computador-downloads.md). Aqui você aprofunda as relações entre arquivos, privilégios, pacotes e serviços.
+
 O terminal é uma interface de texto. O **shell** interpreta os comandos digitados. Uma linha pode iniciar um programa, redirecionar saída ou conectar programas. O prompt `usuario@aparelho:~$` não faz parte do comando: normalmente você copia apenas o texto depois do `$`. O símbolo `#` pode representar um prompt privilegiado ou um comentário, dependendo do contexto.
 
 Um comando se compõe de programa, opções e argumentos. Em `ls -l /etc`, `ls` lista, `-l` pede detalhes e `/etc` é o caminho. Leia a explicação antes de executar. Comandos são sensíveis a maiúsculas/minúsculas; espaços e aspas podem mudar o significado.
@@ -62,7 +64,7 @@ No Alpine, registre `/etc/apk/repositories` e `/etc/apk/world`; no Debian, fonte
 
 ## Serviços e logs
 
-Um serviço executa em segundo plano. O **init** coordena inicialização e encerramento. OpenRC usa ferramentas como `rc-service` e `rc-status`; systemd usa `systemctl` e `journalctl`. Android e PRoot não adotam automaticamente o init do rootfs. Antes de usar comandos de serviço, consulte `ps -p 1 -o comm=` se a ferramenta estiver disponível.
+Um serviço executa em segundo plano. O **init** coordena inicialização e encerramento. OpenRC usa ferramentas como `rc-service` e `rc-status`; systemd usa `systemctl` e `journalctl`. Android e PRoot não adotam automaticamente o init do rootfs. Antes de usar comandos de serviço no Linux nativo, consulte `cat /proc/1/comm`; ele lê o nome do processo de PID 1 sem depender das opções de uma implementação específica de `ps`. Se houver restrição de acesso, registre o erro em vez de presumir qual init está funcionando.
 
 Um comando com sucesso não prova a função completa. Instalar SSH não prova que está ouvindo; iniciar o desktop não prova imagem no monitor. Cada tutorial ensina um teste observável. Ao pedir ajuda, informe ambiente, versão, comando e erro integral relevante, ocultando segredos.
 

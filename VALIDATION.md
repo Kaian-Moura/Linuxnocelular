@@ -1,10 +1,12 @@
-# Validação da primeira edição
+# Validação da documentação
 
-Revisão em **10/10/2026**, horário de São Paulo. Os relatórios JSON usam timestamps UTC, que podem indicar 11/10. Este relatório distingue a validação do site da validação dos procedimentos em hardware.
+Primeira edição em **10/10/2026**; ampliação para iniciantes e nova validação em **11/10/2026**, horário de São Paulo. Os relatórios JSON usam timestamps UTC. Este relatório distingue a validação do site da validação dos procedimentos em hardware.
 
 ## Entrega implementada
 
-O projeto contém **65 páginas de documentação**, com cerca de **58,6 mil palavras de texto**, além de blocos de código. Inclui fundamentos, inventário, decisão por requisitos, preparação, Linux nativo, alternativas sobre Android, desktop, nove capítulos de hardware, diagnóstico, recuperação, aplicações, estudo de caso, FAQ, glossário e contribuição.
+O projeto contém **76 páginas de documentação**, com cerca de **110,2 mil palavras de texto**, além de blocos de código. Inclui fundamentos, inventário, decisão por requisitos, preparação, Linux nativo, alternativas sobre Android, desktop, nove capítulos de hardware, diagnóstico, recuperação, aplicações, estudo de caso, FAQ, glossário e contribuição.
+
+A ampliação acrescentou **11 páginas**: trilha do zero, preparação do computador, primeira aula de terminal, origens de downloads, Linux temporário no notebook, desbloqueio, root com Magisk, scrcpy, primeira configuração visual do GNOME, instalação de aplicativos e ferramentas de diagnóstico. Os caminhos Android/nativos, restauração, desenvolvimento, Arduino/ESP32, SSH, acesso remoto, GNOME e aplicações também foram ampliados com downloads, extração/instalação, local de execução, edição de arquivos, resultados esperados, erros e recuperação. A revisão por pares corrigiu diferenças de CLI/versão, formato de checksum, dependências de extração, porta explícita VNC, pasta de chaves SSH, opções de `ps` no BusyBox, origem Flatpak e transição entre display managers.
 
 O assistente oferece 16 perguntas estruturadas e identificação livre do aparelho. As regras são locais e determinísticas: desconhecer um requisito não comprova suporte. Ele distingue preservar/substituir Android, controle por ADB/SSH/modo de manutenção, necessidades de terminal/desktop/containers e evidências para uma instalação nativa. O catálogo inicial tem dois registros com contexto e limites, não uma base completa de compatibilidade.
 
@@ -15,18 +17,20 @@ O site inclui busca local em português/inglês, temas claro/escuro, sumário, n
 | Verificação | Resultado |
 | --- | --- |
 | Regras, catálogo, metadados e regressão de UTF-8 | 29 testes unitários passaram |
-| Revisão editorial automática | 65 páginas, zero erros; dois avisos revisados |
-| Sintaxe dos exemplos | 144 blocos Bash, 36 `sh` e um Python; zero erros, sem executar o conteúdo |
-| Build de produção na raiz | Passou; 68 páginas HTML contando home, busca e 404 |
-| Links/âncoras na raiz | 3.609 verificados; zero erros e zero HTML com NUL |
-| Build de produção em `/guia/` | Passou; 68 páginas HTML |
-| Links/âncoras em `/guia/` | 3.609 verificados; zero erros e zero HTML com NUL |
-| Chromium/Playwright na raiz | Sete testes passaram |
-| Chromium/Playwright em `/guia/` | Os mesmos sete testes passaram |
-| Referências externas | 241 URLs consultadas: 217 alcançáveis, 20 respostas HTTP inconclusivas e quatro falhas de rede |
+| Revisão editorial automática | 76 páginas, zero erros; dois avisos revisados |
+| Sintaxe dos exemplos | 305 blocos Bash, 47 `sh` e dois Python; zero erros, sem executar o conteúdo |
+| Build de produção na raiz | Passou; 79 páginas HTML contando home, busca e 404 |
+| Links/âncoras na raiz | 4.914 verificados; zero erros e zero HTML com NUL |
+| Build de produção em `/guia/` | Passou; 79 páginas HTML |
+| Links/âncoras em `/guia/` | 4.914 verificados; zero erros e zero HTML com NUL |
+| Chromium/Playwright na raiz | Oito testes passaram |
+| Chromium/Playwright em `/guia/` | Os mesmos oito testes passaram |
+| Referências externas | 399 URLs consultadas: 388 alcançáveis, sete respostas HTTP inconclusivas e quatro falhas de rede; nenhum 404/410 |
 | Revisão de privacidade dos fontes | Não foram encontrados os identificadores/segredos privados procurados; nenhuma foto pessoal, dump ou firmware foi incluído |
 
-Os testes de navegador conferiram temas, navegação, recomendações condicionais, busca real por “Bluetooth”, largura de 390 px, limpeza do formulário, sumário, filtros do catálogo e a renderização de todos os sete diagramas. Capturas de home desktop/móvel, assistente e documentação escura foram inspecionadas. Isso não representa uma certificação completa de acessibilidade ou de todos os navegadores.
+Os testes de navegador conferiram temas, navegação, recomendações condicionais, busca real por “Bluetooth”, largura de 390 px, limpeza do formulário, sumário, filtros do catálogo e a renderização de todos os sete diagramas. O novo teste percorreu **home → trilha iniciante → downloads → root**, verificando links, largura móvel e condições expressas do procedimento. Capturas da trilha no desktop, Magisk no tema escuro e downloads no celular foram inspecionadas, além das capturas da primeira edição. Isso não representa uma certificação completa de acessibilidade ou de todos os navegadores.
+
+Os 354 blocos passaram somente por parsers Bash/Python. PowerShell, C/C++, JavaScript, serviços, firmware e exemplos que dependem de hardware receberam revisão documental; não são declarados executados ou compilados por esse verificador. Disponibilidade HTTP também não comprova a precisão do conteúdo nem o suporte de um dispositivo.
 
 Os avisos editoriais restantes são intencionais: a página do catálogo tem 422 palavras mais o componente interativo, e o guia de publicação usa um domínio `.example` explicitamente identificado como ilustração.
 
@@ -66,13 +70,14 @@ A revisão técnica também corrigiu exemplos de chroot, certificados, montagens
 
 ## Dependências e alerta ainda aberto
 
-As auditorias completa e sem dependências de desenvolvimento estão em `reports/npm-audit-full.json` e `reports/npm-audit.json`. Foram atualizadas dependências transitivas com correções publicadas. O parser editorial antigo foi substituído por `yaml`, eliminando sua cadeia de dependências com alerta moderado.
+As auditorias da primeira edição, completa e sem dependências de desenvolvimento, estão em `reports/npm-audit-full.json` e `reports/npm-audit.json`. Foram atualizadas dependências transitivas com correções publicadas. O parser editorial antigo foi substituído por `yaml`, eliminando sua cadeia de dependências com alerta moderado. A ampliação de 11/10 não modificou dependências nem o lockfile; esses relatórios não são uma nova auditoria do registro npm nesta data.
 
-Resta **um aviso de severidade alta em `braces`**, propagado para 30 entradas na árvore. Na consulta, não havia versão corrigida publicada. O problema é negação de serviço por padrões profundamente aninhados. O projeto não é declarado livre de vulnerabilidades. Veja [SECURITY.md](SECURITY.md) e o [aviso upstream](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm). Downgrades sugeridos pelo npm não foram aplicados sem análise.
+A auditoria da primeira edição registrou **um aviso de severidade alta em `braces`**, propagado para 30 entradas na árvore. Naquela consulta, não havia versão corrigida publicada. O problema é negação de serviço por padrões profundamente aninhados. O projeto não é declarado livre de vulnerabilidades. Veja [SECURITY.md](SECURITY.md) e o [aviso upstream](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm). Downgrades sugeridos pelo npm não foram aplicados sem análise.
 
 ## O que permanece limitado ou pendente
 
 - **Hardware:** os builds e os testes web não demonstram suporte em todos os smartphones. As receitas foram revisadas documentalmente; variantes, firmware, kernel e periféricos precisam de testes próprios.
+- **Iniciantes e procedimentos por modelo:** o tutorial Magisk ensina obtenção, extração, patch e verificação, mas a gravação depende de uma receita identificada para variante/build/slot. O exemplo completo de desbloqueio/restauração é Fairphone 4, não um comando válido para qualquer telefone. Downloads públicos de ferramentas OEM não confirmados e condições de downgrade desconhecidas permanecem lacunas explícitas.
 - **OnePlus 9 Pro:** a página distingue registros históricos do projeto privado de suporte público reproduzível. Não foi publicada uma imagem completa nem um pacote dos patches privados. Energia/PD, hotplug, orientação, câmera e isolamento do navegador mantêm limites expressos; não são apresentados como resolvidos universalmente.
 - **Fontes inconclusivas:** bloqueios, timeout e falhas de rede constam de `reports/external-links.json`. Não foram encontrados 404/410 na rodada final, mas isso não comprova o conteúdo técnico das páginas. As fontes bloqueadas exigem revisão manual quando usadas numa instalação concreta.
 - **Catálogo:** começa com OnePlus 9 Pro e Fairphone 4 em combinações específicas. Os demais aparelhos devem seguir inventário e fontes do projeto escolhido, sem compatibilidade presumida.

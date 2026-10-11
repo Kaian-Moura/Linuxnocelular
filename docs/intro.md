@@ -2,7 +2,7 @@
 title: Comece aqui
 description: O que este projeto ensina, como usar os guias e como preparar um reaproveitamento seguro e viável.
 sidebar_position: 1
-last_verified: '2026-10-10'
+last_verified: '2026-10-11'
 ---
 
 Um smartphone pode ser útil muito depois de deixar de servir como telefone principal. Processador, memória, armazenamento, Wi-Fi e bateria podem sustentar programação, um terminal de administração, serviços na rede local ou um desktop. O desafio é fazer o software conversar com esse hardware de maneira confiável.
@@ -23,6 +23,8 @@ Esta base ajuda você a **investigar o próprio aparelho e escolher um caminho**
 
 ## Como percorrer a documentação
 
+**Nunca usou terminal, baixou um APK ou preparou ADB?** Comece na [trilha do zero](comece-aqui/do-zero.md). Ela organiza a ordem de aprendizado, com [pastas e downloads](comece-aqui/computador-downloads.md), [primeira aula de terminal](comece-aqui/terminal-primeiros-passos.md) e um [diretório de origens oficiais](comece-aqui/downloads.md). Não é necessário fazer root para começar com Termux ou PRoot.
+
 1. Leia [Linux, Android e as camadas do sistema](fundamentos/linux-android.md) se os termos forem novos.
 2. Faça o [inventário do aparelho](compatibilidade/inventario.md), identificando modelo, variante e arquitetura.
 3. Abra [Qual caminho devo seguir com meu celular?](escolha/index.mdx). O assistente não adivinha suporte; use “Ainda não sei” quando faltar evidência.
@@ -31,6 +33,8 @@ Esta base ajuda você a **investigar o próprio aparelho e escolher um caminho**
 6. Valide periféricos, energia e reconexão antes de considerar o aparelho um computador pronto.
 
 Os guias contêm comandos de diferentes ambientes. **Um comando do notebook não deve ser colado automaticamente no telefone.** As páginas indicam onde executá-lo e que privilégio exige. Exemplos com nomes como `USUARIO` ou `IP_DO_TELEFONE` precisam ser substituídos; não são credenciais universais.
+
+Se seu caminho exigir acesso privilegiado no Android, há um [tutorial específico de root com Magisk](preparacao/root-magisk.md), desde o download até a verificação e recuperação, condicionado ao firmware/modelo. Para permitir imagens alternativas no boot, siga [desbloqueio do bootloader](preparacao/desbloquear-bootloader.md). São operações diferentes e nenhuma delas instala, por si só, Linux.
 
 ## Primeiro experimento recomendado
 

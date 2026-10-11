@@ -1,7 +1,7 @@
 ---
 title: Preservar aplicações ao desconectar o monitor
 description: Uma sessão portátil continua viva sem display e retoma o vídeo sem fechar programas.
-sidebar_position: 2
+sidebar_position: 4
 last_verified: '2026-10-10'
 ---
 
@@ -10,6 +10,8 @@ Desligar um monitor, suspender o sistema, encerrar o compositor e reiniciar o te
 **Dificuldade:** intermediária. **Resultado esperado:** mesmo documento e processos após HDMI/hub reconnect. **Pré-requisitos:** desktop nativo funcional, acesso remoto independente, energia suficiente e teste básico de [vídeo](../hardware/video-hotplug.md). Salve uma cópia dos trabalhos, pois um teste pode revelar uma falha real do compositor.
 
 ## Identifique quem encerra a sessão
+
+Execute no terminal do Linux nativo ou por SSH. Prepare `ps` com opções completas e `rg` pelo [guia de ferramentas](../diagnostico/instalar-ferramentas.md): um Alpine mínimo pode trazer somente o `ps` do BusyBox, que não oferece todas as opções abaixo. Se isso acontecer, instale o pacote correspondente da sua release antes da comparação; um erro de opção não prova que a sessão desapareceu.
 
 ```sh
 cat /proc/sys/kernel/random/boot_id

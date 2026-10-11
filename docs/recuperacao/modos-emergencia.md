@@ -21,6 +21,8 @@ Não abra o telefone nem faça curto em pontos de teste por uma receita de outra
 
 ## 1. Identifique o que o computador realmente vê
 
+Comece pelo [guia ADB/Fastboot](../preparacao/adb-fastboot.md) para instalar as ferramentas e localizar o Gerenciador de Dispositivos no Windows. No computador Linux, o comando `lsusb` vem do pacote `usbutils`; a [caixa de ferramentas](../diagnostico/instalar-ferramentas.md) ensina consultar e instalar esse pacote. Instalar um programa de diagnóstico não instala um programmer compatível nem concede autorização OEM.
+
 No computador Linux:
 
 ```bash

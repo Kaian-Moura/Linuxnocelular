@@ -24,6 +24,8 @@ Veja [API de mídia do kernel](https://docs.kernel.org/userspace-api/media/v4l/v
 
 ## 1. Inventário sem captura
 
+Prepare [terminal e ferramentas de diagnóstico](../diagnostico/instalar-ferramentas.md), incluindo o pacote de `v4l2-ctl` quando disponível. Primeiro identifique Linux nativo versus Android/PRoot; instalar esse utilitário num PRoot não transfere a câmera Android para V4L2. O inventário abaixo é de leitura e precede qualquer aplicativo de captura ou adaptação.
+
 ```sh
 ls -l /dev/video* /dev/media* /dev/v4l-subdev* 2>/dev/null
 v4l2-ctl --list-devices

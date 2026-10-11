@@ -29,7 +29,7 @@ export default function Home() {
           <div className={styles.eyebrow}><span/> CONHECIMENTO ABERTO · EM PORTUGUÊS</div>
           <h1>Seu celular ainda<br/>tem muito <em>a fazer.</em></h1>
           <p>Transforme um smartphone em um computador Linux. Escolha um caminho compatível com o seu hardware, entenda cada etapa e construa com segurança.</p>
-          <div className={styles.heroActions}><Link className="button button--primary button--lg" to="/docs/escolha/">Qual caminho devo seguir? <span aria-hidden="true">↗</span></Link><Link className={styles.textLink} to="/docs/intro/">Começar pelos conceitos →</Link></div>
+          <div className={styles.heroActions}><Link className="button button--primary button--lg" to="/docs/escolha/">Qual caminho devo seguir? <span aria-hidden="true">↗</span></Link><Link className={styles.textLink} to="/docs/comece-aqui/do-zero/">Nunca fiz isso: começar do zero →</Link></div>
           <div className={styles.heroNote}>Não existe instalação universal. Existe um caminho bem investigado.</div>
         </div>
         <DesktopDiagram/>

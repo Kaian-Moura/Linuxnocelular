@@ -1,7 +1,7 @@
 ---
 title: Celular com tela quebrada ou sem imagem
 description: Planeje acesso autorizado e reconheça quando Linux nativo ainda não é viável.
-sidebar_position: 3
+sidebar_position: 4
 last_verified: '2026-10-10'
 ---
 
@@ -10,6 +10,8 @@ Um aparelho com tela quebrada pode ser reutilizável, mas o projeto começa pela
 **Dificuldade:** básica quando acesso já está autorizado; avançada quando não existe controle. **Resultado:** encontrar um caminho real de acesso e preparar uma alternativa antes de substituir Android. **Materiais:** cabo de dados conhecido, notebook, periféricos quando suportados e documentação da variante. Sem acesso autorizado ou interface de confirmação, pode ser necessário reparar a tela primeiro.
 
 ## Cenário A: Android e ADB já autorizado
+
+Prepare [ADB passo a passo](../preparacao/adb-fastboot.md) e siga [download, extração e uso do scrcpy](../preparacao/scrcpy.md) quando o canal estiver autorizado. Os dois tutoriais ensinam Windows/macOS/Linux; não é necessário fazer root para o espelhamento comum nem instalar um Linux no telefone para testar esse acesso.
 
 No notebook:
 

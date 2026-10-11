@@ -15,6 +15,8 @@ A opção **Desbloqueio de OEM** geralmente permite solicitar uma mudança de es
 
 ## Resultado, dificuldade e requisitos
 
+Para executar a preparação e um método de desbloqueio documentado desde o início, use [Desbloqueio do bootloader, passo a passo](../preparacao/desbloquear-bootloader.md). Para conceder privilégios dentro do Android, use [root com Magisk](../preparacao/root-magisk.md). Esta página explica como avaliar a política e o estado; os dois tutoriais mostram as operações e seus pré-requisitos próprios.
+
 Resultado esperado: registrar se seu modelo possui um método documentado de desbloqueio e qual o estado atual. Dificuldade: intermediária; **a execução do desbloqueio fica no tutorial específico do aparelho**, depois de backup. Materiais: [inventário](inventario.md), computador com Platform-Tools, cabo de dados, acesso aos botões e página oficial ou do port.
 
 ## Backup e riscos

@@ -28,11 +28,13 @@ Para alterar regras, escreva primeiro o cenário esperado e acrescente um teste 
 
 Use os modelos em `templates/` e o padrão descrito em `CONTRIBUTING.md`. Metadados incluem título, descrição e `last_verified`; páginas técnicas distinguem revisão documental, evidência histórica e teste físico. Uma nova data só deve ser registrada quando a informação for revista. As fontes devem sustentar condições e comandos, e não aparecer apenas como uma lista decorativa.
 
+A entrada para iniciantes fica em `docs/comece-aqui/`: escolha de caminho, preparação do computador, primeira aula de terminal, origens de download e um ambiente Linux temporário no notebook. Um tutorial técnico deve explicar a cadeia **origem → escolha do arquivo → download → extração/instalação → abrir → verificar**, identificar onde cada comando roda e apresentar o resultado esperado. Os capítulos avançados podem reutilizar esses fundamentos por links, mas não dispensar os requisitos específicos de hardware, firmware, privilégios e recuperação.
+
 Links entre documentos usam caminhos relativos quando possível. Links de componentes usam `@docusaurus/Link`, que respeita o `baseUrl`. Não use uma URL de hospedagem provisória dentro dos tutoriais. Os metadados de edição/GitHub dependem da variável real `GITHUB_REPOSITORY`; nenhuma conta é presumida.
 
 ## Construção e portabilidade
 
-`npm ci` reproduz o lockfile em Node.js 22. `npm run verify` executa os testes de regras, revisão editorial, build e verificação de rotas/âncoras. O build gera HTML, recursos e índice local de busca em `build/`. O teste de navegador revisa o resultado de produção, pois o servidor de desenvolvimento não fornece a mesma busca.
+`npm ci` reproduz o lockfile em Node.js 22. `npm run verify` executa os testes de regras, revisão editorial, build e verificação de rotas/âncoras. Links e âncoras quebrados reprovam o build; a checagem do HTML acrescenta conferência do resultado gerado. O build gera HTML, recursos e índice local de busca em `build/`. O teste de navegador revisa o resultado de produção, pois o servidor de desenvolvimento não fornece a mesma busca.
 
 A configuração aceita `DOCUSAURUS_URL` e `DOCUSAURUS_BASE_URL`. Um build separado em `build-subpath/` permite verificar publicação em subdiretório sem substituir a prévia local. O verificador aceita `DOCUSAURUS_BUILD_DIR` e gera um relatório distinto para esse caso. Ambientes e artefatos temporários ficam fora do Git.
 

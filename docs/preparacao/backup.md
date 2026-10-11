@@ -2,7 +2,7 @@
 title: Backup verificável e plano de recuperação
 description: Prepare uma saída de emergência antes de desbloquear ou substituir o Android.
 sidebar_position: 1
-last_verified: '2026-10-10'
+last_verified: '2026-10-11'
 verification: documental
 hardware_tested: false
 ---
@@ -27,6 +27,20 @@ Aplicativos guardam dados privados aos quais ADB comum não tem acesso. Exporte 
 
 ## 1. Faça cópias dos arquivos acessíveis
 
+### Comece pela interface, sem root nem ADB
+
+No computador, crie `smartphone-linux/backup` conforme [preparação das pastas](../comece-aqui/computador-downloads.md). No telefone, abra Arquivos e identifique as pastas de fotos, downloads e documentos que usa. Antes de copiar, abra os aplicativos de mensagens/autenticação e veja **o mecanismo de exportação/backup deles**; copiar a pasta DCIM não inclui conversas nem códigos de autenticação.
+
+No Windows, conecte o cabo de dados, desbloqueie Android, toque na notificação USB e selecione **Transferência de arquivos**, quando essa opção for oferecida. Abra o Explorador → Este Computador → seu telefone → armazenamento interno. Copie, não mova, `DCIM`, `Pictures`, `Download`, `Documents` e outras pastas que você identificou para a pasta de backup. O nome de cada pasta e sua existência variam. Espere a cópia terminar; abra algumas fotos/documentos **do computador** antes de desconectar. [Transferência oficial Android](https://support.google.com/android/answer/9064445?hl=pt-BR).
+
+Em Linux desktop com suporte MTP, a sequência é semelhante pelo gerenciador de arquivos. No macOS não presuma que Finder ofereça a mesma visão MTP; um caminho documentado desta base é ADB, abaixo, após preparar Platform-Tools. Não instale um “recuperador de todos os dados” desconhecido para contornar uma pasta privada.
+
+Se a cópia mostrar pasta vazia, confira se Android está desbloqueado e no modo correto, se o arquivo foi salvo localmente ou só existe na nuvem, e se a aplicação exige exportação própria. Autorizar MTP e autorizar ADB são diálogos diferentes. Backup em nuvem também precisa de verificação e acesso à conta depois da limpeza; não é prova de uma cópia completa apenas porque a opção está ativada.
+
+### Pelo ADB, depois da preparação da ferramenta
+
+Conclua [instalação e autorização ADB](adb-fastboot.md) e confirme o estado `device` antes destes comandos. Use apenas um alvo conferido; se há vários, acrescente `-s SERIAL` com seu identificador local. Não faça root/desbloqueio para tentar preservar dados que serão apagados justamente nessa operação.
+
 **Local: computador Linux/macOS; telefone em Android com ADB autorizado.**
 
 ```bash
@@ -38,9 +52,27 @@ adb pull /sdcard/Documents "$HOME/smartphone-backup/arquivos/"
 
 Cada comando lê um diretório compartilhado e o copia ao computador. Se um diretório não existir, isso não invalida os outros, mas verifique onde o aplicativo salvou os documentos. Não use `/sdcard` como sinônimo de toda a memória do aparelho: é a visão de armazenamento compartilhado exposta ao Android. No Windows, adapte caminhos ao terminal utilizado ou faça cópia por MTP.
 
+**Alternativa completa no PowerShell do computador Windows, com `adb` no caminho da sessão preparada:**
+
+```powershell
+$backupFilesDir = "$env:USERPROFILE\smartphone-linux\backup\arquivos"
+New-Item -ItemType Directory -Force $backupFilesDir
+adb devices -l
+adb pull /sdcard/DCIM "$backupFilesDir"
+adb pull /sdcard/Download "$backupFilesDir"
+adb pull /sdcard/Documents "$backupFilesDir"
+Get-ChildItem $backupFilesDir
+```
+
+Escolha esta alternativa ou a anterior. Para cada transferência, confirme a quantidade de arquivos e a conclusão sem erro. ADB comum não copia dados privados de todos os aplicativos. Não há necessidade de executar um comando de flash para copiar esses arquivos.
+
 Copie também projetos Termux por seu mecanismo próprio, preservando permissões e arquivos ocultos. Não mova bancos de dados de aplicações em uso e considere isso um backup consistente: encerre a aplicação ou use sua exportação. Para Linux nativo já instalado, faça backup de dados, configurações, lista de pacotes e scripts locais antes de alterar kernel ou desktop.
 
 ## 2. Confira integridade e restauração
+
+Pelo gerenciador de arquivos, abra uma fotografia recente, uma antiga e um documento importante a partir da **cópia externa**. Compare o número de pastas e os conjuntos que você pretendia copiar. Uma foto em miniatura no telefone não prova que o arquivo foi transferido para o computador. Guarde exportações e credenciais de recuperação de forma privada, com senha/cópia separadas quando apropriado.
+
+Para testar retorno sem apagar o original, escolha um documento não sensível da cópia e copie-o para **uma pasta nova de teste** no telefone. Abra esse documento pelo aplicativo adequado. Não faça reset de fábrica como “teste de backup” e não sobrescreva uma conversa/base ativa para experimentar restauração. Exportações de apps têm formatos e procedimentos próprios: siga a documentação do serviço.
 
 No computador Linux:
 
@@ -90,9 +122,10 @@ Continue apenas quando conseguir abrir arquivos da cópia, recuperar acesso às 
 
 ## Fontes e limites da verificação
 
-Verificação documental em **10/10/2026**; backups do leitor precisam de validação própria.
+Verificação documental em **11/10/2026**; backups do leitor precisam de validação própria.
 
 - [Android: ADB e transferência de arquivos](https://developer.android.com/tools/adb).
+- [Android: transferência USB por interface](https://support.google.com/android/answer/9064445?hl=pt-BR).
 - [AOSP: desbloqueio e limpeza de dados](https://source.android.com/docs/core/architecture/bootloader/locking_unlocking).
 - [Google: imagens de fábrica e alertas de rollback](https://developers.google.com/android/images).
 - [Fairphone: restauração manual e condições por modelo](https://support.fairphone.com/hc/en-us/articles/18896094650513-How-to-manually-install-Android-on-your-Fairphone).

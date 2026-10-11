@@ -1,7 +1,7 @@
 ---
 title: Método de diagnóstico e coleta de evidências
 description: Investigue por camadas, preserve uma referência e faça alterações reversíveis.
-sidebar_position: 1
+sidebar_position: 2
 last_verified: '2026-10-10'
 ---
 
@@ -10,6 +10,8 @@ Diagnosticar não é escolher um palpite e repetir resets. O processo começa po
 **Dificuldade:** básica a avançada conforme a falha. **Resultado esperado:** um relatório reproduzível que indique o primeiro ponto da cadeia a falhar, as hipóteses descartadas e os limites. **Materiais:** terminal, relógio, espaço para logs, documentação do modelo e acesso de manutenção. Os comandos desta página consultam o sistema; não fazem flash nem escrevem configuração de hardware.
 
 ## 1. Defina o sintoma e a referência
+
+Não conhece as ferramentas? Comece por [instalação e primeiras consultas](instalar-ferramentas.md), com [aula de terminal](../comece-aqui/terminal-primeiros-passos.md) se necessário. A ordem aqui é identificar o ambiente e observar uma camada por vez; não instalar todos os drivers/serviços que aparecem num resultado de busca.
 
 “Não funciona” precisa virar uma observação concreta: teclado enumera mas não gera `EV_KEY`; monitor é detectado mas não mostra pixels; Wi-Fi associa mas DNS falha; fonte é conectada mas a bateria perde carga. Anote também o que **continua funcionando**.
 

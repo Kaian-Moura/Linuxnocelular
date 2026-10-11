@@ -15,6 +15,8 @@ O mouse funcionar prova que **um caminho de entrada** está funcionando. Um tecl
 
 ## Cadeia de diagnóstico
 
+Se nunca usou os comandos desta página, faça [instalação e primeira consulta das ferramentas](../diagnostico/instalar-ferramentas.md). Ela ensina `lsusb`, `evtest` e `libinput`, incluindo como escolher o evento pelo nome do teclado e sair do teste. Para escolher layout e testar digitação pela interface, veja [primeira configuração do desktop](../desktop/primeira-configuracao.md).
+
 ```mermaid
 flowchart LR
   K[Teclado] --> U[USB e hub]

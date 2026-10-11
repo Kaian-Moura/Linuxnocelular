@@ -63,6 +63,20 @@ test('catálogo distingue documentação de teste físico e filtra modelos',asyn
   await page.getByLabel('Filtrar modelo, fabricante ou ambiente').fill('Aparelho sem registro');
   await expect(page.getByText(/Isso não prova incompatibilidade/)).toBeVisible();
 });
+test('trilha iniciante chega ao download e ao root com condições explícitas',async({page})=>{
+  await page.goto(route('/'));
+  await page.getByRole('link',{name:'Nunca fiz isso: começar do zero →'}).click();
+  await expect(page).toHaveURL(/\/docs\/comece-aqui\/do-zero\//);
+  await page.locator('article').getByRole('link',{name:'onde baixar cada ferramenta'}).click();
+  await expect(page).toHaveURL(/\/docs\/comece-aqui\/downloads\//);
+  await page.setViewportSize({width:390,height:844});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);
+  await page.locator('article').getByRole('link',{name:'Root do zero, condicionado ao modelo',exact:true}).click();
+  await expect(page).toHaveURL(/\/docs\/preparacao\/root-magisk\//);
+  await expect(page.getByRole('heading',{name:'Root real no Android com Magisk',exact:true})).toBeVisible();
+  await expect(page.locator('article')).toContainText('Instalar o APK do Magisk, sozinho');
+  await expect(page.locator('article')).toContainText('não constituem um método universal');
+});
 test('todos os sete fluxogramas da edição renderizam',async({page})=>{
   for(const pathname of [
     '/docs/nativo/visao-geral/',

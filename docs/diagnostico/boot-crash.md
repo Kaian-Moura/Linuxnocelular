@@ -1,7 +1,7 @@
 ---
 title: Boot travado, tela preta e Qualcomm CrashDump
 description: Diferencie perda de display, falha de sessão, panic e modos de boot antes de recuperar.
-sidebar_position: 2
+sidebar_position: 3
 last_verified: '2026-10-10'
 ---
 
@@ -25,10 +25,12 @@ No notebook, `lsusb`, `adb devices -l` e `fastboot devices` são consultas útei
 
 ## Se Linux ainda responde
 
+Os comandos a seguir são executados no terminal do telefone ou por SSH autenticado. Se `ps` rejeita as opções ou `rg` não existe, prepare os pacotes indicados em [ferramentas de diagnóstico](instalar-ferramentas.md), sem confundir uma ferramenta ausente com uma falha de boot.
+
 ```sh
 cat /proc/sys/kernel/random/boot_id
 cat /proc/uptime
-ps -p 1 -o comm,args
+cat /proc/1/comm
 ps -eo pid,ppid,user,args | rg 'gnome-shell|gnome-session|sshd'
 sudo dmesg | tail -160
 df -h

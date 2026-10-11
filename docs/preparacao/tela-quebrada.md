@@ -1,7 +1,7 @@
 ---
 title: Planeje o acesso com tela ou touchscreen quebrados
 description: O que é possível por ADB, monitor e SSH e quando um reparo físico é indispensável.
-sidebar_position: 3
+sidebar_position: 6
 last_verified: '2026-10-10'
 verification: documental
 hardware_tested: false
@@ -36,7 +36,7 @@ adb shell getprop sys.boot_completed
 
 Se o alvo estiver em `device`, o shell está autorizado; `sys.boot_completed` pode indicar que o Android terminou parte de sua inicialização. Um valor vazio em recovery ou Linux não tem o mesmo significado. Se estiver `unauthorized`, é preciso aceitar no telefone. Reiniciar o servidor ADB não aprova a chave.
 
-Se o shell funcionar, experimente o [scrcpy oficial](https://github.com/Genymobile/scrcpy), instalado pela distribuição ou pelas instruções upstream:
+Se o shell funcionar, siga [download, instalação e primeira execução do scrcpy](scrcpy.md), a partir do [projeto oficial](https://github.com/Genymobile/scrcpy). A consulta e a execução iniciais são:
 
 ```bash
 scrcpy --version

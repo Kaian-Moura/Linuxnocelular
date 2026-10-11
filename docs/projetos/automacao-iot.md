@@ -2,8 +2,9 @@
 title: Automação doméstica, MQTT e ESP32
 sidebar_position: 7
 description: Faça um laboratório MQTT local e avalie Home Assistant somente nos caminhos atualmente suportados.
-last_verified: '2026-10-10'
+last_verified: '2026-10-11'
 validation: documental
+hardware_tested: false
 ---
 
 ## Resultado e escolha de arquitetura
@@ -20,9 +21,50 @@ Os métodos de instalação Core em ambiente Python e Supervised foram descontin
 
 MQTT conecta clientes a um broker que distribui mensagens por tópicos. Um cliente não precisa ser administrador do sistema nem acessar GPIO do smartphone para publicar uma mensagem.
 
-Instale Mosquitto e clientes no ambiente utilizado: em Debian/Ubuntu, `sudo apt install mosquitto mosquitto-clients`; no administrador simulado do PRoot, use `apt` sem sudo. Em Alpine, confirme os pacotes `mosquitto` e `mosquitto-clients` da sua release; no Termux, confira `pkg search mosquitto` e o pacote disponível. A instalação nativa pode iniciar um serviço padrão; este teste usa **outra porta** para não substituir a configuração dele.
+### A1. Instalar as ferramentas no lugar certo
 
-Crie uma pasta `~/mqtt-mini-pc` e um arquivo `mosquitto.conf` com:
+Todos os três processos iniciais serão executados **no telefone**, dentro do mesmo Linux nativo ou da mesma distribuição PRoot. O notebook pode abrir três conexões SSH separadas; instalar Mosquitto no notebook cria outro broker, não o deste laboratório. Confira `cat /etc/os-release` ou, no Termux direto, `termux-info`. O download é feito pelo gerenciador do ambiente; o [site oficial Mosquitto](https://mosquitto.org/download/) explica os pacotes, mas não é necessário procurar um instalador Windows para rodar o broker no telefone.
+
+Escolha um bloco:
+
+```bash
+# Debian/Ubuntu nativo
+sudo apt update
+sudo apt install mosquitto mosquitto-clients nano
+```
+
+```bash
+# Alpine/postmarketOS nativo, pacotes da própria release
+sudo apk update
+sudo apk add mosquitto mosquitto-clients nano
+```
+
+```bash
+# Termux direto no Android
+pkg update
+pkg install libmosquitto nano
+```
+
+No Debian/Ubuntu PRoot, entre primeiro na distribuição e use o mesmo APT como administrador simulado, retirando `sudo` se ele não existe. No Termux, o pacote consultado chama-se **`libmosquitto`**, embora forneça também o serviço Mosquitto; confirme os executáveis depois de instalar. Não confunda esse nome com os pacotes Debian. A fonte de empacotamento está em [Termux libmosquitto](https://github.com/termux/termux-packages/blob/master/packages/libmosquitto/build.sh).
+
+```bash
+command -v mosquitto
+command -v mosquitto_sub
+command -v mosquitto_pub
+```
+
+Cada comando deve mostrar um caminho. Se o broker nativo estiver em `/usr/sbin/mosquitto` e fora do PATH, confirme `ls -l /usr/sbin/mosquitto` e use esse caminho em lugar de `mosquitto` abaixo. Se `mosquitto_sub` faltar, revise o pacote de clientes da sua release: não é um problema de senha nem Wi-Fi. A instalação nativa pode iniciar um serviço padrão; este teste usa **outra porta** para não substituir a configuração dele.
+
+### A2. Criar a configuração e iniciar o broker
+
+No primeiro terminal do telefone, crie a pasta e abra o editor:
+
+```bash
+mkdir -p "$HOME/mqtt-mini-pc"
+nano "$HOME/mqtt-mini-pc/mosquitto.conf"
+```
+
+Se o arquivo já existe, preserve uma cópia antes de editá-lo. Cole o conteúdo abaixo, salve com **Ctrl+O → Enter** e saia com **Ctrl+X**. Na tela do nano, `^` representa a tecla Ctrl; não é texto para digitar. Confira com `cat "$HOME/mqtt-mini-pc/mosquitto.conf"`:
 
 ```conf
 listener 18883 127.0.0.1
@@ -36,19 +78,23 @@ Anonymous é permitido **somente neste listener loopback de laboratório**. Não
 mosquitto -c "$HOME/mqtt-mini-pc/mosquitto.conf" -v
 ```
 
-Em outro terminal:
+### A3. Receber antes de publicar
+
+O broker mantém o primeiro terminal ocupado e imprime logs: isso é esperado. **Abra um segundo terminal do mesmo ambiente** — outra conexão `ssh mini-pc`, ou outra sessão Termux e o mesmo login PRoot se essa é sua escolha. Não inicie outro broker. Execute:
 
 ```bash
 mosquitto_sub -h 127.0.0.1 -p 18883 -t 'lab/mesa/teste' -v
 ```
 
-Em um terceiro:
+Deixe o subscriber esperando. Abra um terceiro terminal, novamente no telefone e no mesmo ambiente, e publique:
 
 ```bash
 mosquitto_pub -h 127.0.0.1 -p 18883 -t 'lab/mesa/teste' -m 'ligado'
 ```
 
 **Verificação:** o subscriber imprime `lab/mesa/teste ligado` e o broker registra a conexão. Isso confirma somente comunicação local. Encerre cada processo com Ctrl+C. `persistence false` evita armazenamento permanente neste primeiro experimento.
+
+O publisher normalmente retorna ao prompt sem imprimir a mensagem; ela aparece no subscriber. Repita o publish trocando somente `ligado` por `desligado`: a segunda linha deve chegar também. `Connection refused` pede conferir o broker ativo, endereço e porta 18883. `Address already in use` no broker pede localizar outro processo desse laboratório antes de tentar outra porta. Um subscriber iniciado **depois** da publicação não recebe uma mensagem antiga não retida: essa ordem é parte do teste.
 
 ## Do laboratório para um dispositivo IoT
 
@@ -75,7 +121,13 @@ sudo docker run -d --name mini-pc-homeassistant --stop-timeout 60 \
 sudo docker logs --tail 100 mini-pc-homeassistant
 ```
 
-Confira o digest para registrar a versão: `stable` muda com o tempo. A pasta de configuração pode conter tokens, credenciais e base de dados; não publique seu conteúdo. Acesse o painel local ou use túnel `-L 8123:127.0.0.1:8123` sobre o [SSH do host](./ssh-remoto.md). Crie a conta inicial, faça onboarding e salve backup pelo mecanismo disponível.
+Confira o digest para registrar a versão: `stable` muda com o tempo. A pasta de configuração pode conter tokens, credenciais e base de dados; não publique seu conteúdo. No notebook com o alias `mini-pc` preparado pelo [guia SSH](./ssh-remoto.md), abra:
+
+```bash
+ssh -N -o ExitOnForwardFailure=yes -L 18123:127.0.0.1:8123 mini-pc
+```
+
+Deixe esse terminal aberto e visite `http://127.0.0.1:18123` no navegador do notebook. A primeira inicialização pode levar tempo; acompanhe `sudo docker logs --tail 100 mini-pc-homeassistant` numa conexão separada em vez de recriar o container. Se aparecer a tela inicial, crie a conta administrativa local, guarde a senha privadamente e revise nome/localização/unidades no onboarding. Não envie localização precisa a este projeto. Não adicione integrações de relés durante essa prova. Use a função de backup documentada na versão e copie o arquivo para fora do telefone antes de tornar o serviço importante.
 
 Descoberta de LAN, dongles e Bluetooth podem exigir rede host, dispositivos específicos e D-Bus; essas integrações ampliam a exposição e dependem do host. Consulte a receita oficial e avalie cada acesso necessário. Não adicione `--privileged` apenas para silenciar erros de uma integração que nem será utilizada. Container não inclui o Supervisor e as apps/add-ons de Home Assistant OS.
 
@@ -95,4 +147,4 @@ Para encerrar Home Assistant com tempo de banco de dados, `sudo docker stop --ti
 
 ## Fontes e estado
 
-Revisão documental: **10/10/2026**. [Home Assistant, métodos](https://www.home-assistant.io/installation/), [fim de suporte Core/Supervised](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems/), [Container no Linux](https://www.home-assistant.io/installation/linux), [Mosquitto configuração](https://mosquitto.org/man/mosquitto-conf-5.html), [Mosquitto publish](https://mosquitto.org/man/mosquitto_pub-1.html), [ESPHome](https://esphome.io/install/getting-started/). Os laboratórios não foram executados em cada telefone e não certificam automação crítica.
+Revisão documental: **11/10/2026**, sem instalar pacotes nem executar o laboratório. [Home Assistant, métodos](https://www.home-assistant.io/installation/), [fim de suporte Core/Supervised](https://www.home-assistant.io/blog/2025/05/22/deprecating-core-and-supervised-installation-methods-and-32-bit-systems/), [Container no Linux](https://www.home-assistant.io/installation/linux), [Mosquitto configuração](https://mosquitto.org/man/mosquitto-conf-5.html), [Mosquitto publish](https://mosquitto.org/man/mosquitto_pub-1.html), [ESPHome](https://esphome.io/install/getting-started/). O nome do pacote Termux foi conferido no source oficial; disponibilidade de versão e serviço continua dependente do repositório utilizado. Os laboratórios não certificam automação crítica.

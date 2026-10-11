@@ -23,6 +23,8 @@ OTG permite que um aparelho assuma funções de host ou dispositivo, conforme su
 
 ## Materiais e preparação
 
+Antes de usar o terminal, prepare [ferramentas de USB e input](../diagnostico/instalar-ferramentas.md). Num primeiro teste, anote cada cabo e **a função da porta** em que entra: cabo principal do hub no telefone, HDMI na saída de vídeo, periférico em porta de dados, carregador na entrada PD somente se a montagem suportar. Os diagramas do manual do hub e a documentação do telefone determinam quais funções existem; o formato USB-C sozinho não determina isso.
+
 Use um hub cuja documentação distinga entrada PD, cabo upstream ligado ao telefone, portas USB de dados e saídas de vídeo. Prefira uma fonte PD documentada e cabo com capacidade compatível. Uma porta USB-C marcada **Data, 5 Gbit/s** pode alimentar um monitor sem transmitir DisplayPort. Para vídeo nessa porta, o fabricante precisa declarar suporte de display naquele caminho específico.
 
 Antes dos testes, carregue o telefone, faça backup dos dados e configure [acesso de manutenção](../desktop/acesso-remoto.md). Registre modelo do hub, fonte, potência nominal, cabos e ordem de conexão. Se a porta do telefone for única, SSH por Wi-Fi permite observação durante o uso do hub; não suponha que ADB continue disponível.

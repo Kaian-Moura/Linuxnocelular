@@ -2,8 +2,9 @@
 title: Laboratório de redes e observabilidade
 sidebar_position: 10
 description: Aprenda endereços, portas, DNS e diagnóstico de serviços usando somente sistemas autorizados.
-last_verified: '2026-10-10'
+last_verified: '2026-10-11'
 validation: documental
+hardware_tested: false
 ---
 
 ## Resultado, materiais e escopo
@@ -13,6 +14,53 @@ validation: documental
 Um endereço identifica uma interface; rota define como chegar a outro endereço; porta identifica um serviço TCP/UDP; DNS traduz nomes; firewall controla tráfego. Wi-Fi conectado não implica que um servidor está escutando, e ping funcionando não comprova autenticação SSH ou HTTP saudável.
 
 Use somente equipamentos próprios ou com autorização de quem administra a rede. Faculdade, trabalho e redes públicas podem restringir clientes entre si. Não tente “consertar” isolamento de rede alterando regras que você não controla.
+
+## 0. Instalar ferramentas e abrir as duas máquinas
+
+O primeiro laboratório observa **o próprio telefone**, sem varrer a LAN. Abra um terminal local dele ou uma shell por [SSH](./ssh-remoto.md). Os comandos `ip`, `ss`, Nmap e `curl` abaixo são executados **no telefone**. O notebook usa seu cliente SSH e navegador; uma requisição feita no PowerShell sem túnel observa o notebook, não o telefone.
+
+Escolha um bloco de instalação no ambiente do telefone:
+
+```bash
+# Debian/Ubuntu nativo
+sudo apt update
+sudo apt install iproute2 curl nano nmap bind9-dnsutils
+```
+
+```bash
+# Alpine/postmarketOS nativo, repositórios da própria release
+sudo apk update
+sudo apk add iproute2 curl nano nmap bind-tools
+```
+
+```bash
+# Termux direto no Android
+pkg update
+pkg install iproute2 curl nano nmap dnsutils
+```
+
+Num Debian PRoot, utilize o APT como administrador simulado, sem sudo quando ausente, mas lembre que a rede pertence ao host Android. A instalação de iproute2 dentro do PRoot não remove restrições netlink do Android. Os pacotes são obtidos dos repositórios do sistema; não há necessidade de instalar Nmap por um arquivo `.exe` no telefone ARM. No notebook Windows, os testes SSH utilizam PowerShell com OpenSSH Client já preparado; macOS utiliza Terminal e Linux o emulador de terminal da distribuição.
+
+Confira:
+
+```bash
+command -v ip
+command -v ss
+curl --version
+nmap --version
+command -v dig
+```
+
+Devem aparecer caminhos/versões. `command not found` pede rever pacote e PATH; `Permission denied` **depois** de encontrar o programa pode ser política do host. Antes de explorar portas, abra o [servidor web](./servidor-web.md) num terminal separado e deixe-o ativo no loopback 8080. Esse processo em primeiro plano ocupará sua janela, por isso abra outra para diagnóstico.
+
+Crie um registro local sem dados pessoais:
+
+```bash
+mkdir -p "$HOME/rede-mini-pc"
+nano "$HOME/rede-mini-pc/observacoes.md"
+```
+
+Escreva data, ambiente (nativo/Termux/PRoot), qual processo web está ativo e resultados dos testes seguintes; salve com **Ctrl+O → Enter → Ctrl+X**. Não precisa ser script executável. Após cada alteração, abra o mesmo arquivo no nano e acrescente o resultado. IPs, nomes de rede e detalhes privados podem ser necessários na sua anotação local, mas devem ser removidos de uma contribuição pública.
 
 ## 1. Registrar interfaces e rotas
 
@@ -58,22 +106,22 @@ Os logs detalhados separam resolução, conexão TCP, negociação e autenticaç
 Quando Nmap estiver disponível pelo repositório do seu ambiente, um teste de conexões TCP ao **próprio telefone** é:
 
 ```bash
-nmap -sT -p 8022,8080,18883 127.0.0.1
+nmap -sT -p 22,8022,8080,18883 127.0.0.1
 ```
 
-As portas correspondem aos laboratórios SSH, web e MQTT, quando iniciados. `-sT` utiliza conexões TCP normais e não exige raw sockets. Uma porta fechada pode ser correta se seu servidor está parado. Esse comando não varre aparelhos alheios nem descobre se uma aplicação exige senha.
+As portas correspondem ao SSH Linux normalmente em 22, SSH Termux normalmente em 8022, web e MQTT de laboratório, quando iniciados. Sua configuração pode escolher outra porta. `-sT` utiliza conexões TCP normais e não exige raw sockets. Uma porta fechada pode ser correta se seu servidor está parado. A saída deve listar estado por porta: `open` comprova que aceitou a conexão TCP, não que a autenticação da aplicação passou. Esse comando não varre aparelhos alheios nem descobre se uma aplicação exige senha.
 
-Para DNS, utilize a ferramenta da sua distribuição, como `getent hosts example.org` em glibc ou cliente DNS instalado e documentado. Compare resolução com a configuração de rede do host. A escolha de um domínio de teste sem dados sensíveis evita expor URLs privados; falha de DNS não se corrige gravando um IP permanente em qualquer aplicação.
+Para DNS, com os pacotes acima, execute `dig example.org +short`. Devem aparecer respostas de endereço quando a resolução funciona; os valores podem mudar, portanto este guia não fixa um IP esperado. Para observar cabeçalho/status e servidor que respondeu, use `dig example.org`. Em glibc, `getent hosts example.org` testa também o mecanismo de resolução utilizado por aplicações, que pode considerar `/etc/hosts`. Compare com a configuração de rede do host. Um nome público de teste evita expor URLs privados; falha de DNS não se corrige gravando um IP permanente em qualquer aplicação.
 
 ## 5. Captura de tráfego, quando houver necessidade
 
-No Linux real, tcpdump exige acesso apropriado. Para observar apenas seu teste HTTP loopback, após confirmar que a interface é `lo`:
+No Linux real, tcpdump exige acesso apropriado. Se faltar, Debian/Ubuntu fornece `sudo apt install tcpdump` e Alpine/postmarketOS `sudo apk add tcpdump`, quando disponível na release. Não instale/rootear Android apenas para habilitar essa etapa opcional. Confira `command -v tcpdump` e `ip -br address`; o restante exige que a interface loopback observada realmente se chame `lo`. Para observar apenas seu teste HTTP:
 
 ```bash
 sudo tcpdump -i lo -nn 'tcp port 8080' -c 10
 ```
 
-Em outro terminal, gere uma requisição HTTP local. `-nn` evita resolução de nomes e `-c 10` limita o número de pacotes. Não capture uma interface Wi-Fi inteira para investigar um serviço loopback. Capturas podem conter dados pessoais e credenciais; guarde-as de maneira privada e compartilhe somente o necessário.
+Em outro terminal do telefone, execute `curl --max-time 5 -I http://127.0.0.1:8080/`. Deve haver linhas de tráfego no terminal tcpdump e uma resposta HTTP no cliente. `-nn` evita resolução de nomes e `-c 10` limita o número de pacotes; se ainda não chegarem dez, Ctrl+C encerra a observação. Sem servidor ativo, pode haver apenas tentativa/rejeição, que é um resultado diagnóstico. Não capture uma interface Wi-Fi inteira para investigar loopback. Capturas podem conter dados pessoais e credenciais; guarde-as privadamente e compartilhe somente o necessário.
 
 Android, PRoot e kernels móveis podem não oferecer capacidades de captura. Não instale módulos de outro kernel nem adquira root só para repetir esse exemplo. Logs de cliente/servidor e SSH normalmente bastam para diagnosticar a primeira conexão.
 
@@ -85,4 +133,4 @@ O laboratório não muda firewall nem roteador. Encerre processos de teste e tú
 
 ## Fontes e verificação
 
-Revisão documental: **10/10/2026**. [Nmap, técnicas](https://nmap.org/book/man-port-scanning-techniques.html), [condições de uso de scans](https://nmap.org/book/legal-issues.html), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [tcpdump](https://www.tcpdump.org/manpages/tcpdump.1.html), [SSH](https://man.openbsd.org/ssh). Visibilidade de interfaces e captura no Android continuam dependentes da versão e das permissões locais.
+Revisão documental: **11/10/2026**, sem executar scans, captures ou instalações no telefone. [Nmap, técnicas](https://nmap.org/book/man-port-scanning-techniques.html), [condições de uso de scans](https://nmap.org/book/legal-issues.html), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [tcpdump](https://www.tcpdump.org/manpages/tcpdump.1.html), [SSH](https://man.openbsd.org/ssh), [BIND dig](https://bind9.readthedocs.io/en/latest/manpages.html#dig-dns-lookup-utility). Visibilidade de interfaces, DNS e captura no Android continuam dependentes da versão e das permissões locais. Nenhum comando altera o roteador ou firewall.

@@ -13,6 +13,8 @@ O objetivo é identificar a camada que falhou, preservar evidências e escolher 
 
 **Tela preta não prova que o sistema morreu.** Pode haver um Linux funcional sem saída de vídeo, compositor encerrado, monitor na entrada errada ou problema de cabo. “Ficou no logo” também não determina sozinho a etapa do boot: o framebuffer pode conservar a imagem enquanto outro sistema inicializa. A combinação de USB, rede e logs fornece evidência melhor.
 
+Se ainda não preparou as ferramentas, use [ADB/Fastboot desde o download](../preparacao/adb-fastboot.md) no computador e [instalação das ferramentas de diagnóstico](../diagnostico/instalar-ferramentas.md) no Linux que estiver acessível. Os guias explicam onde abrir o terminal e como verificar a instalação. Não instale pacotes no aparelho enquanto ele está sem acesso: primeiro determine o modo em que ele se encontra.
+
 ## Backup e riscos da recuperação
 
 Não comece por limpeza de dados, flash de firmware ou reset contínuo de drivers. A alteração pode destruir logs e arquivos ainda recuperáveis. Se dados importam, obtenha cópia enquanto houver acesso. Reinício forçado pode perder trabalho e interromper gravação de disco; use-o apenas quando o sistema não permite desligamento normal e pela combinação documentada do modelo.
@@ -55,7 +57,7 @@ Se a rede era conhecida, tente SSH com o endereço confirmado, sem varrer redes 
 uptime
 uname -a
 df -h
-ps -p 1 -o comm=
+cat /proc/1/comm
 ps -ef
 sudo dmesg > "$HOME/dmesg-antes-da-recuperacao.txt"
 ```

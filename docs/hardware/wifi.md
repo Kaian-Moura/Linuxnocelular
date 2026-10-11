@@ -11,6 +11,8 @@ Um ícone de Wi-Fi ou a descoberta de uma rede não comprovam acesso IP. Para ma
 
 ## Identifique quem administra a rede
 
+**Primeira vez?** Faça primeiro o [roteiro visual de Wi-Fi no GNOME](../desktop/primeira-configuracao.md). Se vai usar terminal, siga a [instalação das ferramentas de diagnóstico](../diagnostico/instalar-ferramentas.md) para `ip`, `nmcli`, `rfkill` e `rg`. Não confunda instalar um cliente de consulta com substituir o gerenciador que já controla a rede.
+
 ```sh
 ip -br link
 ip -br address

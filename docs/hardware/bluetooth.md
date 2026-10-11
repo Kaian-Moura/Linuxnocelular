@@ -11,6 +11,8 @@ Bluetooth não é um único recurso. Inicializar o rádio, descobrir um telefone
 
 ## Preparação e camadas
 
+Para um pareamento inicial pela interface, siga [Bluetooth no primeiro desktop](../desktop/primeira-configuracao.md). Para instalar/encontrar `bluetoothctl`, `btmon`, `rfkill` e as ferramentas de input, use [preparação dos diagnósticos](../diagnostico/instalar-ferramentas.md). Nos blocos `text` de sessão interativa abaixo, digite `bluetoothctl` no shell e os comandos seguintes **no prompt do programa**, um por vez; `quit` volta ao shell.
+
 Preserve o pareamento existente: não apague `/var/lib/bluetooth` e não troque o endereço do adaptador. Esse diretório guarda identidades e chaves privadas. Um backup precisa manter permissões e nunca deve entrar num repositório público.
 
 ```sh

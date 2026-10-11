@@ -22,6 +22,8 @@ Freedreno oferece drivers para GPUs Adreno suportadas; Turnip é o driver Vulkan
 
 ## Diagnóstico seguro
 
+Se `glxinfo`, `eglinfo` ou ferramentas de sessão não estiverem disponíveis, comece por [como encontrar e instalar ferramentas na sua distribuição](../diagnostico/instalar-ferramentas.md). Execute testes gráficos no contexto da sessão que será avaliada. Um erro de `DISPLAY` numa shell SSH sem acesso à sessão é diferente de um erro no driver da GPU.
+
 Comece com uma sessão e perfil de usuário conhecidos; não substitua bibliotecas globais antes dos testes.
 
 ```sh

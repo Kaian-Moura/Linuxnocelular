@@ -2,7 +2,7 @@
 title: Identifique exatamente o seu aparelho
 description: Inventário de modelo, variante, arquitetura, software e funções antes de escolher um sistema.
 sidebar_position: 1
-last_verified: '2026-10-10'
+last_verified: '2026-10-11'
 verification: documental
 hardware_tested: false
 ---
@@ -23,6 +23,14 @@ Um nome comercial não basta. Um fabricante pode vender o mesmo nome com outro p
 Se o display estiver inutilizável, veja [acesso com tela quebrada](../preparacao/tela-quebrada.md). ADB exige autorização prévia; conectar um cabo não concede acesso automaticamente.
 
 ## 1. Anote a identidade física
+
+### Se você nunca usou terminal, faça a primeira ficha pela tela
+
+Abra Configurações → Sobre o telefone/Sobre o dispositivo. Se não achar, use a busca das Configurações por **modelo**, **versão Android** e **número da compilação**. Dependendo da interface, Informações do software está numa segunda tela. Anote o código do modelo, não apenas o nome grande mostrado no topo. Não publique IMEI/serial; eles podem aparecer nessa mesma página.
+
+No computador ou em uma folha, escreva `modelo:`, `Android:`, `compilação:`, `tela/toque:`, `objetivo:` e `fonte das especificações:`. Complete o que encontrou e deixe “não sei” nos campos ausentes. Procure esse código na página **do fabricante**, e salve o link; pesquisar somente “meu celular tem Snapdragon” não identifica a variante. A arquitetura pode ser consultada por ADB no passo seguinte depois de [instalar a ferramenta do zero](../preparacao/adb-fastboot.md).
+
+**Verificação:** outra pessoa conseguiria procurar o aparelho usando o código que você anotou? A ficha está fora do telefone e pode ser lida depois de um reset? Se o nome encontrado não corresponde à etiqueta/caixa, registre a divergência antes de escolher firmware.
 
 Registre fabricante, nome comercial, código do modelo, região e eventual variante de operadora. Fotografe apenas a parte da etiqueta necessária, ocultando identificadores pessoais. Compare com a página oficial de especificações. Se a comunidade exigir um codinome, confira a correspondência em duas evidências, como propriedade do sistema e documentação do port.
 
@@ -104,7 +112,7 @@ Não há alteração no telefone a reverter. Guarde a ficha em local privado, fa
 
 ## Fontes e limites da verificação
 
-Verificação documental em **10/10/2026**; consultas não executadas em todos os aparelhos.
+Verificação documental em **11/10/2026**; consultas não executadas em todos os aparelhos.
 
 - [Android: ABIs e arquitetura](https://developer.android.com/ndk/guides/abis) — diferenças entre arquiteturas de aplicativos.
 - [Android: ADB](https://developer.android.com/tools/adb) — shell, seleção e autorização de dispositivos.
